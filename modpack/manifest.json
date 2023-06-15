@@ -1,0 +1,133 @@
+{
+  "minecraft": {
+    "version": "1.18.2",
+    "modLoaders": [
+      {
+        "id": "forge-40.2.0",
+        "primary": true
+      }
+    ]
+  },
+  "manifestType": "minecraftModpack",
+  "overrides": "overrides",
+  "manifestVersion": 1,
+  "version": "1.0.0",
+  "author": "Gaelmare",
+  "name": "Essential TFC",
+  "files": [
+    {
+      "projectID": 238222,
+      "fileID": 4434393,
+      "required": true,
+      "__meta": {
+        "name": "Just Enough Items (JEI)"
+      }
+    },
+    {
+      "projectID": 250398,
+      "fileID": 4555742,
+      "required": true,
+      "__meta": {
+        "name": "Controlling"
+      }
+    },
+    {
+      "projectID": 263420,
+      "fileID": 4550312,
+      "required": true,
+      "__meta": {
+        "name": "Xaero's Minimap"
+      }
+    },
+    {
+      "projectID": 302973,
+      "fileID": 4572444,
+      "required": true,
+      "__meta": {
+        "name": "TerraFirmaCraft",
+        "dependencies": [
+          306770
+        ]
+      }
+    },
+    {
+      "projectID": 306770,
+      "fileID": 3846086,
+      "required": true,
+      "__meta": {
+        "name": "Patchouli",
+        "explicit": false
+      }
+    },
+    {
+      "projectID": 309927,
+      "fileID": 4418032,
+      "required": true,
+      "__meta": {
+        "name": "Curios API (Forge)",
+        "explicit": false
+      }
+    },
+    {
+      "projectID": 317780,
+      "fileID": 4550331,
+      "required": true,
+      "__meta": {
+        "name": "Xaero's World Map"
+      }
+    },
+    {
+      "projectID": 324717,
+      "fileID": 4575623,
+      "required": true,
+      "__meta": {
+        "name": "Jade 🔍"
+      }
+    },
+    {
+      "projectID": 354353,
+      "fileID": 4466931,
+      "required": true,
+      "__meta": {
+        "name": "TFC Water Flasks",
+        "dependencies": [
+          302973
+        ]
+      }
+    },
+    {
+      "projectID": 662156,
+      "fileID": 3940742,
+      "required": true,
+      "__meta": {
+        "name": "Barrels 2012",
+        "dependencies": [
+          302973,
+          309927
+        ]
+      }
+    },
+    {
+      "projectID": 699529,
+      "fileID": 4126987,
+      "required": true,
+      "__meta": {
+        "name": "TFC Item Barrels",
+        "dependencies": [
+          302973
+        ]
+      }
+    },
+    {
+      "projectID": 838143,
+      "fileID": 4465407,
+      "required": true,
+      "__meta": {
+        "name": "TFCGyres-RockLayerSize",
+        "dependencies": [
+          302973
+        ]
+      }
+    }
+  ]
+}
