@@ -17,7 +17,7 @@
   "files": [
     {
       "projectID": 238222,
-      "fileID": 4434393,
+      "fileID": 4593548,
       "required": true,
       "__meta": {
         "name": "Just Enough Items (JEI)"
@@ -61,7 +61,7 @@
     },
     {
       "projectID": 309927,
-      "fileID": 4418032,
+      "fileID": 4590652,
       "required": true,
       "__meta": {
         "name": "Curios API (Forge)",
@@ -104,17 +104,6 @@
         "dependencies": [
           302973,
           309927
-        ]
-      }
-    },
-    {
-      "projectID": 699529,
-      "fileID": 4126987,
-      "required": true,
-      "__meta": {
-        "name": "TFC Item Barrels",
-        "dependencies": [
-          302973
         ]
       }
     },
