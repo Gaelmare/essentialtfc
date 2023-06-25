@@ -33,7 +33,7 @@
     },
     {
       "projectID": 263420,
-      "fileID": 4550312,
+      "fileID": 4593177,
       "required": true,
       "__meta": {
         "name": "Xaero's Minimap"
@@ -41,7 +41,7 @@
     },
     {
       "projectID": 302973,
-      "fileID": 4572444,
+      "fileID": 4607534,
       "required": true,
       "__meta": {
         "name": "TerraFirmaCraft",
@@ -70,7 +70,7 @@
     },
     {
       "projectID": 317780,
-      "fileID": 4550331,
+      "fileID": 4594980,
       "required": true,
       "__meta": {
         "name": "Xaero's World Map"

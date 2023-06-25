@@ -6,7 +6,11 @@ on:
       - 'v*'
 
 env:
+
   PROJECT_ID: "874611"
+
+permissions:
+  contents: write
 
 jobs:
   modpack-info:
