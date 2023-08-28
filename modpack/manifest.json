@@ -33,7 +33,7 @@
     },
     {
       "projectID": 263420,
-      "fileID": 4685456,
+      "fileID": 4716694,
       "required": true,
       "__meta": {
         "name": "Xaero's Minimap"
@@ -41,7 +41,7 @@
     },
     {
       "projectID": 302973,
-      "fileID": 4691512,
+      "fileID": 4723717,
       "required": true,
       "__meta": {
         "name": "TerraFirmaCraft",
@@ -70,7 +70,7 @@
     },
     {
       "projectID": 317780,
-      "fileID": 4685548,
+      "fileID": 4716749,
       "required": true,
       "__meta": {
         "name": "Xaero's World Map"
@@ -86,7 +86,7 @@
     },
     {
       "projectID": 354353,
-      "fileID": 4466931,
+      "fileID": 4705764,
       "required": true,
       "__meta": {
         "name": "TFC Water Flasks",
