@@ -33,7 +33,7 @@
     },
     {
       "projectID": 263420,
-      "fileID": 4749545,
+      "fileID": 4799540,
       "required": true,
       "__meta": {
         "name": "Xaero's Minimap"
@@ -41,7 +41,7 @@
     },
     {
       "projectID": 302973,
-      "fileID": 4767291,
+      "fileID": 4809760,
       "required": true,
       "__meta": {
         "name": "TerraFirmaCraft",
@@ -70,7 +70,7 @@
     },
     {
       "projectID": 317780,
-      "fileID": 4749567,
+      "fileID": 4799578,
       "required": true,
       "__meta": {
         "name": "Xaero's World Map"
@@ -78,7 +78,7 @@
     },
     {
       "projectID": 324717,
-      "fileID": 4575623,
+      "fileID": 4800837,
       "required": true,
       "__meta": {
         "name": "Jade 🔍"
