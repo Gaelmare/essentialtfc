@@ -1,9 +1,9 @@
 {
   "minecraft": {
-    "version": "1.18.2",
+    "version": "1.20.1",
     "modLoaders": [
       {
-        "id": "forge-40.2.0",
+        "id": "forge-47.2.6",
         "primary": true
       }
     ]
@@ -17,7 +17,7 @@
   "files": [
     {
       "projectID": 238222,
-      "fileID": 4593548,
+      "fileID": 4712868,
       "required": true,
       "__meta": {
         "name": "Just Enough Items (JEI)"
@@ -25,7 +25,7 @@
     },
     {
       "projectID": 250398,
-      "fileID": 4555742,
+      "fileID": 4646682,
       "required": true,
       "__meta": {
         "name": "Controlling"
@@ -33,7 +33,7 @@
     },
     {
       "projectID": 263420,
-      "fileID": 4812556,
+      "fileID": 4933782,
       "required": true,
       "__meta": {
         "name": "Xaero's Minimap"
@@ -41,7 +41,7 @@
     },
     {
       "projectID": 302973,
-      "fileID": 4843196,
+      "fileID": 4943174,
       "required": true,
       "__meta": {
         "name": "TerraFirmaCraft",
@@ -52,7 +52,7 @@
     },
     {
       "projectID": 306770,
-      "fileID": 3846086,
+      "fileID": 4892162,
       "required": true,
       "__meta": {
         "name": "Patchouli",
@@ -61,7 +61,7 @@
     },
     {
       "projectID": 309927,
-      "fileID": 4590652,
+      "fileID": 4913335,
       "required": true,
       "__meta": {
         "name": "Curios API (Forge)",
@@ -70,7 +70,7 @@
     },
     {
       "projectID": 317780,
-      "fileID": 4812583,
+      "fileID": 4929640,
       "required": true,
       "__meta": {
         "name": "Xaero's World Map"
@@ -78,7 +78,7 @@
     },
     {
       "projectID": 324717,
-      "fileID": 4800837,
+      "fileID": 4801177,
       "required": true,
       "__meta": {
         "name": "Jade 🔍"
@@ -86,7 +86,7 @@
     },
     {
       "projectID": 354353,
-      "fileID": 4705764,
+      "fileID": 4891706,
       "required": true,
       "__meta": {
         "name": "TFC Water Flasks",
@@ -97,7 +97,7 @@
     },
     {
       "projectID": 662156,
-      "fileID": 3940742,
+      "fileID": 4944918,
       "required": true,
       "__meta": {
         "name": "Barrels 2012",
@@ -108,14 +108,11 @@
       }
     },
     {
-      "projectID": 838143,
-      "fileID": 4465407,
+      "projectID": 858542,
+      "fileID": 4779110,
       "required": true,
       "__meta": {
-        "name": "TFCGyres-RockLayerSize",
-        "dependencies": [
-          302973
-        ]
+        "name": "Searchables"
       }
     }
   ]

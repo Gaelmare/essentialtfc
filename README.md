@@ -1,5 +1,5 @@
-# Essential TFC - Filling the gap of basic TFC modpacks in 1.18
-Otherwise known as the modpack I'd recommend someone start with in TerraFirmaCraft 1.18.2
+# Essential TFC - Filling the gap of basic TFC modpacks in 1.18/1.20
+Otherwise known as the modpack I'd recommend someone start with in TerraFirmaCraft 1.18.2 or 1.20.1
 
 I plan to keep this up-to-date consistently
 
@@ -18,6 +18,8 @@ Mod List:
  └─ •↑ Just Enough Items (JEI) - https://www.curseforge.com/minecraft/mc-mods/jei/files/4434393
 
  └─ •↑ Patchouli - https://www.curseforge.com/minecraft/mc-mods/patchouli/files/3846086
+
+ └─ •↑ Searchables - https://www.curseforge.com/minecraft/mc-mods/searchables/files/4779110
 
  └─ •↑ TFC Water Flasks - https://www.curseforge.com/minecraft/mc-mods/water-flasks/files/4466931
 
