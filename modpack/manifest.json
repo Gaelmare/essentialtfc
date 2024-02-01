@@ -33,7 +33,7 @@
     },
     {
       "projectID": 263420,
-      "fileID": 4812556,
+      "fileID": 5060700,
       "required": true,
       "__meta": {
         "name": "Xaero's Minimap"
@@ -41,7 +41,7 @@
     },
     {
       "projectID": 302973,
-      "fileID": 4843196,
+      "fileID": 5065452,
       "required": true,
       "__meta": {
         "name": "TerraFirmaCraft",
@@ -61,7 +61,7 @@
     },
     {
       "projectID": 309927,
-      "fileID": 4590652,
+      "fileID": 4985315,
       "required": true,
       "__meta": {
         "name": "Curios API (Forge)",
@@ -70,7 +70,7 @@
     },
     {
       "projectID": 317780,
-      "fileID": 4812583,
+      "fileID": 5060750,
       "required": true,
       "__meta": {
         "name": "Xaero's World Map"
@@ -86,7 +86,7 @@
     },
     {
       "projectID": 354353,
-      "fileID": 4705764,
+      "fileID": 4886020,
       "required": true,
       "__meta": {
         "name": "TFC Water Flasks",
