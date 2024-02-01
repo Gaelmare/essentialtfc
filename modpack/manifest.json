@@ -33,7 +33,7 @@
     },
     {
       "projectID": 263420,
-      "fileID": 4933782,
+      "fileID": 5060708,
       "required": true,
       "__meta": {
         "name": "Xaero's Minimap"
@@ -41,7 +41,7 @@
     },
     {
       "projectID": 302973,
-      "fileID": 4943174,
+      "fileID": 5065718,
       "required": true,
       "__meta": {
         "name": "TerraFirmaCraft",
@@ -52,7 +52,7 @@
     },
     {
       "projectID": 306770,
-      "fileID": 4892162,
+      "fileID": 4966125,
       "required": true,
       "__meta": {
         "name": "Patchouli",
@@ -61,7 +61,7 @@
     },
     {
       "projectID": 309927,
-      "fileID": 4913335,
+      "fileID": 5066845,
       "required": true,
       "__meta": {
         "name": "Curios API (Forge)",
@@ -70,7 +70,7 @@
     },
     {
       "projectID": 317780,
-      "fileID": 4929640,
+      "fileID": 5060773,
       "required": true,
       "__meta": {
         "name": "Xaero's World Map"
@@ -78,7 +78,7 @@
     },
     {
       "projectID": 324717,
-      "fileID": 4801177,
+      "fileID": 5072729,
       "required": true,
       "__meta": {
         "name": "Jade 🔍"
