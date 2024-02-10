@@ -7,3 +7,6 @@ cacert.pem
 
 ### Modpack ###
 .out/
+.idea/
+*log
+logs
