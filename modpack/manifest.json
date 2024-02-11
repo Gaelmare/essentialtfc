@@ -17,7 +17,7 @@
   "files": [
     {
       "projectID": 238222,
-      "fileID": 4712868,
+      "fileID": 5074448,
       "required": true,
       "__meta": {
         "name": "Just Enough Items (JEI)"
@@ -41,7 +41,7 @@
     },
     {
       "projectID": 302973,
-      "fileID": 5065718,
+      "fileID": 5096511,
       "required": true,
       "__meta": {
         "name": "TerraFirmaCraft",
@@ -61,7 +61,7 @@
     },
     {
       "projectID": 309927,
-      "fileID": 5066845,
+      "fileID": 5086821,
       "required": true,
       "__meta": {
         "name": "Curios API (Forge)",
@@ -70,7 +70,7 @@
     },
     {
       "projectID": 317780,
-      "fileID": 5060773,
+      "fileID": 5073804,
       "required": true,
       "__meta": {
         "name": "Xaero's World Map"
@@ -96,6 +96,30 @@
       }
     },
     {
+      "projectID": 429235,
+      "fileID": 4810975,
+      "required": true,
+      "__meta": {
+        "name": "FerriteCore ((Neo)Forge)"
+      }
+    },
+    {
+      "projectID": 551736,
+      "fileID": 4731947,
+      "required": true,
+      "__meta": {
+        "name": "Embeddium/Rubidium Dynamic Lights"
+      }
+    },
+    {
+      "projectID": 558905,
+      "fileID": 4632207,
+      "required": true,
+      "__meta": {
+        "name": "Embeddium/Rubidium Extras"
+      }
+    },
+    {
       "projectID": 662156,
       "fileID": 4944918,
       "required": true,
@@ -108,11 +132,38 @@
       }
     },
     {
+      "projectID": 790626,
+      "fileID": 5077298,
+      "required": true,
+      "__meta": {
+        "name": "ModernFix"
+      }
+    },
+    {
+      "projectID": 838993,
+      "fileID": 4964731,
+      "required": true,
+      "__meta": {
+        "name": "TFCGyres-OreHints",
+        "dependencies": [
+          302973
+        ]
+      }
+    },
+    {
       "projectID": 858542,
       "fileID": 4779110,
       "required": true,
       "__meta": {
         "name": "Searchables"
+      }
+    },
+    {
+      "projectID": 908741,
+      "fileID": 4984832,
+      "required": true,
+      "__meta": {
+        "name": "Embeddium"
       }
     }
   ]
