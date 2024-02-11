@@ -3,7 +3,7 @@
     "version": "1.18.2",
     "modLoaders": [
       {
-        "id": "forge-40.2.0",
+        "id": "forge-40.2.6",
         "primary": true
       }
     ]
@@ -96,6 +96,33 @@
       }
     },
     {
+      "projectID": 429235,
+      "fileID": 4074294,
+      "required": true,
+      "__meta": {
+        "name": "FerriteCore ((Neo)Forge)"
+      }
+    },
+    {
+      "projectID": 551736,
+      "fileID": 3817266,
+      "required": true,
+      "__meta": {
+        "name": "Embeddium/Rubidium Dynamic Lights"
+      }
+    },
+    {
+      "projectID": 558905,
+      "fileID": 3936081,
+      "required": true,
+      "__meta": {
+        "name": "Embeddium/Rubidium Extras",
+        "dependencies": [
+          574856
+        ]
+      }
+    },
+    {
       "projectID": 662156,
       "fileID": 3940742,
       "required": true,
@@ -116,6 +143,25 @@
         "dependencies": [
           302973
         ]
+      }
+    },
+    {
+      "projectID": 838993,
+      "fileID": 4590567,
+      "required": true,
+      "__meta": {
+        "name": "TFCGyres-OreHints",
+        "dependencies": [
+          302973
+        ]
+      }
+    },
+    {
+      "projectID": 908741,
+      "fileID": 5067973,
+      "required": true,
+      "__meta": {
+        "name": "Embeddium"
       }
     }
   ]
