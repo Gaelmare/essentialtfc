@@ -17,7 +17,7 @@
   "files": [
     {
       "projectID": 238222,
-      "fileID": 5074448,
+      "fileID": 5101366,
       "required": true,
       "__meta": {
         "name": "Just Enough Items (JEI)"
@@ -41,7 +41,7 @@
     },
     {
       "projectID": 302973,
-      "fileID": 5096511,
+      "fileID": 5133509,
       "required": true,
       "__meta": {
         "name": "TerraFirmaCraft",
