@@ -33,7 +33,7 @@
     },
     {
       "projectID": 263420,
-      "fileID": 5060708,
+      "fileID": 5262365,
       "required": true,
       "__meta": {
         "name": "Xaero's Minimap"
@@ -41,7 +41,7 @@
     },
     {
       "projectID": 302973,
-      "fileID": 5133509,
+      "fileID": 5356073,
       "required": true,
       "__meta": {
         "name": "TerraFirmaCraft",
@@ -61,7 +61,7 @@
     },
     {
       "projectID": 309927,
-      "fileID": 5086821,
+      "fileID": 5296876,
       "required": true,
       "__meta": {
         "name": "Curios API (Forge)",
@@ -70,7 +70,7 @@
     },
     {
       "projectID": 317780,
-      "fileID": 5073804,
+      "fileID": 5262424,
       "required": true,
       "__meta": {
         "name": "Xaero's World Map"
@@ -133,7 +133,7 @@
     },
     {
       "projectID": 790626,
-      "fileID": 5077298,
+      "fileID": 5288164,
       "required": true,
       "__meta": {
         "name": "ModernFix"
@@ -152,7 +152,7 @@
     },
     {
       "projectID": 858542,
-      "fileID": 4779110,
+      "fileID": 5284015,
       "required": true,
       "__meta": {
         "name": "Searchables"
