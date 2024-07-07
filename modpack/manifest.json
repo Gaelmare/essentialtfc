@@ -17,7 +17,7 @@
   "files": [
     {
       "projectID": 238222,
-      "fileID": 5101366,
+      "fileID": 5440261,
       "required": true,
       "__meta": {
         "name": "Just Enough Items (JEI)"
@@ -33,7 +33,7 @@
     },
     {
       "projectID": 263420,
-      "fileID": 5262365,
+      "fileID": 5394772,
       "required": true,
       "__meta": {
         "name": "Xaero's Minimap"
@@ -41,7 +41,7 @@
     },
     {
       "projectID": 302973,
-      "fileID": 5356073,
+      "fileID": 5478226,
       "required": true,
       "__meta": {
         "name": "TerraFirmaCraft",
@@ -61,7 +61,7 @@
     },
     {
       "projectID": 309927,
-      "fileID": 5296876,
+      "fileID": 5367944,
       "required": true,
       "__meta": {
         "name": "Curios API (Forge)",
@@ -70,7 +70,7 @@
     },
     {
       "projectID": 317780,
-      "fileID": 5262424,
+      "fileID": 5394829,
       "required": true,
       "__meta": {
         "name": "Xaero's World Map"
@@ -78,7 +78,7 @@
     },
     {
       "projectID": 324717,
-      "fileID": 5072729,
+      "fileID": 5493390,
       "required": true,
       "__meta": {
         "name": "Jade 🔍"
@@ -133,7 +133,7 @@
     },
     {
       "projectID": 790626,
-      "fileID": 5288164,
+      "fileID": 5425647,
       "required": true,
       "__meta": {
         "name": "ModernFix"
