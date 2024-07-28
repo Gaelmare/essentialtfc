@@ -17,7 +17,7 @@
   "files": [
     {
       "projectID": 238222,
-      "fileID": 5440261,
+      "fileID": 5567914,
       "required": true,
       "__meta": {
         "name": "Just Enough Items (JEI)"
@@ -41,7 +41,7 @@
     },
     {
       "projectID": 302973,
-      "fileID": 5478226,
+      "fileID": 5571484,
       "required": true,
       "__meta": {
         "name": "TerraFirmaCraft",
@@ -133,7 +133,7 @@
     },
     {
       "projectID": 790626,
-      "fileID": 5425647,
+      "fileID": 5569652,
       "required": true,
       "__meta": {
         "name": "ModernFix"
