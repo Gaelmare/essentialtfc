@@ -17,7 +17,7 @@
   "files": [
     {
       "projectID": 238222,
-      "fileID": 5567914,
+      "fileID": 5846810,
       "required": true,
       "__meta": {
         "name": "Just Enough Items (JEI)"
@@ -33,7 +33,7 @@
     },
     {
       "projectID": 263420,
-      "fileID": 5394772,
+      "fileID": 5773012,
       "required": true,
       "__meta": {
         "name": "Xaero's Minimap"
@@ -61,7 +61,7 @@
     },
     {
       "projectID": 309927,
-      "fileID": 5367944,
+      "fileID": 5843594,
       "required": true,
       "__meta": {
         "name": "Curios API (Forge)",
@@ -70,7 +70,7 @@
     },
     {
       "projectID": 317780,
-      "fileID": 5394829,
+      "fileID": 5658224,
       "required": true,
       "__meta": {
         "name": "Xaero's World Map"
@@ -78,7 +78,7 @@
     },
     {
       "projectID": 324717,
-      "fileID": 5493390,
+      "fileID": 5776962,
       "required": true,
       "__meta": {
         "name": "Jade 🔍"
@@ -86,7 +86,7 @@
     },
     {
       "projectID": 354353,
-      "fileID": 4891706,
+      "fileID": 5849711,
       "required": true,
       "__meta": {
         "name": "TFC Water Flasks",
@@ -133,7 +133,7 @@
     },
     {
       "projectID": 790626,
-      "fileID": 5569652,
+      "fileID": 5676014,
       "required": true,
       "__meta": {
         "name": "ModernFix"
