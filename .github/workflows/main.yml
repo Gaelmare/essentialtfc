@@ -49,7 +49,7 @@ jobs:
           output: CHANGELOG.md
           stripGeneratorNotice: true
       - name: Store changelog
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: changelog
           path: CHANGELOG.md
@@ -67,7 +67,7 @@ jobs:
           file: "pax"
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Download changelog
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: changelog
       - name: Move changelog
@@ -80,7 +80,7 @@ jobs:
         run: |
           mv .out/${{ needs.modpack-info.outputs.projectname }}.zip .out/${{ needs.modpack-info.outputs.projectname }}-${{ needs.modpack-info.outputs.tag }}.zip
       - name: Upload zip
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: modpack
           path: .out/${{ needs.modpack-info.outputs.projectname }}-${{ needs.modpack-info.outputs.tag }}.zip
@@ -90,11 +90,11 @@ jobs:
     needs: [build, changelog, modpack-info]
     steps:
       - name: Download modpack
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: modpack
       - name: Download changelog
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: changelog
       - name: Create release
@@ -110,7 +110,7 @@ jobs:
     needs: [build, changelog, modpack-info]
     steps:
       - name: Download modpack
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: modpack
       - name: Get release type
