@@ -33,7 +33,7 @@
     },
     {
       "projectID": 263420,
-      "fileID": 5773012,
+      "fileID": 5862235,
       "required": true,
       "__meta": {
         "name": "Xaero's Minimap"
@@ -41,7 +41,7 @@
     },
     {
       "projectID": 302973,
-      "fileID": 5872631,
+      "fileID": 5943050,
       "required": true,
       "__meta": {
         "name": "TerraFirmaCraft",
@@ -108,7 +108,8 @@
       "fileID": 4731947,
       "required": true,
       "__meta": {
-        "name": "Embeddium/Rubidium Dynamic Lights"
+        "name": "Embeddium/Rubidium Dynamic Lights",
+        "pinned": true
       }
     },
     {
@@ -116,7 +117,8 @@
       "fileID": 4632207,
       "required": true,
       "__meta": {
-        "name": "Embeddium/Rubidium Extras"
+        "name": "Embeddium/Rubidium Extras",
+        "pinned": true
       }
     },
     {
@@ -133,7 +135,7 @@
     },
     {
       "projectID": 790626,
-      "fileID": 5676014,
+      "fileID": 5876359,
       "required": true,
       "__meta": {
         "name": "ModernFix"
@@ -163,7 +165,8 @@
       "fileID": 4984832,
       "required": true,
       "__meta": {
-        "name": "Embeddium"
+        "name": "Embeddium",
+        "pinned": true
       }
     }
   ]
