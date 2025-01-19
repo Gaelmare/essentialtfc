@@ -11,13 +11,13 @@
   "manifestType": "minecraftModpack",
   "overrides": "overrides",
   "manifestVersion": 1,
-  "version": "1.0.0",
+  "version": "2.0.11",
   "author": "Gaelmare",
   "name": "EssentialTFC",
   "files": [
     {
       "projectID": 238222,
-      "fileID": 5846810,
+      "fileID": 6075247,
       "required": true,
       "__meta": {
         "name": "Just Enough Items (JEI)"
@@ -33,7 +33,7 @@
     },
     {
       "projectID": 263420,
-      "fileID": 5862235,
+      "fileID": 6012833,
       "required": true,
       "__meta": {
         "name": "Xaero's Minimap"
@@ -41,7 +41,7 @@
     },
     {
       "projectID": 302973,
-      "fileID": 5943050,
+      "fileID": 6103204,
       "required": true,
       "__meta": {
         "name": "TerraFirmaCraft",
@@ -61,7 +61,7 @@
     },
     {
       "projectID": 309927,
-      "fileID": 5843594,
+      "fileID": 6058834,
       "required": true,
       "__meta": {
         "name": "Curios API (Forge)",
@@ -70,7 +70,7 @@
     },
     {
       "projectID": 317780,
-      "fileID": 5658224,
+      "fileID": 5987149,
       "required": true,
       "__meta": {
         "name": "Xaero's World Map"
@@ -86,7 +86,7 @@
     },
     {
       "projectID": 354353,
-      "fileID": 5886257,
+      "fileID": 6105042,
       "required": true,
       "__meta": {
         "name": "TFC Water Flasks",
@@ -105,20 +105,10 @@
     },
     {
       "projectID": 551736,
-      "fileID": 4731947,
+      "fileID": 6044481,
       "required": true,
       "__meta": {
-        "name": "Embeddium/Rubidium Dynamic Lights",
-        "pinned": true
-      }
-    },
-    {
-      "projectID": 558905,
-      "fileID": 4632207,
-      "required": true,
-      "__meta": {
-        "name": "Embeddium/Rubidium Extras",
-        "pinned": true
+        "name": "Embeddium/Rubidium Dynamic Lights"
       }
     },
     {
@@ -135,7 +125,7 @@
     },
     {
       "projectID": 790626,
-      "fileID": 5876359,
+      "fileID": 6025611,
       "required": true,
       "__meta": {
         "name": "ModernFix"
@@ -143,7 +133,7 @@
     },
     {
       "projectID": 838993,
-      "fileID": 4964731,
+      "fileID": 6105026,
       "required": true,
       "__meta": {
         "name": "TFCGyres-OreHints",
@@ -162,11 +152,29 @@
     },
     {
       "projectID": 908741,
-      "fileID": 4984832,
+      "fileID": 5681725,
       "required": true,
       "__meta": {
-        "name": "Embeddium",
-        "pinned": true
+        "name": "Embeddium"
+      }
+    },
+    {
+      "projectID": 927564,
+      "fileID": 5861244,
+      "required": true,
+      "__meta": {
+        "name": "Zume"
+      }
+    },
+    {
+      "projectID": 931925,
+      "fileID": 5436746,
+      "required": true,
+      "__meta": {
+        "name": "Embeddium++",
+        "dependencies": [
+          908741
+        ]
       }
     }
   ]
