@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "overrides": "overrides",
   "manifestVersion": 1,
-  "version": "2.0.11",
+  "version": "2.0.12",
   "author": "Gaelmare",
   "name": "EssentialTFC",
   "files": [
@@ -33,7 +33,7 @@
     },
     {
       "projectID": 263420,
-      "fileID": 6012833,
+      "fileID": 6184430,
       "required": true,
       "__meta": {
         "name": "Xaero's Minimap"
@@ -41,7 +41,7 @@
     },
     {
       "projectID": 302973,
-      "fileID": 6103204,
+      "fileID": 6187491,
       "required": true,
       "__meta": {
         "name": "TerraFirmaCraft",
@@ -52,7 +52,7 @@
     },
     {
       "projectID": 306770,
-      "fileID": 4966125,
+      "fileID": 6164575,
       "required": true,
       "__meta": {
         "name": "Patchouli",
@@ -78,7 +78,7 @@
     },
     {
       "projectID": 324717,
-      "fileID": 5876199,
+      "fileID": 6106101,
       "required": true,
       "__meta": {
         "name": "Jade 🔍"
@@ -125,7 +125,7 @@
     },
     {
       "projectID": 790626,
-      "fileID": 6025611,
+      "fileID": 6125143,
       "required": true,
       "__meta": {
         "name": "ModernFix"
@@ -133,7 +133,7 @@
     },
     {
       "projectID": 838993,
-      "fileID": 6105026,
+      "fileID": 6135766,
       "required": true,
       "__meta": {
         "name": "TFCGyres-OreHints",
