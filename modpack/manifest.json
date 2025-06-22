@@ -11,13 +11,13 @@
   "manifestType": "minecraftModpack",
   "overrides": "overrides",
   "manifestVersion": 1,
-  "version": "2.0.12",
+  "version": "2.0.13",
   "author": "Gaelmare",
   "name": "EssentialTFC",
   "files": [
     {
       "projectID": 238222,
-      "fileID": 6075247,
+      "fileID": 6600311,
       "required": true,
       "__meta": {
         "name": "Just Enough Items (JEI)"
@@ -33,7 +33,7 @@
     },
     {
       "projectID": 263420,
-      "fileID": 6184430,
+      "fileID": 6515024,
       "required": true,
       "__meta": {
         "name": "Xaero's Minimap"
@@ -41,7 +41,7 @@
     },
     {
       "projectID": 302973,
-      "fileID": 6187491,
+      "fileID": 6656048,
       "required": true,
       "__meta": {
         "name": "TerraFirmaCraft",
@@ -61,7 +61,7 @@
     },
     {
       "projectID": 309927,
-      "fileID": 6058834,
+      "fileID": 6418456,
       "required": true,
       "__meta": {
         "name": "Curios API (Forge)",
@@ -70,7 +70,7 @@
     },
     {
       "projectID": 317780,
-      "fileID": 5987149,
+      "fileID": 6538337,
       "required": true,
       "__meta": {
         "name": "Xaero's World Map"
@@ -78,7 +78,7 @@
     },
     {
       "projectID": 324717,
-      "fileID": 6106101,
+      "fileID": 6271651,
       "required": true,
       "__meta": {
         "name": "Jade 🔍"
@@ -86,7 +86,7 @@
     },
     {
       "projectID": 354353,
-      "fileID": 6105042,
+      "fileID": 6681183,
       "required": true,
       "__meta": {
         "name": "TFC Water Flasks",
@@ -125,7 +125,7 @@
     },
     {
       "projectID": 790626,
-      "fileID": 6125143,
+      "fileID": 6609555,
       "required": true,
       "__meta": {
         "name": "ModernFix"
@@ -171,7 +171,7 @@
       "fileID": 5436746,
       "required": true,
       "__meta": {
-        "name": "Embeddium++",
+        "name": "Chloride (Embeddium++/Sodium++)",
         "dependencies": [
           908741
         ]
