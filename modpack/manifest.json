@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "overrides": "overrides",
   "manifestVersion": 1,
-  "version": "2.0.13",
+  "version": "2.0.14",
   "author": "Gaelmare",
   "name": "EssentialTFC",
   "files": [
@@ -41,7 +41,7 @@
     },
     {
       "projectID": 302973,
-      "fileID": 6656048,
+      "fileID": 6739107,
       "required": true,
       "__meta": {
         "name": "TerraFirmaCraft",
@@ -125,7 +125,7 @@
     },
     {
       "projectID": 790626,
-      "fileID": 6609555,
+      "fileID": 6725223,
       "required": true,
       "__meta": {
         "name": "ModernFix"
@@ -172,6 +172,7 @@
       "required": true,
       "__meta": {
         "name": "Chloride (Embeddium++/Sodium++)",
+        "pinned": true,
         "dependencies": [
           908741
         ]
