@@ -11,9 +11,10 @@
   "manifestType": "minecraftModpack",
   "overrides": "overrides",
   "manifestVersion": 1,
-  "version": "2.0.15",
+  "version": "2.0.16",
   "author": "Gaelmare",
   "name": "EssentialTFC",
+  "description": "Curious about TerraFirmaCraft and want to play a curated modpack with just TFC? This modpack is for you! Designed for the beginner TerraFirmaCraft player in 1.20, planned as a modpack that someone can just recommend for new arrivals to the TFC TNG community. Selected a few content addons and favorite Quality of Play mods, while not adding shaders or large content changes.",
   "files": [
     {
       "projectID": 238222,
@@ -41,7 +42,7 @@
     },
     {
       "projectID": 302973,
-      "fileID": 6817388,
+      "fileID": 6835820,
       "required": true,
       "__meta": {
         "name": "TerraFirmaCraft",
