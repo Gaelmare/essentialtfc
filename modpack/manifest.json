@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "overrides": "overrides",
   "manifestVersion": 1,
-  "version": "2.0.17",
+  "version": "2.0.18",
   "author": "Gaelmare",
   "name": "EssentialTFC",
   "files": [
@@ -33,7 +33,7 @@
     },
     {
       "projectID": 263420,
-      "fileID": 6515024,
+      "fileID": 6778028,
       "required": true,
       "__meta": {
         "name": "Xaero's Minimap"
@@ -41,7 +41,7 @@
     },
     {
       "projectID": 302973,
-      "fileID": 6835820,
+      "fileID": 6990923,
       "required": true,
       "__meta": {
         "name": "TerraFirmaCraft",
@@ -70,7 +70,7 @@
     },
     {
       "projectID": 317780,
-      "fileID": 6538337,
+      "fileID": 6778091,
       "required": true,
       "__meta": {
         "name": "Xaero's World Map"
@@ -78,7 +78,7 @@
     },
     {
       "projectID": 324717,
-      "fileID": 6271651,
+      "fileID": 6855440,
       "required": true,
       "__meta": {
         "name": "Jade 🔍"
@@ -86,7 +86,7 @@
     },
     {
       "projectID": 354353,
-      "fileID": 6877264,
+      "fileID": 7056478,
       "required": true,
       "__meta": {
         "name": "TFC Water Flasks",
@@ -125,7 +125,7 @@
     },
     {
       "projectID": 790626,
-      "fileID": 6725223,
+      "fileID": 6837713,
       "required": true,
       "__meta": {
         "name": "ModernFix"
