@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "overrides": "overrides",
   "manifestVersion": 1,
-  "version": "2.0.18",
+  "version": "2.0.19",
   "author": "Gaelmare",
   "name": "EssentialTFC",
   "files": [
@@ -41,7 +41,7 @@
     },
     {
       "projectID": 302973,
-      "fileID": 6990923,
+      "fileID": 8242625,
       "required": true,
       "__meta": {
         "name": "TerraFirmaCraft",
