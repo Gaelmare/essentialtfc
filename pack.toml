@@ -1,0 +1,13 @@
+name = "EssentialTFC"
+author = "Gaelmare"
+version = "3.0.0-a"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "be376fad999e160cd975cfdc0e22114973fc44258df1687b41a50dad9318f14a"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.238"

@@ -7,3 +7,7 @@ cacert.pem
 
 ### Modpack ###
 .out/
+
+### Dev ###
+.idea
+*.zip*

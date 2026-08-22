@@ -1,0 +1,212 @@
+hash-format = "sha256"
+
+[[files]]
+file = ".github/workflows/main.yml"
+hash = "da278c8b6dc1451374fcb3eacf678de27247166ea8d1e7ed1952b93a26001b45"
+
+[[files]]
+file = ".idea/dbnavigator.xml"
+hash = "6037becc4b00c71fb3bb5c500d965c1d82e70c669cc435f17d084fd533696439"
+
+[[files]]
+file = ".idea/misc.xml"
+hash = "57bea35097014a036eab2807a673960cb5f1c52fe05dd0fa9fbe23d8a7676ae4"
+
+[[files]]
+file = ".idea/modules.xml"
+hash = "18065a59e24d28690ea5efdd1a55faf29b3f9ccee4d30492cb7ceb4b4bf6630c"
+
+[[files]]
+file = ".idea/vcs.xml"
+hash = "6323e12648862a0a96fc0d7877672817d6cd91e2c2a3c3d78f1090db23c6e88e"
+
+[[files]]
+file = ".idea/workspace.xml"
+hash = "c438cea9919d9246f97b7d3371c75293075859f761879c97657d1a660028bcec"
+
+[[files]]
+file = "EssentialTFC-3.0.0-a.zip.bak"
+hash = "f638a33252c603fe552bc938b9f22e8f75208adfe99c5bfdcc5513da6d8e18a2"
+
+[[files]]
+file = "LICENSE.txt"
+hash = "33c42f6adbfec0327ebfbc2eaa58bff1e29f3d0efc054dd828eabdc0b52c14a4"
+
+[[files]]
+file = "README.md"
+hash = "26aa3ccd67c4a63a9a0d44e6bc19afd39919f48e49957eb945fe17f8417bfcd6"
+
+[[files]]
+file = "config/xaerominimap.txt"
+hash = "51852b81c65aea982b5da3ad7aad128eb25ed48858efa2c2102a9bedb4833101"
+
+[[files]]
+file = "essential-tfc-logo.png"
+hash = "614f423389b5d6350c1357d5b8d3dc47d35441cf4dcd236a1b2508ccfa1d0549"
+
+[[files]]
+file = "essentialtfc.iml"
+hash = "3e424157a615b6a6912a9a510f0c3ef2045ebb77996a7018687a21d225fed1a4"
+
+[[files]]
+file = "mods/TFCGyres-OreHints-3.0.0-a1.jar"
+hash = "f0addc1a74b456b52edb85622473bc0aec2dbbcfd4fb74c42821d456e87d479d"
+
+[[files]]
+file = "mods/barrels-2012.pw.toml"
+hash = "673cb4c569c6d7d77fdbe5afae681cf811ac94bac4b540a08ee54133e0e69c59"
+metafile = true
+
+[[files]]
+file = "mods/chloride.pw.toml"
+hash = "144d4bd742122408670a1453c889191a15cb4a7912956dbe8db6518fe1a26b2f"
+metafile = true
+
+[[files]]
+file = "mods/controlling.pw.toml"
+hash = "42ffb6f5835250003da6ca3667ff751709ea295faee43b49c365b0f6c1e8f4d8"
+metafile = true
+
+[[files]]
+file = "mods/corpse.pw.toml"
+hash = "e2edf339c98dbdcf04f46a15276e9b1b5bbdeee0f1ac8b7d9bddb1ee8e54b9a1"
+metafile = true
+
+[[files]]
+file = "mods/creativecore.pw.toml"
+hash = "83ea88c8687aebdc1b1f09ce6da7241a3d2119574301f597982756d04e6c9e1d"
+metafile = true
+
+[[files]]
+file = "mods/curios.pw.toml"
+hash = "6b6683fd8ec53d10d4fbef3b3d53922a1aaa8ef4d2e4b52bb819dc451f5d6b3d"
+metafile = true
+
+[[files]]
+file = "mods/distant-horizons.pw.toml"
+hash = "1bbe182b3a43c998b702e565e7f061125a491c5ee385fd9b050de0faaf28647f"
+metafile = true
+
+[[files]]
+file = "mods/dynamiclights-reforged.pw.toml"
+hash = "f619c1ed2e189f9d482d081411fccee4bd26c05cce52a5db914f1989303f080c"
+metafile = true
+
+[[files]]
+file = "mods/extreme-sound-muffler.pw.toml"
+hash = "6d51c8adfc6782f216a150dedda2ea64969a639f4e21401eb5c5b5ac8c9ab28f"
+metafile = true
+
+[[files]]
+file = "mods/ferritecore.pw.toml"
+hash = "dff824171060c79b327a4880c2f0546c727a041a489ef3af643ec2dcd9cd0c48"
+metafile = true
+
+[[files]]
+file = "mods/irisshaders.pw.toml"
+hash = "763ed0c115b2b9a1e37e38cb153748c9c3f3c31869fd3d56acfaad54c63e78af"
+metafile = true
+
+[[files]]
+file = "mods/jade.pw.toml"
+hash = "4b0a995f7cfa19951ba585aa320a1f4ef1a755a38b608adcff2f9ddd156b195b"
+metafile = true
+
+[[files]]
+file = "mods/jei.pw.toml"
+hash = "cc9ff8f836b242932bc70428c785c1b24838bf4a008f1614aa8c2fcbd3fd86d4"
+metafile = true
+
+[[files]]
+file = "mods/kubejs-tfc.pw.toml"
+hash = "9c2add9082b66545ed92dc750e3e89f2aecf9c4333ff459dca35350a4c7300df"
+metafile = true
+
+[[files]]
+file = "mods/kubejs.pw.toml"
+hash = "018fd970193f808f8c28f873d8b8c69ac9ba134712c7db27fc8d639cb226c9a6"
+metafile = true
+
+[[files]]
+file = "mods/lithium.pw.toml"
+hash = "fb6171c8f7ff0d83513b3f75ee5d7a98659559c427d79fb69eb0219639af8a37"
+metafile = true
+
+[[files]]
+file = "mods/littletiles.pw.toml"
+hash = "d92882607bc767ad209a6b44b20ad65d3d273f2095d46e097474dd2318baa106"
+metafile = true
+
+[[files]]
+file = "mods/makeup-ultra-fast-shader.pw.toml"
+hash = "97619bbf9d7ba1ef5a2b55d8f67eb90329100bca2bcb560182f7233f5a09edb9"
+metafile = true
+
+[[files]]
+file = "mods/modernfix.pw.toml"
+hash = "b0364f6b95f6ed837239c232bad0e2d7317e58f0e4c040e66a4f533239d5775e"
+metafile = true
+
+[[files]]
+file = "mods/patchouli.pw.toml"
+hash = "3718e8a37d0dc2939cc350cce74bcb9c36b59f48baf4560e62804f7ca6478185"
+metafile = true
+
+[[files]]
+file = "mods/placebo.pw.toml"
+hash = "a80d243759a5998d1f61cab61a9769526c21e1a9ac2f328ec1f213bb97311bfe"
+metafile = true
+
+[[files]]
+file = "mods/rhino.pw.toml"
+hash = "985a99f7465b68e43b98f3dbe1081b7113d957c7926a8caab163503528910f42"
+metafile = true
+
+[[files]]
+file = "mods/searchables.pw.toml"
+hash = "6c0fac550bb053ee2728144a28819835823dcc6d04ad7897750431fe55100e53"
+metafile = true
+
+[[files]]
+file = "mods/sodium-extra.pw.toml"
+hash = "c4ebb45eb6e49b9e6a1dfcbae4f7b67da70088f7e672a70d1fff2308d72ff9bc"
+metafile = true
+
+[[files]]
+file = "mods/sodium.pw.toml"
+hash = "e98864e7d943db400d05aa5b283ef9e06eea346e144f0b75d9690032804b4d3d"
+metafile = true
+
+[[files]]
+file = "mods/terrafirmacraft.pw.toml"
+hash = "7945a845351143fe4a47425e4ca96401ca8e89162d770f198502a5809e94ae90"
+metafile = true
+
+[[files]]
+file = "mods/tfcgenviewer.pw.toml"
+hash = "70ea1c0679be1a222e1154447a0a6e3a73ca6b5f43d9b69307548cd42dcd5921"
+metafile = true
+
+[[files]]
+file = "mods/toast-control.pw.toml"
+hash = "29d1e04030fcbdad4ee91eb9bc0b0d6b8907ffe967c9bd0543e8bb7e3dab5282"
+metafile = true
+
+[[files]]
+file = "mods/water-flasks.pw.toml"
+hash = "c8377d50dafad4324098cec0041f5b51b87dfb4dda629e7ef0858cfeae55d95d"
+metafile = true
+
+[[files]]
+file = "mods/xaeros-minimap.pw.toml"
+hash = "03b30d68893aff0507d36044ab3b43e586f4412274b5de0abe193b9f4a754905"
+metafile = true
+
+[[files]]
+file = "mods/xaeros-world-map.pw.toml"
+hash = "2ba7eb6ca5c2c9886cfb1bb23ed56fbbcaac3d4d3b1b185dc550ed61b66ecce1"
+metafile = true
+
+[[files]]
+file = "options.txt"
+hash = "f65356e1d53a58b1704d4a5cdb8f02431f245f146f3f8ca8ea4b3fab94e018da"
