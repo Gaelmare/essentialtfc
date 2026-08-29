@@ -18,7 +18,7 @@ hash = "51852b81c65aea982b5da3ad7aad128eb25ed48858efa2c2102a9bedb4833101"
 
 [[files]]
 file = "icon.png"
-hash = "614f423389b5d6350c1357d5b8d3dc47d35441cf4dcd236a1b2508ccfa1d0549"
+hash = "1d6d60bd81f9b5a7b0a0f35fcaa7d9c9eddac21fe4ad3620412371c378af60e5"
 
 [[files]]
 file = "mods/balm.pw.toml"
@@ -221,4 +221,4 @@ hash = "b0a3857dec46d770b7ba15270e4cf86a70f9580ee5f958432af05d290f4ce1ac"
 
 [[files]]
 file = "postbuild.sh"
-hash = "c5e7fea79d4d81976d61caa09d8cd2c5aa8a255c655c2911fbee911b401f3cc8"
+hash = "cb6e3eb3ea6b5f8d83a74c2828b72bff2a2f04db302a91768266063f1c41973a"
