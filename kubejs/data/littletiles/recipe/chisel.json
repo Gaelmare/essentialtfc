@@ -1,0 +1,20 @@
+{
+	"result": {
+		"id": "littletiles:chisel"
+	},
+	"category": "equipment",
+	"pattern": [
+		"X",
+		"X",
+		"L"
+	],
+	"type": "minecraft:crafting_shaped",
+	"key": {
+		"X": {
+			"item": "tfc:metal/ingot/wrought_iron"
+		},
+		"L": {
+			"item": "tfc:gem/lapis_lazuli"
+		}
+	}
+}

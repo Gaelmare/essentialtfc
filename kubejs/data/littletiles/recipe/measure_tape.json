@@ -1,0 +1,23 @@
+{
+	"result": {
+		"id": "littletiles:measure_tape"
+	},
+	"category": "equipment",
+	"pattern": [
+		"S",
+		"X",
+		"L"
+	],
+	"type": "minecraft:crafting_shaped",
+	"key": {
+		"S": {
+			"item": "minecraft:lead"
+		},
+		"X": {
+			"item": "tfc:metal/ingot/wrought_iron"
+		},
+		"L": {
+			"item": "tfc:gem/lapis_lazuli"
+		}
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"result": {
+		"id": "littletiles:colored_white_lava"
+	},
+	"category": "building",
+	"ingredients": [
+		{
+			"type": "tfc:fluid_content",
+			"fluid": {
+				"amount": 1000,
+				"fluid": "minecraft:milk"
+			}
+		},
+		{
+			"item": "littletiles:colored_lava"
+		}
+	],
+	"type": "minecraft:crafting_shapeless"
+}

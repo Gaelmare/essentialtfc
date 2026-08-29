@@ -1,0 +1,13 @@
+name = "TFC Canes"
+filename = "TFC Canes-1.21.1-3.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "526be222d051eaf59a3aaf882950f1318618c166"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7255647
+project-id = 920202

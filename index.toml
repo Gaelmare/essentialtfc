@@ -1,34 +1,6 @@
 hash-format = "sha256"
 
 [[files]]
-file = ".github/workflows/main.yml"
-hash = "da278c8b6dc1451374fcb3eacf678de27247166ea8d1e7ed1952b93a26001b45"
-
-[[files]]
-file = ".idea/dbnavigator.xml"
-hash = "6037becc4b00c71fb3bb5c500d965c1d82e70c669cc435f17d084fd533696439"
-
-[[files]]
-file = ".idea/misc.xml"
-hash = "57bea35097014a036eab2807a673960cb5f1c52fe05dd0fa9fbe23d8a7676ae4"
-
-[[files]]
-file = ".idea/modules.xml"
-hash = "18065a59e24d28690ea5efdd1a55faf29b3f9ccee4d30492cb7ceb4b4bf6630c"
-
-[[files]]
-file = ".idea/vcs.xml"
-hash = "6323e12648862a0a96fc0d7877672817d6cd91e2c2a3c3d78f1090db23c6e88e"
-
-[[files]]
-file = ".idea/workspace.xml"
-hash = "c438cea9919d9246f97b7d3371c75293075859f761879c97657d1a660028bcec"
-
-[[files]]
-file = "EssentialTFC-3.0.0-a.zip.bak"
-hash = "f638a33252c603fe552bc938b9f22e8f75208adfe99c5bfdcc5513da6d8e18a2"
-
-[[files]]
 file = "LICENSE.txt"
 hash = "33c42f6adbfec0327ebfbc2eaa58bff1e29f3d0efc054dd828eabdc0b52c14a4"
 
@@ -37,20 +9,185 @@ file = "README.md"
 hash = "26aa3ccd67c4a63a9a0d44e6bc19afd39919f48e49957eb945fe17f8417bfcd6"
 
 [[files]]
+file = "config/fallingtrees/client.json"
+hash = "32250607fd16180bc354ee685dbd5739aecbc86a30872fc29cd36ac43ac2d4a5"
+
+[[files]]
+file = "config/fallingtrees/common.json"
+hash = "d52f049ea869be692e6389ae66cf1dcd800fd13a3c48e515eddc9ce41c69a0c3"
+
+[[files]]
+file = "config/lithium.properties"
+hash = "ca4f2a432b3af2e9b7021fe11989b95dd138641c38c506d84167425e3ba2b296"
+
+[[files]]
 file = "config/xaerominimap.txt"
 hash = "51852b81c65aea982b5da3ad7aad128eb25ed48858efa2c2102a9bedb4833101"
 
 [[files]]
-file = "essential-tfc-logo.png"
+file = "icon.png"
 hash = "614f423389b5d6350c1357d5b8d3dc47d35441cf4dcd236a1b2508ccfa1d0549"
 
 [[files]]
-file = "essentialtfc.iml"
-hash = "3e424157a615b6a6912a9a510f0c3ef2045ebb77996a7018687a21d225fed1a4"
+file = "kubejs/data/littletiles/recipe/bag.json"
+hash = "7257b7ea7aa1c58de7acbffaac6511c7390c0816b1466c2ec29c4dd4193bef9a"
 
 [[files]]
-file = "mods/TFCGyres-OreHints-3.0.0-a1.jar"
-hash = "eb22bba2d9e24319fb8e36b8147f974202aebf12a083231a29cd66a282bec796"
+file = "kubejs/data/littletiles/recipe/blankomatic.json"
+hash = "3a6e316924f6017eef6308907bbe2a36ec193cdd06c10d35e094e8df5b8babb0"
+
+[[files]]
+file = "kubejs/data/littletiles/recipe/blueprint.json"
+hash = "09bbdbc0e9d68ff2eff400dbe793c0e12f0ccc3e0cf52324f42b224eb69376c2"
+
+[[files]]
+file = "kubejs/data/littletiles/recipe/chisel.json"
+hash = "e57c12af0bd07eb42d5a5006552153ecc033e4fcbedd5ab732adeb117637d860"
+
+[[files]]
+file = "kubejs/data/littletiles/recipe/clock_sensor.json"
+hash = "781e90b13a1a5530fc080e141da7c000b7a7915df88e157f8698f210d2de15c7"
+
+[[files]]
+file = "kubejs/data/littletiles/recipe/clock_sensor16.json"
+hash = "6cf82f5d7247de9b5e68d63091b96ff7d534c19da34733837091358471fefdaa"
+
+[[files]]
+file = "kubejs/data/littletiles/recipe/clock_sensor4.json"
+hash = "d13bf70e9a752b47aabbef6f5cb246c0fe917114a19e822572c077cb628473e3"
+
+[[files]]
+file = "kubejs/data/littletiles/recipe/colored_lava.json"
+hash = "77f9f7b54f0f3a442ac7a4534082e401da5588f86efb61a6fc2bc6609f4d0af5"
+
+[[files]]
+file = "kubejs/data/littletiles/recipe/colored_water.json"
+hash = "6059a45929431a1a8c76e0ec0eddeca22d39d1fbd3b930dc9ab694b96fa32e96"
+
+[[files]]
+file = "kubejs/data/littletiles/recipe/colored_white_lava.json"
+hash = "b6326cc52dfda51de3b4403cae59ea6e140fac38634053f45d62449d253e3b87"
+
+[[files]]
+file = "kubejs/data/littletiles/recipe/daylight_sensor.json"
+hash = "5f5a549c1abdfc73a95e63376480e9e7822f0f6a6d5c74e5c7224187b5ba5e9a"
+
+[[files]]
+file = "kubejs/data/littletiles/recipe/daylight_sensor4.json"
+hash = "5cbfde21523101f4c90e0345cbf761acd0d346f1b659ab5bc2163b3b6aa36001"
+
+[[files]]
+file = "kubejs/data/littletiles/recipe/exporter.json"
+hash = "14cf9507b48f5739b606d9f41f42f79771040c08fde3431e12ad5e16c9561d98"
+
+[[files]]
+file = "kubejs/data/littletiles/recipe/glove.json"
+hash = "766cddccb51fa1f3209a4748f2373f0d7bdb3f16c259dd7e189cb61ea895eee8"
+
+[[files]]
+file = "kubejs/data/littletiles/recipe/hammer.json"
+hash = "12d9d5da9e9b66bd3e63a3621a7ce40364b3eea1c92e1b0b7b3f878493fa88b5"
+
+[[files]]
+file = "kubejs/data/littletiles/recipe/importer.json"
+hash = "4fe3dcff56e367e6a3dd9fd67a6e3d5d9c9c4b8be2669a44a4ce4beeafc6dca2"
+
+[[files]]
+file = "kubejs/data/littletiles/recipe/measure_tape.json"
+hash = "faddfb788dacbc4c16cf3ab612183df80b2907c2362d661faf6d2b4d11e2d5af"
+
+[[files]]
+file = "kubejs/data/littletiles/recipe/paint_brush.json"
+hash = "1cd761dc3651a1ac8dcb00212265ed0a5e1851c60851ff61094d24e9c1aada95"
+
+[[files]]
+file = "kubejs/data/littletiles/recipe/particle_emitter.json"
+hash = "31b7a1be71cc69280b7ac905dae1548a685207de0b461b370ae915effafbecd1"
+
+[[files]]
+file = "kubejs/data/littletiles/recipe/saw.json"
+hash = "d3b37235554ca0523759f728e01f3d972ced769bfdfa41f66caf367d9a7e5e04"
+
+[[files]]
+file = "kubejs/data/littletiles/recipe/signal_converter.json"
+hash = "61cc66f35421f576e0a22c4d5a930bcd47353fc356426189461cc0238510a9b5"
+
+[[files]]
+file = "kubejs/data/littletiles/recipe/signal_display1.json"
+hash = "14435281dd2a694d3fdbca6366116d5830f74ac0702789465c2cf96f7f5ec706"
+
+[[files]]
+file = "kubejs/data/littletiles/recipe/signal_display16.json"
+hash = "de4523d000cc44cd21384b5a7def79a6a7fcba0e7cd0df53746c841650a534aa"
+
+[[files]]
+file = "kubejs/data/littletiles/recipe/signal_display4.json"
+hash = "d7b4b228064ae8b75d4ce6905c04cf6464a51e02f0fe86b5d400b95a6d14081b"
+
+[[files]]
+file = "kubejs/data/littletiles/recipe/single_cable1.json"
+hash = "f6a2e8506d4d238543406032aea82b2dc492ee53107c5fcc7b95dfa9e949f0a5"
+
+[[files]]
+file = "kubejs/data/littletiles/recipe/single_cable16.json"
+hash = "deeab84f67402835c892c2a2d45b6582a78b752ba3df14bcad951da2dfc34c12"
+
+[[files]]
+file = "kubejs/data/littletiles/recipe/single_cable4.json"
+hash = "deebfa2bbefcdb0139f9cf44dd84d97d03db63c2e40a517ebe24ffd7d51ecfdd"
+
+[[files]]
+file = "kubejs/data/littletiles/recipe/single_input1.json"
+hash = "0bd1ba1650a367a32fbb5c941ace222b9faf0edd3ec3c1a01e970235c1547d12"
+
+[[files]]
+file = "kubejs/data/littletiles/recipe/single_input16.json"
+hash = "108bf8219b73bcdb7bed692913085352e0612e813a7d3f4afd0ba00c85e0829d"
+
+[[files]]
+file = "kubejs/data/littletiles/recipe/single_input4.json"
+hash = "6b8d5ebacf9ab5ce8c46b1baee36c3fc02e7fa6a9ee66345cc743a66c24edbd0"
+
+[[files]]
+file = "kubejs/data/littletiles/recipe/single_output1.json"
+hash = "0e480f086246b6d2444d9f378723528ce927829dadbd56b1dae74ff77e193ca8"
+
+[[files]]
+file = "kubejs/data/littletiles/recipe/single_output16.json"
+hash = "749064407357684b9280c7fa1ed5975e5ffefaf47254735b12baf460c5818966"
+
+[[files]]
+file = "kubejs/data/littletiles/recipe/single_output4.json"
+hash = "182a25b27c257e419052447bafd818103e7f9847d49dfd64dd9bb474435b86b1"
+
+[[files]]
+file = "kubejs/data/littletiles/recipe/storage.json"
+hash = "2c20eeadcdfb65b1b180939b64989d616985775e63d3aff2bfee994f4e16f0b4"
+
+[[files]]
+file = "kubejs/data/littletiles/recipe/structure_builder.json"
+hash = "18f0bdb3a35ccdfd96e0adea038d8c5b700e8155500e62075d43f1926fed9300"
+
+[[files]]
+file = "kubejs/data/littletiles/recipe/transparency.json"
+hash = "73415f825228b3303cf0355849829754142354c5fd59aa3044fca6e38a8d5cd0"
+
+[[files]]
+file = "kubejs/data/littletiles/recipe/workbench.json"
+hash = "db2aac3f6aca021de9a25533fe84c069072c750f59787b677dec560fecc00e1a"
+
+[[files]]
+file = "kubejs/data/littletiles/recipe/wrench.json"
+hash = "2bfc24f14fd0cb8241cd9ae44acae336bce9a2e914ab3a32a362018bcab3f8d2"
+
+[[files]]
+file = "kubejs/server_scripts/main_server.js"
+hash = "c615fe9365f1c63291b2a7e8591bba57f3c096871ca29efd061444723459a8c7"
+
+[[files]]
+file = "mods/balm.pw.toml"
+hash = "48ccf754257a1d140c12e4cee3bd7901392023fcd5a3fc961b7275448459fe73"
+metafile = true
 
 [[files]]
 file = "mods/barrels-2012.pw.toml"
@@ -58,8 +195,18 @@ hash = "673cb4c569c6d7d77fdbe5afae681cf811ac94bac4b540a08ee54133e0e69c59"
 metafile = true
 
 [[files]]
+file = "mods/bsl-shaders.pw.toml"
+hash = "4a5ea44fb3e87c430dbb19df9587ec93bd189ea1a12a15ed190dde3cf5a5cf13"
+metafile = true
+
+[[files]]
 file = "mods/chloride.pw.toml"
 hash = "144d4bd742122408670a1453c889191a15cb4a7912956dbe8db6518fe1a26b2f"
+metafile = true
+
+[[files]]
+file = "mods/complementary-reimagined.pw.toml"
+hash = "335d3e0f28b42381f929c9997dd188cd656178904833c2d1b01dfd3e098b0569"
 metafile = true
 
 [[files]]
@@ -83,13 +230,18 @@ hash = "6b6683fd8ec53d10d4fbef3b3d53922a1aaa8ef4d2e4b52bb819dc451f5d6b3d"
 metafile = true
 
 [[files]]
-file = "mods/distant-horizons.pw.toml"
-hash = "1bbe182b3a43c998b702e565e7f061125a491c5ee385fd9b050de0faaf28647f"
+file = "mods/default-options.pw.toml"
+hash = "12602d5c4952c42a2390b1d78869777d81e37f0393188a3bb409ded91e18f373"
 metafile = true
 
 [[files]]
 file = "mods/dynamiclights-reforged.pw.toml"
 hash = "f619c1ed2e189f9d482d081411fccee4bd26c05cce52a5db914f1989303f080c"
+metafile = true
+
+[[files]]
+file = "mods/euphoria-patches.pw.toml"
+hash = "1010c34ac2177d15b77d843b7e514d152df73d5f0c05b59247eeaa525b23698d"
 metafile = true
 
 [[files]]
@@ -100,6 +252,16 @@ metafile = true
 [[files]]
 file = "mods/ferritecore.pw.toml"
 hash = "dff824171060c79b327a4880c2f0546c727a041a489ef3af643ec2dcd9cd0c48"
+metafile = true
+
+[[files]]
+file = "mods/forgified-fabric-api.pw.toml"
+hash = "15219e64b45e53db93de94091172e6a4c5ae9a749710ce91a615c973a552c215"
+metafile = true
+
+[[files]]
+file = "mods/immediatelyfast.pw.toml"
+hash = "f57772314b450b5c5d9f84d6cfccb414d1f3d72f1dfdeaf07e8ffe35d2675a92"
 metafile = true
 
 [[files]]
@@ -114,7 +276,12 @@ metafile = true
 
 [[files]]
 file = "mods/jei.pw.toml"
-hash = "cc9ff8f836b242932bc70428c785c1b24838bf4a008f1614aa8c2fcbd3fd86d4"
+hash = "4520268d4ae061f16fe109c519d08d4a1bf60824fd2c8bdbda2595905ce0dd57"
+metafile = true
+
+[[files]]
+file = "mods/key-smithing-for-tfc.pw.toml"
+hash = "91ac9064a53c930afbbacfcd67b5532acb21863abe36fc85f53ad0d6b972c813"
 metafile = true
 
 [[files]]
@@ -124,7 +291,7 @@ metafile = true
 
 [[files]]
 file = "mods/kubejs.pw.toml"
-hash = "018fd970193f808f8c28f873d8b8c69ac9ba134712c7db27fc8d639cb226c9a6"
+hash = "17b5bef818ac8c504958db422aba2f1cc79979da41a71b0ecb793f85accf30df"
 metafile = true
 
 [[files]]
@@ -153,13 +320,23 @@ hash = "3718e8a37d0dc2939cc350cce74bcb9c36b59f48baf4560e62804f7ca6478185"
 metafile = true
 
 [[files]]
-file = "mods/placebo.pw.toml"
-hash = "a80d243759a5998d1f61cab61a9769526c21e1a9ac2f328ec1f213bb97311bfe"
+file = "mods/photon-shader.pw.toml"
+hash = "ac478481f65646015b7d4a3b9a3ef54a8208dee5b6cf5383f68dc3de86f8324f"
 metafile = true
 
 [[files]]
 file = "mods/rhino.pw.toml"
 hash = "985a99f7465b68e43b98f3dbe1081b7113d957c7926a8caab163503528910f42"
+metafile = true
+
+[[files]]
+file = "mods/roxy.pw.toml"
+hash = "ce45249fe1c98b059fefb9498ff05e2a5629d9dbfd60c1c83b88280ae38db824"
+metafile = true
+
+[[files]]
+file = "mods/seamless-loading-screen.pw.toml"
+hash = "ff82eb4524b29dda9d14ac266058382c1989e654952cddd9474825b9f01b8052"
 metafile = true
 
 [[files]]
@@ -174,7 +351,7 @@ metafile = true
 
 [[files]]
 file = "mods/sodium.pw.toml"
-hash = "e98864e7d943db400d05aa5b283ef9e06eea346e144f0b75d9690032804b4d3d"
+hash = "617ec6e9893d59905035a510fe336addd46a97b6fd28fad88b70713ebf8e69e3"
 metafile = true
 
 [[files]]
@@ -183,13 +360,28 @@ hash = "7945a845351143fe4a47425e4ca96401ca8e89162d770f198502a5809e94ae90"
 metafile = true
 
 [[files]]
+file = "mods/tfc-canes.pw.toml"
+hash = "c11d82b477a87e61dc005b0ba8db1c849a7f13ce511dd7848cfc2be1fd8ad217"
+metafile = true
+
+[[files]]
 file = "mods/tfcgenviewer.pw.toml"
 hash = "70ea1c0679be1a222e1154447a0a6e3a73ca6b5f43d9b69307548cd42dcd5921"
 metafile = true
 
 [[files]]
-file = "mods/toast-control.pw.toml"
-hash = "29d1e04030fcbdad4ee91eb9bc0b0d6b8907ffe967c9bd0543e8bb7e3dab5282"
+file = "mods/tfcgyres-orehints.pw.toml"
+hash = "741637dde87e404a2c7821696d9fbeb4d29b49e0b5bdee8ec4180435e1682471"
+metafile = true
+
+[[files]]
+file = "mods/voxy-server-side-forge-neoforge.pw.toml"
+hash = "3aae451319056c64e824b14823298c712af6cbbc47ebc52069d89d8b59e68105"
+metafile = true
+
+[[files]]
+file = "mods/voxy.pw.toml"
+hash = "1b15aa249e728fe7af88899bfa08ca4a7a629b0f440750138f74a9b36c607292"
 metafile = true
 
 [[files]]
@@ -208,5 +400,14 @@ hash = "2ba7eb6ca5c2c9886cfb1bb23ed56fbbcaac3d4d3b1b185dc550ed61b66ecce1"
 metafile = true
 
 [[files]]
+file = "mods/yacl.pw.toml"
+hash = "492daa3391b6079b541685db276007b286774bab3b9881505127b7aef6b3f16c"
+metafile = true
+
+[[files]]
 file = "options.txt"
-hash = "f65356e1d53a58b1704d4a5cdb8f02431f245f146f3f8ca8ea4b3fab94e018da"
+hash = "8b3add06eb94d19b8d7d539fddfed0caac2daa5d38fb197044f8cc0d407bd7c9"
+
+[[files]]
+file = "postbuild.sh"
+hash = "1cf637fea3226fe3dccecee860b0185907a8c56ddf703ed2be570bc737684590"

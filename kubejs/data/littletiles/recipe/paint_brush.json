@@ -1,0 +1,20 @@
+{
+	"result": {
+		"id": "littletiles:paint_brush"
+	},
+	"category": "equipment",
+	"pattern": [
+		"XXX",
+		" L ",
+		" L "
+	],
+	"type": "minecraft:crafting_shaped",
+	"key": {
+		"X": {
+			"item": "minecraft:white_wool"
+		},
+		"L": {
+			"item": "tfc:gem/lapis_lazuli"
+		}
+	}
+}

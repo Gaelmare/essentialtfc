@@ -1,0 +1,30 @@
+{
+	"result": {
+		"id": "littletiles:premade"
+	},
+	"structure": "exporter",
+	"category": "building",
+	"pattern": [
+		"PXP",
+		"ILI",
+		"IRI"
+	],
+	"type": "littletiles:crafting_shaped_premade",
+	"key": {
+		"P": {
+			"tag": "minecraft:planks"
+		},
+		"X": {
+			"item": "tfc:metal/bars/wrought_iron"
+		},
+		"I": {
+			"item": "tfc:metal/ingot/wrought_iron"
+		},
+		"R": {
+			"item": "minecraft:redstone_block"
+		},
+		"L": {
+			"item": "littletiles:blueprint"
+		}
+	}
+}

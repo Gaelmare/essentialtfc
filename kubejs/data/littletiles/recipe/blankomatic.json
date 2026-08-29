@@ -1,0 +1,24 @@
+{
+	"result": {
+		"id": "littletiles:premade"
+	},
+	"structure": "blankomatic",
+	"category": "building",
+	"pattern": [
+		"XWX",
+		"XLX",
+		"X X"
+	],
+	"type": "littletiles:crafting_shaped_premade",
+	"key": {
+		"X": {
+			"tag": "minecraft:planks"
+		},
+		"W": {
+			"item": "tfc:metal/ingot/wrought_iron"
+		},
+		"L": {
+			"item": "littletiles:paint_brush"
+		}
+	}
+}
