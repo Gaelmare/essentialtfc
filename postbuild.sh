@@ -43,5 +43,5 @@ mv -f "$tmpzip" "$newest_zip"
 
 zip -d "$newest_zip" overrides/mods/voxy-0.2.16-beta+1.21.11.jar
 zip -d "$newest_zip" overrides/icon.png
-zip -a "$newest_zip" icon.png
+zip -u "$newest_zip" icon.png
 echo "Updated $newest_zip"

@@ -9,14 +9,6 @@ file = "README.md"
 hash = "26aa3ccd67c4a63a9a0d44e6bc19afd39919f48e49957eb945fe17f8417bfcd6"
 
 [[files]]
-file = "config/fallingtrees/client.json"
-hash = "32250607fd16180bc354ee685dbd5739aecbc86a30872fc29cd36ac43ac2d4a5"
-
-[[files]]
-file = "config/fallingtrees/common.json"
-hash = "d52f049ea869be692e6389ae66cf1dcd800fd13a3c48e515eddc9ce41c69a0c3"
-
-[[files]]
 file = "config/lithium.properties"
 hash = "ca4f2a432b3af2e9b7021fe11989b95dd138641c38c506d84167425e3ba2b296"
 
@@ -406,8 +398,8 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "8b3add06eb94d19b8d7d539fddfed0caac2daa5d38fb197044f8cc0d407bd7c9"
+hash = "b0a3857dec46d770b7ba15270e4cf86a70f9580ee5f958432af05d290f4ce1ac"
 
 [[files]]
 file = "postbuild.sh"
-hash = "1cf637fea3226fe3dccecee860b0185907a8c56ddf703ed2be570bc737684590"
+hash = "c5e7fea79d4d81976d61caa09d8cd2c5aa8a255c655c2911fbee911b401f3cc8"
