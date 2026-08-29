@@ -1,0 +1,19 @@
+{
+	"result": {
+		"id": "littletiles:signal_converter"
+	},
+	"category": "redstone",
+	"pattern": [
+		"R",
+		"C"
+	],
+	"type": "minecraft:crafting_shaped",
+	"key": {
+		"C": {
+			"tag": "c:cobblestones"
+		},
+		"R": {
+			"item": "minecraft:redstone_block"
+		}
+	}
+}

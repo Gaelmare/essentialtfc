@@ -1,0 +1,13 @@
+name = "Key Smithing for TFC"
+filename = "keysmithing-2.1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "992012c9ed4ef705bd1cb9cd694ef3da31d970d2"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8735070
+project-id = 1314476

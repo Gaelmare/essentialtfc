@@ -1,0 +1,13 @@
+name = "TFCGyres-OreHints"
+filename = "TFCGyres-OreHints-3.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "e75fb746559b2c18167dac0266726d37516e8c77"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8736849
+project-id = 838993

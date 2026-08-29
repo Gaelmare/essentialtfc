@@ -1,0 +1,13 @@
+name = "Photon Shader"
+filename = "photon_v1.3b.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d975d25c9686de5f10e8b86c8518613cdf3f040a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7927503
+project-id = 1312687

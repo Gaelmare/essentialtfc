@@ -1,13 +1,14 @@
 name = "EssentialTFC"
 author = "Gaelmare"
 version = "3.0.0-a"
+description = "Testing TFCT test"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "cd3ae35d97fc53159165b61fb5a5d47a2ac1839f54d977a5924d2f59b90cc2b6"
+hash = "8acecaa3932e155843defd203b63e7b29540e76ffde1bf8cd763f55f6e9c2e63"
 
 [versions]
 minecraft = "1.21.1"
-neoforge = "21.1.238"
+neoforge = "21.1.248"

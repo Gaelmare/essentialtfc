@@ -1,0 +1,20 @@
+{
+	"result": {
+		"id": "littletiles:saw"
+	},
+	"category": "equipment",
+	"pattern": [
+		"LX",
+		"LX",
+		"L "
+	],
+	"type": "minecraft:crafting_shaped",
+	"key": {
+		"X": {
+			"item": "tfc:metal/ingot/wrought_iron"
+		},
+		"L": {
+			"item": "tfc:gem/lapis_lazuli"
+		}
+	}
+}

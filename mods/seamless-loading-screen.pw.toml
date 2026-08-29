@@ -1,0 +1,13 @@
+name = "Seamless Loading Screen"
+filename = "seamless-loading-screen-2.2.1+1.21-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0e53c533a9032d337ee59740ed228a0002db500e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5774794
+project-id = 429926

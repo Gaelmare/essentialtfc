@@ -10,4 +10,7 @@ cacert.pem
 
 ### Dev ###
 .idea
-*.zip
+*.zip*
+
+.github
+*.iml
