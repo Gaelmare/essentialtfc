@@ -174,7 +174,12 @@ hash = "2bfc24f14fd0cb8241cd9ae44acae336bce9a2e914ab3a32a362018bcab3f8d2"
 
 [[files]]
 file = "kubejs/server_scripts/main_server.js"
-hash = "c615fe9365f1c63291b2a7e8591bba57f3c096871ca29efd061444723459a8c7"
+hash = "1de95db548934fbeb0684391b7717e287a58bec250c274e67d482d96e8ad15d4"
+
+[[files]]
+file = "mods/baguettelib.pw.toml"
+hash = "075877ff2a9539ebe8238238f9d50cd0068e29583bcc110f98fe7c08c4769058"
+metafile = true
 
 [[files]]
 file = "mods/balm.pw.toml"
@@ -204,6 +209,11 @@ metafile = true
 [[files]]
 file = "mods/controlling.pw.toml"
 hash = "42ffb6f5835250003da6ca3667ff751709ea295faee43b49c365b0f6c1e8f4d8"
+metafile = true
+
+[[files]]
+file = "mods/corpse-x-curios-api-compat.pw.toml"
+hash = "073c8410430fa1f84f4b8926ea37ce5bdcf2df764c25f44331978171311da9f2"
 metafile = true
 
 [[files]]
@@ -268,7 +278,7 @@ metafile = true
 
 [[files]]
 file = "mods/jei.pw.toml"
-hash = "4520268d4ae061f16fe109c519d08d4a1bf60824fd2c8bdbda2595905ce0dd57"
+hash = "8da660f47b338e994d8acf2caa10d9d5845b96f9c425ace479e7870191974f21"
 metafile = true
 
 [[files]]
@@ -293,7 +303,7 @@ metafile = true
 
 [[files]]
 file = "mods/littletiles.pw.toml"
-hash = "d92882607bc767ad209a6b44b20ad65d3d273f2095d46e097474dd2318baa106"
+hash = "e9048bb70985899607dc0bc6f11c5b2fd0e68f4439ef3967a935d26498b6a870"
 metafile = true
 
 [[files]]
@@ -303,7 +313,7 @@ metafile = true
 
 [[files]]
 file = "mods/modernfix.pw.toml"
-hash = "b0364f6b95f6ed837239c232bad0e2d7317e58f0e4c040e66a4f533239d5775e"
+hash = "ed6ac1b169f40d6ea67376edac878c6eb842c935f743553016ba3817e67b9830"
 metafile = true
 
 [[files]]
@@ -348,7 +358,7 @@ metafile = true
 
 [[files]]
 file = "mods/terrafirmacraft.pw.toml"
-hash = "7945a845351143fe4a47425e4ca96401ca8e89162d770f198502a5809e94ae90"
+hash = "58adbaea4459dae5b8b19d63651ace5c66f2a96120ed7014dae0c24d9a476b66"
 metafile = true
 
 [[files]]
