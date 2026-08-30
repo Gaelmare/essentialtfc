@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
-SUMMARY="Testing TFCT Test"
+SUMMARY="The pack I'd actually want to play if I was playing Vanilla TFC in 1.21."
 
 # Find newest zip in current directory
 newest_zip=$(ls -t -- *.zip 2>/dev/null | head -n1 || true)
