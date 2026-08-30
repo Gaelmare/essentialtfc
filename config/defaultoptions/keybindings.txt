@@ -134,10 +134,3 @@ key_key.rotateup:key.keyboard.up:
 key_key.rotatedown:key.keyboard.down:
 key_key.rotateright:key.keyboard.right:
 key_key.rotateleft:key.keyboard.left:
-key_key.little.mirror:key.keyboard.g:
-key_key.little.mark:key.keyboard.m:
-key_key.little.config.item:key.keyboard.c:SHIFT
-key_key.little.config_secondary.item:key.keyboard.c:CONTROL
-key_key.little.building_mode:key.keyboard.b:
-key_key.little.undo:key.keyboard.z:CONTROL
-key_key.little.redo:key.keyboard.y:CONTROL

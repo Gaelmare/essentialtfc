@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "0316704322798496e90f888256f1d177be30666bfedb062b3be8eb91e4586229"
+hash = "22fe58de1ee9cf930643f88e1a44875710bda0b7ad3344de39fd049243013c0a"
 
 [[files]]
 file = "LICENSE.txt"
@@ -18,7 +18,7 @@ hash = "5ed6eea2e4b38e1d940dbfbccfcb51e3cc948409b8b173110fec8683cbcf27a8"
 
 [[files]]
 file = "config/defaultoptions/keybindings.txt"
-hash = "9b010ca19af4fdfaf63c29aa46f7fd791e1cec127b9c3e3504a31196e4278a7f"
+hash = "4094e2fd257366318a4d749d39f1e774fad74f38737321360fee20cc3a6e37ef"
 
 [[files]]
 file = "config/defaultoptions/options.txt"
@@ -35,6 +35,11 @@ hash = "51852b81c65aea982b5da3ad7aad128eb25ed48858efa2c2102a9bedb4833101"
 [[files]]
 file = "icon.png"
 hash = "1d6d60bd81f9b5a7b0a0f35fcaa7d9c9eddac21fe4ad3620412371c378af60e5"
+
+[[files]]
+file = "mods/baguettelib.pw.toml"
+hash = "075877ff2a9539ebe8238238f9d50cd0068e29583bcc110f98fe7c08c4769058"
+metafile = true
 
 [[files]]
 file = "mods/balm.pw.toml"

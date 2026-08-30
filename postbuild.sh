@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
-SUMMARY="Testing TFCT Test"
+SUMMARY="TFC modpack for beginner TerraFirmaCraft players with selected QoL and minor content mods"
 
 # Find newest zip in current directory
 newest_zip=$(ls -t -- *.zip 2>/dev/null | head -n1 || true)
