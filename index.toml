@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "f4c787f69ef0d70c86c2a3dd1a06d81e4fe6acca79e47650c35c8033db21317d"
+hash = "0316704322798496e90f888256f1d177be30666bfedb062b3be8eb91e4586229"
 
 [[files]]
 file = "LICENSE.txt"
@@ -431,10 +431,6 @@ metafile = true
 file = "mods/yacl.pw.toml"
 hash = "492daa3391b6079b541685db276007b286774bab3b9881505127b7aef6b3f16c"
 metafile = true
-
-[[files]]
-file = "postbuild.sh"
-hash = "31212e6cb7f418d729836cd827c0a587450c492df2d61529ddb665f795915905"
 
 [[files]]
 file = "resourcepacks/aures-tfc-livestock-skins.pw.toml"
