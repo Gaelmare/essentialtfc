@@ -37,7 +37,10 @@ awk -v summary="$SUMMARY" '
 ' "$manifest" > "$manifest".tmp && mv "$manifest".tmp "$manifest"
 
 # Rezip contents, preserving paths. Create temp zip then overwrite original.
+# add resource pack in manually
 tmpzip=$(mktemp -u --suffix=.zip)
+mkdir -p $tmpdir/overrides/resourcepacks && \
+cp resourcepacks/Vexxed\ Visuals\ -\ TFC\ Canes.zip $tmpdir/overrides/resourcepacks/
 (cd "$tmpdir" && zip -r -q "$tmpzip" .)
 mv -f "$tmpzip" "$newest_zip"
 
