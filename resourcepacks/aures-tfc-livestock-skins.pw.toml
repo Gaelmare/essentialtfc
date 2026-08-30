@@ -1,0 +1,13 @@
+name = "Aures - TFC Livestock Skins"
+filename = "TFC_Aures_Livestock_Skins_1.0.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "3fe35e58efcad2cce50042ff49a5f675a08a0e8d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8380244
+project-id = 1599841

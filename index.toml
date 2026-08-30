@@ -1,12 +1,28 @@
 hash-format = "sha256"
 
 [[files]]
+file = "CHANGELOG.md"
+hash = "f4c787f69ef0d70c86c2a3dd1a06d81e4fe6acca79e47650c35c8033db21317d"
+
+[[files]]
 file = "LICENSE.txt"
 hash = "33c42f6adbfec0327ebfbc2eaa58bff1e29f3d0efc054dd828eabdc0b52c14a4"
 
 [[files]]
 file = "README.md"
-hash = "26aa3ccd67c4a63a9a0d44e6bc19afd39919f48e49957eb945fe17f8417bfcd6"
+hash = "ae23662ab4025d126af3c1c3194ed8842072f560a701cb97789ecf25f244fc62"
+
+[[files]]
+file = "config/defaultoptions-common.toml"
+hash = "5ed6eea2e4b38e1d940dbfbccfcb51e3cc948409b8b173110fec8683cbcf27a8"
+
+[[files]]
+file = "config/defaultoptions/keybindings.txt"
+hash = "9b010ca19af4fdfaf63c29aa46f7fd791e1cec127b9c3e3504a31196e4278a7f"
+
+[[files]]
+file = "config/defaultoptions/options.txt"
+hash = "969e6d84159370afd6a9091e6254b8be329d6f1a41b169ae356d8f2008634f8b"
 
 [[files]]
 file = "config/lithium.properties"
@@ -73,6 +89,16 @@ metafile = true
 [[files]]
 file = "mods/dynamiclights-reforged.pw.toml"
 hash = "f619c1ed2e189f9d482d081411fccee4bd26c05cce52a5db914f1989303f080c"
+metafile = true
+
+[[files]]
+file = "mods/entity-model-features.pw.toml"
+hash = "ea67fcbd702909226736e0feb0d64df758e21e724d53a43730537c6bbf34d455"
+metafile = true
+
+[[files]]
+file = "mods/entity-texture-features-fabric.pw.toml"
+hash = "298f2a99e309853181e71938c2358c4b2c7c6c19137dcf6bcefb736d43ab6f65"
 metafile = true
 
 [[files]]
@@ -221,9 +247,15 @@ hash = "492daa3391b6079b541685db276007b286774bab3b9881505127b7aef6b3f16c"
 metafile = true
 
 [[files]]
-file = "options.txt"
-hash = "b0a3857dec46d770b7ba15270e4cf86a70f9580ee5f958432af05d290f4ce1ac"
+file = "postbuild.sh"
+hash = "31212e6cb7f418d729836cd827c0a587450c492df2d61529ddb665f795915905"
 
 [[files]]
-file = "postbuild.sh"
-hash = "cb6e3eb3ea6b5f8d83a74c2828b72bff2a2f04db302a91768266063f1c41973a"
+file = "resourcepacks/aures-tfc-livestock-skins.pw.toml"
+hash = "7c18e040ff710ed8ddeca750377bb50480808d5515fbeebef909c46393592ab5"
+metafile = true
+
+[[files]]
+file = "resourcepacks/terrafirmacraft-vexxed-visuals.pw.toml"
+hash = "f37165b4b043c5a3ee25c00361526eaaa3640f26ebca0d0aaf4a5bfd9d369c8a"
+metafile = true

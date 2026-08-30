@@ -7,7 +7,7 @@ on:
 
 env:
 
-  PROJECT_ID: "874611"
+  PROJECT_ID: "1672905"
 
 permissions:
   contents: write
