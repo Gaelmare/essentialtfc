@@ -15,7 +15,7 @@
     "maxSizeAction": "ABORT",
     "breakOrder": "FURTHEST_FIRST",
     "minimumLeavesAroundRequired": 1,
-    "includePersistentLeavesInRequiredCount": true,
+    "includePersistentLeavesInRequiredCount": false,
     "treeBreaking": true,
     "leavesBreaking": true,
     "leavesBreakingForceRadius": 0,
@@ -33,7 +33,7 @@
     "denied": [],
     "durabilityMode": "NORMAL",
     "ignoreTools": false,
-    "damageMultiplicand": 1.25,
+    "damageMultiplicand": 1.0,
     "damageRounding": "ROUND_DOWN",
     "speedMultiplicand": 0.0,
     "forceToolUsage": false

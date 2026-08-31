@@ -6,7 +6,7 @@ entityDistanceScaling:1.0
 entityShadows:true
 forceUnicodeFont:false
 japaneseGlyphVariants:false
-fov:0.0
+fov:0.575
 fovEffectScale:1.0
 darknessEffectScale:1.0
 glintSpeed:0.5
@@ -48,7 +48,7 @@ mouseSensitivity:0.6584507042253521
 damageTiltStrength:1.0
 highContrast:false
 narratorHotkey:true
-resourcePacks:["vanilla","mod_resources","fabric"]
+resourcePacks:["vanilla","mod_resources","fabric","file/Vexxed_Visuals_TFC_v1.3.8.zip","file/Vexxed Visuals - TFC Canes.zip","file/TFC_Aures_Livestock_Skins_1.0.zip"]
 incompatibleResourcePacks:[]
 lastServer:
 lang:en_us
