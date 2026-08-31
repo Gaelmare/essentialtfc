@@ -193,11 +193,6 @@ file = "kubejs/server_scripts/main_server.js"
 hash = "1de95db548934fbeb0684391b7717e287a58bec250c274e67d482d96e8ad15d4"
 
 [[files]]
-file = "mods/baguettelib.pw.toml"
-hash = "075877ff2a9539ebe8238238f9d50cd0068e29583bcc110f98fe7c08c4769058"
-metafile = true
-
-[[files]]
 file = "mods/balm.pw.toml"
 hash = "48ccf754257a1d140c12e4cee3bd7901392023fcd5a3fc961b7275448459fe73"
 metafile = true
@@ -225,11 +220,6 @@ metafile = true
 [[files]]
 file = "mods/controlling.pw.toml"
 hash = "42ffb6f5835250003da6ca3667ff751709ea295faee43b49c365b0f6c1e8f4d8"
-metafile = true
-
-[[files]]
-file = "mods/corpse-x-curios-api-compat.pw.toml"
-hash = "073c8410430fa1f84f4b8926ea37ce5bdcf2df764c25f44331978171311da9f2"
 metafile = true
 
 [[files]]
@@ -293,6 +283,11 @@ hash = "f57772314b450b5c5d9f84d6cfccb414d1f3d72f1dfdeaf07e8ffe35d2675a92"
 metafile = true
 
 [[files]]
+file = "mods/inventory-tweaks-refoxed.pw.toml"
+hash = "1d3b922c0d1a43fa497faf27827bfa9f9f3841dfba51d8684435d58c1141fe93"
+metafile = true
+
+[[files]]
 file = "mods/irisshaders.pw.toml"
 hash = "763ed0c115b2b9a1e37e38cb153748c9c3f3c31869fd3d56acfaad54c63e78af"
 metafile = true
@@ -340,6 +335,11 @@ metafile = true
 [[files]]
 file = "mods/modernfix.pw.toml"
 hash = "ed6ac1b169f40d6ea67376edac878c6eb842c935f743553016ba3817e67b9830"
+metafile = true
+
+[[files]]
+file = "mods/mouse-tweaks.pw.toml"
+hash = "2bdee19bd39b4bd411d7c858a7978ca9d2bdda41c1cf15920ea6be0014663f79"
 metafile = true
 
 [[files]]
