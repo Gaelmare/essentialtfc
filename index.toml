@@ -18,15 +18,23 @@ hash = "5ed6eea2e4b38e1d940dbfbccfcb51e3cc948409b8b173110fec8683cbcf27a8"
 
 [[files]]
 file = "config/defaultoptions/keybindings.txt"
-hash = "9b010ca19af4fdfaf63c29aa46f7fd791e1cec127b9c3e3504a31196e4278a7f"
+hash = "3a50452c4ca52f9906a5a765c79289b2a2a10b140f51269dac9849b41ff470be"
 
 [[files]]
 file = "config/defaultoptions/options.txt"
-hash = "969e6d84159370afd6a9091e6254b8be329d6f1a41b169ae356d8f2008634f8b"
+hash = "8a33c3804271dbe1f1dcc951f270d7a5f3bc95139aca2b5e0b84d34862811d27"
+
+[[files]]
+file = "config/fallingtree.json"
+hash = "6e8857b6c4d79a5bc9ab011e40cce643544bd8c8348957448d66827230da5e5a"
 
 [[files]]
 file = "config/lithium.properties"
 hash = "ca4f2a432b3af2e9b7021fe11989b95dd138641c38c506d84167425e3ba2b296"
+
+[[files]]
+file = "config/simplebackups-common.toml"
+hash = "e86a242e9dfb34d6ebaabc7b7ba094d78082719a6cf33383f07f1939b3e9b95b"
 
 [[files]]
 file = "config/xaerominimap.txt"
@@ -268,6 +276,11 @@ hash = "6d51c8adfc6782f216a150dedda2ea64969a639f4e21401eb5c5b5ac8c9ab28f"
 metafile = true
 
 [[files]]
+file = "mods/falling-tree.pw.toml"
+hash = "5fe387bcad2d72c9bdd7047c19fed3959dcc65e2615e188ae743c517c08209df"
+metafile = true
+
+[[files]]
 file = "mods/ferritecore.pw.toml"
 hash = "dff824171060c79b327a4880c2f0546c727a041a489ef3af643ec2dcd9cd0c48"
 metafile = true
@@ -370,6 +383,11 @@ metafile = true
 [[files]]
 file = "mods/searchables.pw.toml"
 hash = "6c0fac550bb053ee2728144a28819835823dcc6d04ad7897750431fe55100e53"
+metafile = true
+
+[[files]]
+file = "mods/simple-backups.pw.toml"
+hash = "0d76b6f0f8b2cbe44931c7094c416aab1d1534c47cbee499f01c546e5e09b42b"
 metafile = true
 
 [[files]]
