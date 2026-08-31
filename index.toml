@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "22fe58de1ee9cf930643f88e1a44875710bda0b7ad3344de39fd049243013c0a"
+hash = "29fe9b3816e98e2837a10062f40462539dfc7dcaf19db38ad376171568241d54"
 
 [[files]]
 file = "LICENSE.txt"
@@ -18,7 +18,7 @@ hash = "5ed6eea2e4b38e1d940dbfbccfcb51e3cc948409b8b173110fec8683cbcf27a8"
 
 [[files]]
 file = "config/defaultoptions/keybindings.txt"
-hash = "4094e2fd257366318a4d749d39f1e774fad74f38737321360fee20cc3a6e37ef"
+hash = "d24dedc10a8fb7e6977e746160a4e171ba909ed0293bec43862c944a74c89774"
 
 [[files]]
 file = "config/defaultoptions/options.txt"
