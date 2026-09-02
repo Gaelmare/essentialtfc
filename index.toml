@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "0316704322798496e90f888256f1d177be30666bfedb062b3be8eb91e4586229"
+hash = "17ad6af49e463d38ddf0135fddb2f02a00b3962088fef5ff6f361fbc51a0969f"
 
 [[files]]
 file = "LICENSE.txt"
@@ -197,6 +197,18 @@ file = "kubejs/data/littletiles/recipe/wrench.json"
 hash = "2bfc24f14fd0cb8241cd9ae44acae336bce9a2e914ab3a32a362018bcab3f8d2"
 
 [[files]]
+file = "kubejs/data/tfc/recipe/crafting/wood/planks/palm_mosaic.json"
+hash = "41224bc89018c2654a7dee55e2299e0c2d7dbe2f6cc1c8e7caa503b4443384d7"
+
+[[files]]
+file = "kubejs/data/tfc/recipe/crafting/wood/planks/palm_mosaic_slab.json"
+hash = "504ade7b257603aa25a5c51e9a60c3e25174feb0407294b48bcab5264d788a61"
+
+[[files]]
+file = "kubejs/data/tfc/recipe/crafting/wood/planks/palm_mosaic_slairs.json"
+hash = "22d8214c02c87bff7cfae2b11214e4ad233069048ec7ed09556e10cf8ed4eb7a"
+
+[[files]]
 file = "kubejs/server_scripts/main_server.js"
 hash = "1de95db548934fbeb0684391b7717e287a58bec250c274e67d482d96e8ad15d4"
 
@@ -353,6 +365,11 @@ metafile = true
 [[files]]
 file = "mods/mouse-tweaks.pw.toml"
 hash = "2bdee19bd39b4bd411d7c858a7978ca9d2bdda41c1cf15920ea6be0014663f79"
+metafile = true
+
+[[files]]
+file = "mods/no-chat-restrictions.pw.toml"
+hash = "df7ba5fcc9f4e584e3dc1e0f17da8a0b18dc1e7925167557220defb43cc08718"
 metafile = true
 
 [[files]]
