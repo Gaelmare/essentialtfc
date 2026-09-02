@@ -1,3 +1,8 @@
+## 3.0.5
+* No Chat Restrictions mod
+* Update options
+* Palm Mosaic plank recipes
+
 ## 3.0.4
 * Working Falling Trees. Saw recommended if maximum saplings required.
 * Remove Corpse X Curios -> Leclown
