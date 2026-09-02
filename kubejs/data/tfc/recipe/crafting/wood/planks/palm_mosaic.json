@@ -1,0 +1,22 @@
+{
+	"type": "tfc:advanced_shapeless_crafting",
+	"ingredients": [
+		{
+			"item": "tfc:wood/planks/palm"
+		},
+		{
+			"tag": "c:tools/chisel"
+		}
+	],
+	"primary_ingredient": {
+		"tag": "c:tools/chisel"
+	},
+	"remainder": {
+		"modifiers": [
+			{
+				"type": "tfc:damage_crafting_remainder"
+			}
+		]
+	},
+	"result":{"count":1,"id":"tfc:wood/planks/palm_mosaic"}
+}
