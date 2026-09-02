@@ -21,7 +21,7 @@ mipmapLevels:4
 narrator:0
 particles:0
 reducedDebugInfo:false
-renderClouds:"false"
+renderClouds:"true"
 renderDistance:12
 simulationDistance:12
 screenEffectScale:1.0
@@ -41,7 +41,7 @@ touchscreen:false
 bobView:true
 toggleCrouch:false
 toggleSprint:false
-darkMojangStudiosBackground:false
+darkMojangStudiosBackground:true
 hideLightningFlashes:false
 hideSplashTexts:true
 mouseSensitivity:0.6584507042253521
