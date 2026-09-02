@@ -22,7 +22,7 @@ hash = "3a50452c4ca52f9906a5a765c79289b2a2a10b140f51269dac9849b41ff470be"
 
 [[files]]
 file = "config/defaultoptions/options.txt"
-hash = "8a33c3804271dbe1f1dcc951f270d7a5f3bc95139aca2b5e0b84d34862811d27"
+hash = "eb1dafa6805a48844620187ea20cfc8845da427e9442fc2d15b026507ca164ca"
 
 [[files]]
 file = "config/fallingtree.json"
@@ -198,7 +198,7 @@ hash = "2bfc24f14fd0cb8241cd9ae44acae336bce9a2e914ab3a32a362018bcab3f8d2"
 
 [[files]]
 file = "kubejs/data/tfc/recipe/crafting/wood/planks/palm_mosaic.json"
-hash = "41224bc89018c2654a7dee55e2299e0c2d7dbe2f6cc1c8e7caa503b4443384d7"
+hash = "56cf7d3add2bce6dc7d990ae8994057874fb9827c55cfa2c97eedca44821dd82"
 
 [[files]]
 file = "kubejs/data/tfc/recipe/crafting/wood/planks/palm_mosaic_slab.json"
