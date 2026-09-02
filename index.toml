@@ -45,6 +45,18 @@ file = "icon.png"
 hash = "72dd7be62ca8b2deca784072450b4f13625567ac3ce6253538add8d1451020e7"
 
 [[files]]
+file = "kubejs/data/tfc/recipe/crafting/wood/planks/palm_mosaic.json"
+hash = "56cf7d3add2bce6dc7d990ae8994057874fb9827c55cfa2c97eedca44821dd82"
+
+[[files]]
+file = "kubejs/data/tfc/recipe/crafting/wood/planks/palm_mosaic_slab.json"
+hash = "504ade7b257603aa25a5c51e9a60c3e25174feb0407294b48bcab5264d788a61"
+
+[[files]]
+file = "kubejs/data/tfc/recipe/crafting/wood/planks/palm_mosaic_slairs.json"
+hash = "22d8214c02c87bff7cfae2b11214e4ad233069048ec7ed09556e10cf8ed4eb7a"
+
+[[files]]
 file = "mods/balm.pw.toml"
 hash = "48ccf754257a1d140c12e4cee3bd7901392023fcd5a3fc961b7275448459fe73"
 metafile = true
