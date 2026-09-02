@@ -1,0 +1,16 @@
+{
+	"result": {
+		"id": "tfc:wood/planks/palm_mosaic_slab",
+		"count": 6
+	},
+	"category": "crafting",
+	"pattern": [
+		"PPP"
+	],
+	"type": "minecraft:crafting_shaped",
+	"key": {
+		"P": {
+			"item": "tfc:wood/planks/palm_mosaic"
+		}
+	}
+}
