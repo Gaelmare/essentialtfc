@@ -1,0 +1,13 @@
+name = "Sticky Keys (AutoRun)"
+filename = "stickyinput-1.0.0.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/VqPDZ83f/versions/7O1EBc9L/stickyinput-1.0.0.jar"
+hash-format = "sha512"
+hash = "eb20ea77de923b849097c80330f784683d6e364dc62897fee45bd79f6cf29503be64bafe56aab05eabb55cd268e672ad0a31f03f3e2d1019798469f9eff97746"
+
+[update]
+[update.modrinth]
+mod-id = "VqPDZ83f"
+version = "7O1EBc9L"

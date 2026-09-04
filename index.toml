@@ -198,7 +198,7 @@ hash = "2bfc24f14fd0cb8241cd9ae44acae336bce9a2e914ab3a32a362018bcab3f8d2"
 
 [[files]]
 file = "kubejs/data/tfc/recipe/crafting/wood/planks/palm_mosaic.json"
-hash = "56cf7d3add2bce6dc7d990ae8994057874fb9827c55cfa2c97eedca44821dd82"
+hash = "87434c7cc240d1d0e7bf974b4b831f4494a00fcb7bf803985864b57938d2a098"
 
 [[files]]
 file = "kubejs/data/tfc/recipe/crafting/wood/planks/palm_mosaic_slab.json"
@@ -415,6 +415,11 @@ metafile = true
 [[files]]
 file = "mods/sodium.pw.toml"
 hash = "617ec6e9893d59905035a510fe336addd46a97b6fd28fad88b70713ebf8e69e3"
+metafile = true
+
+[[files]]
+file = "mods/sticky-keys-(autorun).pw.toml"
+hash = "74e2c2ae64d9192e3a51ad9c19b7e399165acd41d5f1f1c10b47423ff0942321"
 metafile = true
 
 [[files]]
