@@ -1,3 +1,6 @@
+## 3.0.6
+* Bump to TFC 4.2.10
+
 ## 3.0.5
 * Autowalk mod
 * Updated mosaic recipe based on new TFC recipe.
