@@ -46,7 +46,7 @@ hash = "72dd7be62ca8b2deca784072450b4f13625567ac3ce6253538add8d1451020e7"
 
 [[files]]
 file = "kubejs/data/tfc/recipe/crafting/wood/planks/palm_mosaic.json"
-hash = "87434c7cc240d1d0e7bf974b4b831f4494a00fcb7bf803985864b57938d2a098"
+hash = "16d459596eb65a03801cc238f46911cdc8ca6b2d3334087d30ff39b24155ecb0"
 
 [[files]]
 file = "kubejs/data/tfc/recipe/crafting/wood/planks/palm_mosaic_slab.json"
@@ -237,8 +237,8 @@ hash = "617ec6e9893d59905035a510fe336addd46a97b6fd28fad88b70713ebf8e69e3"
 metafile = true
 
 [[files]]
-file = "mods/sticky-keys-(autorun).pw.toml"
-hash = "74e2c2ae64d9192e3a51ad9c19b7e399165acd41d5f1f1c10b47423ff0942321"
+file = "mods/sophisticated-auto-walk.pw.toml"
+hash = "0eb8e3115662ca57b0d335d98a98b573bc1b75f1b2f0750b61439549689b2465"
 metafile = true
 
 [[files]]

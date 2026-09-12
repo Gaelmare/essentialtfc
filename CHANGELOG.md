@@ -1,3 +1,8 @@
+## 3.0.6
+* Autowalk mod
+* Updated mosaic recipe based on new TFC recipe.
+* Added back recipe for vanilla metal bucket from previous TFC versions. Comments welcome.
+
 ## 3.0.5
 * No Chat Restrictions mod
 * Update options
