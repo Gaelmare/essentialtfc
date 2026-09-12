@@ -1,0 +1,13 @@
+name = "Sophisticated Auto Walk"
+filename = "autowalk-1.21.1-1.5.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "14cc572a5f665f9ce06cce229d06f22055b80ae2"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6354989
+project-id = 1222942

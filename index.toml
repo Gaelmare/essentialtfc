@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "d7c6b008a2f450c37e43c22d742a423c4555ff0eceb6a6bb7702b364b53dd4bd"
+hash = "709d7cc7e3d9f43b4a92b16b63d22a7303a59b95ed6e951175139e51dffedbf2"
 
 [[files]]
 file = "LICENSE.txt"
@@ -198,7 +198,7 @@ hash = "2bfc24f14fd0cb8241cd9ae44acae336bce9a2e914ab3a32a362018bcab3f8d2"
 
 [[files]]
 file = "kubejs/data/tfc/recipe/crafting/wood/planks/palm_mosaic.json"
-hash = "87434c7cc240d1d0e7bf974b4b831f4494a00fcb7bf803985864b57938d2a098"
+hash = "16d459596eb65a03801cc238f46911cdc8ca6b2d3334087d30ff39b24155ecb0"
 
 [[files]]
 file = "kubejs/data/tfc/recipe/crafting/wood/planks/palm_mosaic_slab.json"
@@ -210,7 +210,7 @@ hash = "22d8214c02c87bff7cfae2b11214e4ad233069048ec7ed09556e10cf8ed4eb7a"
 
 [[files]]
 file = "kubejs/server_scripts/main_server.js"
-hash = "1de95db548934fbeb0684391b7717e287a58bec250c274e67d482d96e8ad15d4"
+hash = "cfebd4549d9578a7c1d5fa5c7e81e9156c898f68d026f79ecb45c580b6bbfb8f"
 
 [[files]]
 file = "mods/balm.pw.toml"
@@ -250,6 +250,11 @@ metafile = true
 [[files]]
 file = "mods/creativecore.pw.toml"
 hash = "83ea88c8687aebdc1b1f09ce6da7241a3d2119574301f597982756d04e6c9e1d"
+metafile = true
+
+[[files]]
+file = "mods/cupboard.pw.toml"
+hash = "8e83d6344bba3711337872275843631ec1046884d44b1b579f3c4566448c3697"
 metafile = true
 
 [[files]]
@@ -418,8 +423,8 @@ hash = "617ec6e9893d59905035a510fe336addd46a97b6fd28fad88b70713ebf8e69e3"
 metafile = true
 
 [[files]]
-file = "mods/sticky-keys-(autorun).pw.toml"
-hash = "74e2c2ae64d9192e3a51ad9c19b7e399165acd41d5f1f1c10b47423ff0942321"
+file = "mods/sophisticated-auto-walk.pw.toml"
+hash = "0eb8e3115662ca57b0d335d98a98b573bc1b75f1b2f0750b61439549689b2465"
 metafile = true
 
 [[files]]
