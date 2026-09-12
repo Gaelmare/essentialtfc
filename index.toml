@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "36841d73c8a13c75a1ec9a515176abd52fe059e6541495f943ddde2118556016"
+hash = "12c9810ca3e30966825002c89ff34aba489ca636f284c9b419b40dd3d8ed668f"
 
 [[files]]
 file = "LICENSE.txt"
@@ -22,7 +22,7 @@ hash = "d24dedc10a8fb7e6977e746160a4e171ba909ed0293bec43862c944a74c89774"
 
 [[files]]
 file = "config/defaultoptions/options.txt"
-hash = "8a33c3804271dbe1f1dcc951f270d7a5f3bc95139aca2b5e0b84d34862811d27"
+hash = "eb1dafa6805a48844620187ea20cfc8845da427e9442fc2d15b026507ca164ca"
 
 [[files]]
 file = "config/fallingtree.json"
@@ -57,6 +57,10 @@ file = "kubejs/data/tfc/recipe/crafting/wood/planks/palm_mosaic_slairs.json"
 hash = "22d8214c02c87bff7cfae2b11214e4ad233069048ec7ed09556e10cf8ed4eb7a"
 
 [[files]]
+file = "kubejs/server_scripts/main_server.js"
+hash = "cfebd4549d9578a7c1d5fa5c7e81e9156c898f68d026f79ecb45c580b6bbfb8f"
+
+[[files]]
 file = "mods/balm.pw.toml"
 hash = "48ccf754257a1d140c12e4cee3bd7901392023fcd5a3fc961b7275448459fe73"
 metafile = true
@@ -89,6 +93,11 @@ metafile = true
 [[files]]
 file = "mods/corpse.pw.toml"
 hash = "e2edf339c98dbdcf04f46a15276e9b1b5bbdeee0f1ac8b7d9bddb1ee8e54b9a1"
+metafile = true
+
+[[files]]
+file = "mods/cupboard.pw.toml"
+hash = "8e83d6344bba3711337872275843631ec1046884d44b1b579f3c4566448c3697"
 metafile = true
 
 [[files]]
