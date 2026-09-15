@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "00de93ee60c123b174e41c394e69dc173a034523234773a9dd96266a6991b160"
+hash = "6b891b1645385d811bf9f5db36c2cf1ab2f0e7fdc4578ae63fd2d6cab91b5e4f"
 
 [[files]]
 file = "LICENSE.txt"
@@ -10,19 +10,11 @@ hash = "33c42f6adbfec0327ebfbc2eaa58bff1e29f3d0efc054dd828eabdc0b52c14a4"
 
 [[files]]
 file = "README.md"
-hash = "ae23662ab4025d126af3c1c3194ed8842072f560a701cb97789ecf25f244fc62"
+hash = "5762c3bf8fa2ae78825dca8525da3462563d888a7d40de2dd7afcc68b1ff7904"
 
 [[files]]
-file = "config/defaultoptions-common.toml"
-hash = "5ed6eea2e4b38e1d940dbfbccfcb51e3cc948409b8b173110fec8683cbcf27a8"
-
-[[files]]
-file = "config/defaultoptions/keybindings.txt"
-hash = "3a50452c4ca52f9906a5a765c79289b2a2a10b140f51269dac9849b41ff470be"
-
-[[files]]
-file = "config/defaultoptions/options.txt"
-hash = "eb1dafa6805a48844620187ea20cfc8845da427e9442fc2d15b026507ca164ca"
+file = "build.sh"
+hash = "347ce7dbaf10052c7f930df03115ac6a7e0205dd38b789caecf52d4867d98807"
 
 [[files]]
 file = "config/fallingtree.json"
@@ -43,6 +35,10 @@ hash = "51852b81c65aea982b5da3ad7aad128eb25ed48858efa2c2102a9bedb4833101"
 [[files]]
 file = "icon.png"
 hash = "1d6d60bd81f9b5a7b0a0f35fcaa7d9c9eddac21fe4ad3620412371c378af60e5"
+
+[[files]]
+file = "kubejs/config/defaultoptions.txt"
+hash = "359211ae6a4425b9bc917e518e5cf182818835304732d8e215db52878a1a91b8"
 
 [[files]]
 file = "kubejs/data/littletiles/recipe/bag.json"
@@ -248,11 +244,6 @@ metafile = true
 [[files]]
 file = "mods/curios.pw.toml"
 hash = "6b6683fd8ec53d10d4fbef3b3d53922a1aaa8ef4d2e4b52bb819dc451f5d6b3d"
-metafile = true
-
-[[files]]
-file = "mods/default-options.pw.toml"
-hash = "12602d5c4952c42a2390b1d78869777d81e37f0393188a3bb409ded91e18f373"
 metafile = true
 
 [[files]]
@@ -468,6 +459,11 @@ metafile = true
 [[files]]
 file = "resourcepacks/aures-tfc-livestock-skins.pw.toml"
 hash = "7c18e040ff710ed8ddeca750377bb50480808d5515fbeebef909c46393592ab5"
+metafile = true
+
+[[files]]
+file = "resourcepacks/slightly-improved-font.pw.toml"
+hash = "1500696334c198418def3441b2a5764156c1b68d7de1882d345f61d842dc3d25"
 metafile = true
 
 [[files]]

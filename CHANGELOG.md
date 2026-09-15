@@ -1,3 +1,8 @@
+## 3.0.8
+* Added Slightly Improved Font resource pack
+* Build cleanups
+* Switch default options handling to KubeJS
+
 ## 3.0.7
 * Bump to TFC 4.2.10
 
