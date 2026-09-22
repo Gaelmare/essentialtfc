@@ -10,7 +10,6 @@ Mod List:
 - [EMF] Entity Model Features [Fabric & Forge]
 - [ETF] Entity Texture Features - [Fabric & Forge]
 - Aures - TFC Livestock Skins
-- Balm
 - Barrels 2012
 - BSL Shaders
 - Complementary Shaders - Reimagined

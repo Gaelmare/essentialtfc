@@ -10,7 +10,7 @@ hash = "33c42f6adbfec0327ebfbc2eaa58bff1e29f3d0efc054dd828eabdc0b52c14a4"
 
 [[files]]
 file = "README.md"
-hash = "5762c3bf8fa2ae78825dca8525da3462563d888a7d40de2dd7afcc68b1ff7904"
+hash = "ed9a6af943a1098733827eae4d51b7faa02ef591cba1b5254996d0a5aede5c2b"
 
 [[files]]
 file = "build.sh"
@@ -193,13 +193,16 @@ file = "kubejs/data/littletiles/recipe/wrench.json"
 hash = "2bfc24f14fd0cb8241cd9ae44acae336bce9a2e914ab3a32a362018bcab3f8d2"
 
 [[files]]
-file = "kubejs/server_scripts/main_server.js"
-hash = "cfebd4549d9578a7c1d5fa5c7e81e9156c898f68d026f79ecb45c580b6bbfb8f"
+file = "kubejs/data/vitaltfc/advancement/ian_crushed.json"
+hash = "888162399137261745325b44db0f2ab05209e6bd8b9b29ecc689b673c5c028c4"
 
 [[files]]
-file = "mods/balm.pw.toml"
-hash = "48ccf754257a1d140c12e4cee3bd7901392023fcd5a3fc961b7275448459fe73"
-metafile = true
+file = "kubejs/server_scripts/checksmooth.js"
+hash = "505c364497a7dbc57802274133ef8efb3c35bf4d0dba82deff770b08777e5952"
+
+[[files]]
+file = "kubejs/server_scripts/main_server.js"
+hash = "cfebd4549d9578a7c1d5fa5c7e81e9156c898f68d026f79ecb45c580b6bbfb8f"
 
 [[files]]
 file = "mods/barrels-2012.pw.toml"
