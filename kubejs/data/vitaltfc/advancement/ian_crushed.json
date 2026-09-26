@@ -1,0 +1,23 @@
+{
+  "parent": "tfc:story/chisel",
+  "display": {
+    "title": {
+      "text": "Ian, No!"
+    },
+    "description": {
+      "text": "Hoist by X_Wing_Ian's petard! Get crushed by chiseled stone cobble."
+    },
+    "icon": {
+      "id": "tfc:rock/raw/granite"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

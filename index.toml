@@ -10,27 +10,31 @@ hash = "33c42f6adbfec0327ebfbc2eaa58bff1e29f3d0efc054dd828eabdc0b52c14a4"
 
 [[files]]
 file = "README.md"
-hash = "718316f201237ac8011f3492d431cf9855061a633ec78ec7f1ecd833b076cc64"
+hash = "bd6aaca543c56092c57fb4ff223b88e647182ef6ffd6a953888757c0c67102a2"
 
 [[files]]
 file = "build.sh"
 hash = "6d35736ba82b8c88078853b753d3ceef31c902bfd111220c14dcf6bfa9b461e9"
 
 [[files]]
-file = "config/fallingtree.json"
+file = "defaultconfigs/fallingtree.json"
 hash = "6e8857b6c4d79a5bc9ab011e40cce643544bd8c8348957448d66827230da5e5a"
 
 [[files]]
-file = "config/lithium.properties"
+file = "defaultconfigs/lithium.properties"
 hash = "ca4f2a432b3af2e9b7021fe11989b95dd138641c38c506d84167425e3ba2b296"
 
 [[files]]
-file = "config/simplebackups-common.toml"
+file = "defaultconfigs/simplebackups-common.toml"
 hash = "e86a242e9dfb34d6ebaabc7b7ba094d78082719a6cf33383f07f1939b3e9b95b"
 
 [[files]]
-file = "config/xaerominimap.txt"
-hash = "51852b81c65aea982b5da3ad7aad128eb25ed48858efa2c2102a9bedb4833101"
+file = "defaultconfigs/xaero/minimap/client.cfg"
+hash = "80c77d2c2882d29b5ae19be7588b19fd6e9ef6ef1a9b66feda121bde76943263"
+
+[[files]]
+file = "defaultconfigs/xaero/world-map/client.cfg"
+hash = "33bcf15d5706daf090323b03c16e357c44bdb8e5f29a2f65ef839316b6e94c5f"
 
 [[files]]
 file = "icon.png"
@@ -41,13 +45,16 @@ file = "kubejs/config/defaultoptions.txt"
 hash = "ab63a57bbf98e9a292e2f13df54b1f990510a632de06a205705b8f4df17cc9f2"
 
 [[files]]
-file = "kubejs/server_scripts/main_server.js"
-hash = "cfebd4549d9578a7c1d5fa5c7e81e9156c898f68d026f79ecb45c580b6bbfb8f"
+file = "kubejs/data/vitaltfc/advancement/ian_crushed.json"
+hash = "09410e556523190400837e9bbf041215491f72bd3245922deb843f152006c666"
 
 [[files]]
-file = "mods/balm.pw.toml"
-hash = "48ccf754257a1d140c12e4cee3bd7901392023fcd5a3fc961b7275448459fe73"
-metafile = true
+file = "kubejs/server_scripts/checksmooth.js"
+hash = "189d1c1c83636635f62e69a80632d1803dc6d4f9ae0b900aef58a00a464a0734"
+
+[[files]]
+file = "kubejs/server_scripts/main_server.js"
+hash = "cfebd4549d9578a7c1d5fa5c7e81e9156c898f68d026f79ecb45c580b6bbfb8f"
 
 [[files]]
 file = "mods/barrels-2012.pw.toml"
