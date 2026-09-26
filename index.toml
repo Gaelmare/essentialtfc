@@ -325,12 +325,12 @@ metafile = true
 
 [[files]]
 file = "mods/kubejs-tfc.pw.toml"
-hash = "9c2add9082b66545ed92dc750e3e89f2aecf9c4333ff459dca35350a4c7300df"
+hash = "05c29e5b37302c8f5e375775af03ce261e8c8c8220613f10e6e8bd626d29403c"
 metafile = true
 
 [[files]]
 file = "mods/kubejs.pw.toml"
-hash = "17b5bef818ac8c504958db422aba2f1cc79979da41a71b0ecb793f85accf30df"
+hash = "00bacfc5a98d9b0dff90bbad503def28abf970a2061c9456f721e442bc32ab29"
 metafile = true
 
 [[files]]
