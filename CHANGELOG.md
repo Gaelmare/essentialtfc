@@ -1,3 +1,9 @@
+## 3.0.9
+* Skipped 3.0.8 to sync with VitalTFC pack
+* New advancement honoring he who prompted smooth stone to collapse
+* Balm removed as orphan dep
+* Quiet Xaero's update spam
+
 ## 3.0.7
 * Added Slightly Improved Font resource pack
 * Build cleanups
