@@ -30,7 +30,7 @@ hash = "e86a242e9dfb34d6ebaabc7b7ba094d78082719a6cf33383f07f1939b3e9b95b"
 
 [[files]]
 file = "config/xaerominimap.txt"
-hash = "51852b81c65aea982b5da3ad7aad128eb25ed48858efa2c2102a9bedb4833101"
+hash = "d71271b161e4cc61a2504cb813e7f91c61bcb5024e34710605f552c698ee9f74"
 
 [[files]]
 file = "icon.png"
@@ -194,11 +194,11 @@ hash = "2bfc24f14fd0cb8241cd9ae44acae336bce9a2e914ab3a32a362018bcab3f8d2"
 
 [[files]]
 file = "kubejs/data/vitaltfc/advancement/ian_crushed.json"
-hash = "888162399137261745325b44db0f2ab05209e6bd8b9b29ecc689b673c5c028c4"
+hash = "09410e556523190400837e9bbf041215491f72bd3245922deb843f152006c666"
 
 [[files]]
 file = "kubejs/server_scripts/checksmooth.js"
-hash = "505c364497a7dbc57802274133ef8efb3c35bf4d0dba82deff770b08777e5952"
+hash = "189d1c1c83636635f62e69a80632d1803dc6d4f9ae0b900aef58a00a464a0734"
 
 [[files]]
 file = "kubejs/server_scripts/main_server.js"

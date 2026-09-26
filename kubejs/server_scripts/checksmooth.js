@@ -1,62 +1,29 @@
-// Advancement: vitaltfc:ian_crushed
-// Grant condition: the player is hurt or killed by a tfc:falling_block entity from a
-// chisel-triggered collapse (ChiselItem.useOn, TFC source), where that entity is either
-// (a) a block tagged #c:stones/smooth at collapse time, or
-// (b) the specific block the chisel was targeting when it triggered the collapse - which is
-//     itself still raw (chiseling aborts on collapse, see below), but still counts.
-//
-// ChiselItem.useOn() calls CollapseRecipe.tryTriggerCollapse(level, pos) directly, from inside the
-// item's own interaction code - there's no dedicated event for "collapse triggered by chiseling".
-// The only hook available earlier in that call chain is PlayerInteractEvent.RightClickBlock
-// (KubeJS: BlockEvents.rightClicked), which vanilla always fires *before* dispatching to
-// ItemStack.useOn(). Unlike the block-break path, this isn't a race against another mod's listener:
-// TFC doesn't listen to RightClickBlock itself for collapses, it only reacts once useOn() runs, so by
-// hooking rightClicked we're guaranteed to see the original, unconverted blocks.
-//
-// Once we see a right click with a chisel (#c:tools/chisel) on a block tagged
-// #tfc:can_trigger_collapse, we proactively scan the surrounding volume for #c:stones/smooth blocks
-// (mirroring CollapseRecipe.startCollapse's own search area) and record them as candidates. This is
-// necessarily speculative: we don't know yet whether the chisel hit actually rolls a collapse
-// (TFCConfig.enableChiselsStartCollapses + the same random chance as mining), so some scans record
-// candidates that never end up mattering - they're just cleaned up by the TTL sweep below.
-//
-// Once a smooth position is known, we carry that fact forward onto the entity itself using a
-// scoreboard tag (entity.addTag), which survives safely on the entity - unlike hand-editing the
-// full entity NBT, which risks corrupting live falling-block state.
-
+// Grants the new advancement: vitaltfc:ian_crushed when a player is hurt or killed by a falling block that was smooth stone at the time of collapse.
+// The collapse must have been triggered by chiseling smooth a raw block (tagged #tfc:can_trigger_collapse)
 const SMOOTH_TAG = 'c:stones/smooth';
 const CHISEL_TAG = 'c:tools/chisel';
 const CAN_TRIGGER_COLLAPSE_TAG = 'tfc:can_trigger_collapse';
+// uses scoreboard tags on entities to track provenance
 const CARRY_TAG = 'vitaltfc:was_smooth_stone';
 const CHISEL_TARGET_CARRY_TAG = 'vitaltfc:was_chisel_target';
 const ADVANCEMENT = 'vitaltfc:ian_crushed';
 const CANDIDATE_TTL_TICKS = 100; // ~5 seconds; drop candidates that never spawned an entity
 const DEBUG = false;
 
-// How far a chisel-triggered collapse can reach from the chiseled block. It uses the exact same
-// CollapseRecipe.tryTriggerCollapse -> startCollapse path as mining does, so the same search area
-// applies: worst case ~4 blocks (initial locus search) + collapseMinRadius + collapseRadiusVariance
-// (server config, vanilla defaults 3 and 16) horizontally, and roughly +/-8 vertically from that
-// locus. These defaults are NOT overridden in this pack's config, so the true worst case is larger
-// than what's scanned below. Shrink/grow this to match how far collapses actually reach in practice
-// on this server - the wider it is, the more it costs per chisel hit on a collapsible block.
+// how far out to look for smooth blocks when a chisel triggers a collapse.
+//  The actual collapse search radius is larger, but we search this smaller range for performance reasons.
 const SCAN_RADIUS_XZ = 10;
-const SCAN_RADIUS_DOWN = 6;
-const SCAN_RADIUS_UP = 6;
+const SCAN_RADIUS_DOWN = 3;
+const SCAN_RADIUS_UP = 3;
 
 function debug(msg) {
     if (DEBUG) console.log(`[checksmooth] ${msg}`);
 }
 
-// pos key -> tick recorded, for positions that were smooth stone right before collapsing
+// hash of pos key -> tick recorded, for positions that were smooth stone right before collapsing
 let smoothCandidates = {};
 
-// pos key -> tick recorded, for the specific block a chisel was targeting when it triggered a
-// collapse. It's excluded from being the collapse's own "locus" (see tryTriggerCollapse), but can
-// still end up swept into startCollapse's wider search and fall itself - and since chiseling aborts
-// when a collapse triggers, it's still raw (not #c:stones/smooth) at that point, so it never lands in
-// smoothCandidates above. Tracked and tagged separately so it doesn't get conflated with the actual
-// "was smooth stone" advancement requirement.
+// chiseled targets. These never become smooth stone if they collapse, but still should count
 let chiselTargetCandidates = {};
 
 function posKey(x, y, z) {

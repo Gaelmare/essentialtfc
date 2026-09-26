@@ -1,11 +1,11 @@
 {
-  "parent": "tfc:story/pickaxe",
+  "parent": "tfc:story/chisel",
   "display": {
     "title": {
       "text": "Ian, No!"
     },
     "description": {
-      "text": "Hoist by Ian's petard! Get crushed by chiseled stone cobble."
+      "text": "Hoist by X_Wing_Ian's petard! Get crushed by chiseled stone cobble."
     },
     "icon": {
       "id": "tfc:rock/raw/granite"
