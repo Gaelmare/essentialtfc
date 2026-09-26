@@ -1,3 +1,7 @@
+## 3.0.9
+* Special advancement for those that recklessly chisel raw stone ceilings
+* Stopped Xaero's update spam
+
 ## 3.0.8
 * Added Slightly Improved Font resource pack
 * Build cleanups
