@@ -1,6 +1,8 @@
 ## 3.0.9
 * Special advancement for those that recklessly chisel raw stone ceilings
 * Stopped Xaero's update spam
+* Balm removed as orphan dep
+* KubeJS update and add Better Advanced Tooltips as dep
 
 ## 3.0.8
 * Added Slightly Improved Font resource pack
