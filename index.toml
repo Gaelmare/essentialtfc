@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "6b891b1645385d811bf9f5db36c2cf1ab2f0e7fdc4578ae63fd2d6cab91b5e4f"
+hash = "8c3c64690cb82b781324bdf43e58fba0b7867b4839cc8c70af65a2600b79f185"
 
 [[files]]
 file = "LICENSE.txt"
@@ -17,20 +17,24 @@ file = "build.sh"
 hash = "347ce7dbaf10052c7f930df03115ac6a7e0205dd38b789caecf52d4867d98807"
 
 [[files]]
-file = "config/fallingtree.json"
+file = "defaultconfigs/fallingtree.json"
 hash = "6e8857b6c4d79a5bc9ab011e40cce643544bd8c8348957448d66827230da5e5a"
 
 [[files]]
-file = "config/lithium.properties"
+file = "defaultconfigs/lithium.properties"
 hash = "ca4f2a432b3af2e9b7021fe11989b95dd138641c38c506d84167425e3ba2b296"
 
 [[files]]
-file = "config/simplebackups-common.toml"
+file = "defaultconfigs/simplebackups-common.toml"
 hash = "e86a242e9dfb34d6ebaabc7b7ba094d78082719a6cf33383f07f1939b3e9b95b"
 
 [[files]]
-file = "config/xaerominimap.txt"
-hash = "d71271b161e4cc61a2504cb813e7f91c61bcb5024e34710605f552c698ee9f74"
+file = "defaultconfigs/xaero/minimap/client.cfg"
+hash = "80c77d2c2882d29b5ae19be7588b19fd6e9ef6ef1a9b66feda121bde76943263"
+
+[[files]]
+file = "defaultconfigs/xaero/world-map/client.cfg"
+hash = "33bcf15d5706daf090323b03c16e357c44bdb8e5f29a2f65ef839316b6e94c5f"
 
 [[files]]
 file = "icon.png"
