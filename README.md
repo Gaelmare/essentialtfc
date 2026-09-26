@@ -11,6 +11,7 @@ Mod List:
 - [ETF] Entity Texture Features - [Fabric & Forge]
 - Aures - TFC Livestock Skins
 - Barrels 2012
+- Better Advanced Tooltips
 - BSL Shaders
 - Complementary Shaders - Reimagined
 - Controlling

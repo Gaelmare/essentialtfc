@@ -10,7 +10,7 @@ hash = "33c42f6adbfec0327ebfbc2eaa58bff1e29f3d0efc054dd828eabdc0b52c14a4"
 
 [[files]]
 file = "README.md"
-hash = "ed9a6af943a1098733827eae4d51b7faa02ef591cba1b5254996d0a5aede5c2b"
+hash = "e610378b66a639fd15288fa54953115f3b0e6fb05f118fbde15bdfd4f9b327e3"
 
 [[files]]
 file = "build.sh"
@@ -211,6 +211,11 @@ hash = "cfebd4549d9578a7c1d5fa5c7e81e9156c898f68d026f79ecb45c580b6bbfb8f"
 [[files]]
 file = "mods/barrels-2012.pw.toml"
 hash = "673cb4c569c6d7d77fdbe5afae681cf811ac94bac4b540a08ee54133e0e69c59"
+metafile = true
+
+[[files]]
+file = "mods/better-advanced-tooltips.pw.toml"
+hash = "9009bd5cdcdbc6bc47a7fbb203844d9a551accdd796877bdba5233ac14bbd513"
 metafile = true
 
 [[files]]
