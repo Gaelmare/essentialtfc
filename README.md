@@ -23,6 +23,7 @@ Mod List:
 - FallingTree
 - FerriteCore ((Neo)Forge)
 - Forgified Fabric API
+- Global Shaderpack Properties
 - ImmediatelyFast
 - Inventory Tweaks - ReFoxed
 - Iris Shaders

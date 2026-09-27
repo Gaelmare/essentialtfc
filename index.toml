@@ -17,6 +17,10 @@ file = "build.sh"
 hash = "6d35736ba82b8c88078853b753d3ceef31c902bfd111220c14dcf6bfa9b461e9"
 
 [[files]]
+file = "config/global_shaderpack_properties/block.properties"
+hash = "2edafa12d6c7e7361cefac85416dbfc733f733fdf056aa0ce7de4100bcd3c714"
+
+[[files]]
 file = "defaultconfigs/fallingtree.json"
 hash = "6e8857b6c4d79a5bc9ab011e40cce643544bd8c8348957448d66827230da5e5a"
 
@@ -139,6 +143,11 @@ metafile = true
 [[files]]
 file = "mods/forgified-fabric-api.pw.toml"
 hash = "15219e64b45e53db93de94091172e6a4c5ae9a749710ce91a615c973a552c215"
+metafile = true
+
+[[files]]
+file = "mods/global-shaderpack-properties.pw.toml"
+hash = "2848228ff9d20eea42a3c17653d1478c9f49ef31e55f367d5cf3e9e7567996dc"
 metafile = true
 
 [[files]]
@@ -310,6 +319,10 @@ metafile = true
 file = "resourcepacks/aures-tfc-livestock-skins.pw.toml"
 hash = "7c18e040ff710ed8ddeca750377bb50480808d5515fbeebef909c46393592ab5"
 metafile = true
+
+[[files]]
+file = "resourcepacks/block.properties"
+hash = "2edafa12d6c7e7361cefac85416dbfc733f733fdf056aa0ce7de4100bcd3c714"
 
 [[files]]
 file = "resourcepacks/slightly-improved-font.pw.toml"

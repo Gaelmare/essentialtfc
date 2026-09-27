@@ -1,0 +1,13 @@
+name = "Global Shaderpack Properties"
+filename = "globalshaderpackproperties-neoforge1.21.1-1.1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "5597d992b69919979253287b3a14daab4069277b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7369909
+project-id = 1344473
