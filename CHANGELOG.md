@@ -1,3 +1,6 @@
+## 3.0.10
+* Fixed Photon shaders for TFC water etc.
+
 ## 3.0.9
 * Special advancement for those that recklessly chisel raw stone ceilings
 * Stopped Xaero's update spam

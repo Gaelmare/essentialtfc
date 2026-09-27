@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "d7492bac5da0e68b05b0f5ee95a50ed9b4eb00d282d8c3f2a89ebe501679f61b"
+hash = "2646a7517287025ab8bc1475fb1028a4684d578d24cacef43f1493e884b524ad"
 
 [[files]]
 file = "LICENSE.txt"
@@ -10,7 +10,7 @@ hash = "33c42f6adbfec0327ebfbc2eaa58bff1e29f3d0efc054dd828eabdc0b52c14a4"
 
 [[files]]
 file = "README.md"
-hash = "fdd54946d072722cb64c506a12772dd50ee330ae13efca4f497fc010505fb24b"
+hash = "819be96656ff15857e137b9cfa745484e43f2b91c0f73c960a9ba2b2cebeff9b"
 
 [[files]]
 file = "build.sh"
@@ -18,7 +18,7 @@ hash = "347ce7dbaf10052c7f930df03115ac6a7e0205dd38b789caecf52d4867d98807"
 
 [[files]]
 file = "config/global_shaderpack_properties/block.properties"
-hash = "2edafa12d6c7e7361cefac85416dbfc733f733fdf056aa0ce7de4100bcd3c714"
+hash = "c00ff4a4a04ce6b6ae43cd981674eaeb9f373082a6df36b24eff4bc73e10e5bc"
 
 [[files]]
 file = "defaultconfigs/fallingtree.json"
