@@ -10,11 +10,15 @@ hash = "33c42f6adbfec0327ebfbc2eaa58bff1e29f3d0efc054dd828eabdc0b52c14a4"
 
 [[files]]
 file = "README.md"
-hash = "e610378b66a639fd15288fa54953115f3b0e6fb05f118fbde15bdfd4f9b327e3"
+hash = "fdd54946d072722cb64c506a12772dd50ee330ae13efca4f497fc010505fb24b"
 
 [[files]]
 file = "build.sh"
 hash = "347ce7dbaf10052c7f930df03115ac6a7e0205dd38b789caecf52d4867d98807"
+
+[[files]]
+file = "config/global_shaderpack_properties/block.properties"
+hash = "2edafa12d6c7e7361cefac85416dbfc733f733fdf056aa0ce7de4100bcd3c714"
 
 [[files]]
 file = "defaultconfigs/fallingtree.json"
@@ -296,6 +300,11 @@ metafile = true
 [[files]]
 file = "mods/forgified-fabric-api.pw.toml"
 hash = "15219e64b45e53db93de94091172e6a4c5ae9a749710ce91a615c973a552c215"
+metafile = true
+
+[[files]]
+file = "mods/global-shaderpack-properties.pw.toml"
+hash = "2848228ff9d20eea42a3c17653d1478c9f49ef31e55f367d5cf3e9e7567996dc"
 metafile = true
 
 [[files]]
