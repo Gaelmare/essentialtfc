@@ -1,3 +1,6 @@
+## 3.0.10
+* Fixed Photon shaders for TFC water etc.
+
 ## 3.0.9
 * Skipped 3.0.8 to sync with VitalTFC pack
 * New advancement honoring he who prompted smooth stone to collapse
