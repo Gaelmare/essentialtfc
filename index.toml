@@ -10,7 +10,7 @@ hash = "33c42f6adbfec0327ebfbc2eaa58bff1e29f3d0efc054dd828eabdc0b52c14a4"
 
 [[files]]
 file = "README.md"
-hash = "bd6aaca543c56092c57fb4ff223b88e647182ef6ffd6a953888757c0c67102a2"
+hash = "3908714b2616cc32fbf83a3924340b3fe69334a98f017730317f03972d91e69e"
 
 [[files]]
 file = "build.sh"
@@ -18,7 +18,7 @@ hash = "6d35736ba82b8c88078853b753d3ceef31c902bfd111220c14dcf6bfa9b461e9"
 
 [[files]]
 file = "config/global_shaderpack_properties/block.properties"
-hash = "2edafa12d6c7e7361cefac85416dbfc733f733fdf056aa0ce7de4100bcd3c714"
+hash = "c00ff4a4a04ce6b6ae43cd981674eaeb9f373082a6df36b24eff4bc73e10e5bc"
 
 [[files]]
 file = "defaultconfigs/fallingtree.json"
@@ -319,10 +319,6 @@ metafile = true
 file = "resourcepacks/aures-tfc-livestock-skins.pw.toml"
 hash = "7c18e040ff710ed8ddeca750377bb50480808d5515fbeebef909c46393592ab5"
 metafile = true
-
-[[files]]
-file = "resourcepacks/block.properties"
-hash = "2edafa12d6c7e7361cefac85416dbfc733f733fdf056aa0ce7de4100bcd3c714"
 
 [[files]]
 file = "resourcepacks/slightly-improved-font.pw.toml"
