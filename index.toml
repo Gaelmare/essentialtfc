@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "2646a7517287025ab8bc1475fb1028a4684d578d24cacef43f1493e884b524ad"
+hash = "bc067954dcfa19e7a6fa2c42cbef9b99d03f7238fb8a3d9a17d7a166b6489948"
 
 [[files]]
 file = "LICENSE.txt"
@@ -11,10 +11,6 @@ hash = "33c42f6adbfec0327ebfbc2eaa58bff1e29f3d0efc054dd828eabdc0b52c14a4"
 [[files]]
 file = "README.md"
 hash = "819be96656ff15857e137b9cfa745484e43f2b91c0f73c960a9ba2b2cebeff9b"
-
-[[files]]
-file = "build.sh"
-hash = "347ce7dbaf10052c7f930df03115ac6a7e0205dd38b789caecf52d4867d98807"
 
 [[files]]
 file = "config/global_shaderpack_properties/photon_v1.3b/block.properties"
@@ -46,7 +42,7 @@ hash = "1d6d60bd81f9b5a7b0a0f35fcaa7d9c9eddac21fe4ad3620412371c378af60e5"
 
 [[files]]
 file = "kubejs/config/defaultoptions.txt"
-hash = "359211ae6a4425b9bc917e518e5cf182818835304732d8e215db52878a1a91b8"
+hash = "f21e9ea70123abfe3774d61a818a4ce7d0eb1eaef2429d90de0e6df84a6b7a45"
 
 [[files]]
 file = "kubejs/data/littletiles/recipe/bag.json"
@@ -234,7 +230,7 @@ metafile = true
 
 [[files]]
 file = "mods/complementary-reimagined.pw.toml"
-hash = "335d3e0f28b42381f929c9997dd188cd656178904833c2d1b01dfd3e098b0569"
+hash = "fe2fb19ba4d0fec45626237b701d857ac3c7c961efd5b4b7ccfff6cd512872f8"
 metafile = true
 
 [[files]]
@@ -249,7 +245,7 @@ metafile = true
 
 [[files]]
 file = "mods/creativecore.pw.toml"
-hash = "83ea88c8687aebdc1b1f09ce6da7241a3d2119574301f597982756d04e6c9e1d"
+hash = "30cb84b864534e520ce67d07a7898b71f03d6f346afd54f33d9cb967f4859c54"
 metafile = true
 
 [[files]]
@@ -269,17 +265,17 @@ metafile = true
 
 [[files]]
 file = "mods/entity-model-features.pw.toml"
-hash = "ea67fcbd702909226736e0feb0d64df758e21e724d53a43730537c6bbf34d455"
+hash = "2e82b0238c24e7522ddffec066b0be2cfe4faa18b1fb66d9496734ff7a658153"
 metafile = true
 
 [[files]]
 file = "mods/entity-texture-features-fabric.pw.toml"
-hash = "298f2a99e309853181e71938c2358c4b2c7c6c19137dcf6bcefb736d43ab6f65"
+hash = "20de659318ff023d1d7c99d360eb8e33a6053c3564d1c702ddaa7fcfc63e693e"
 metafile = true
 
 [[files]]
 file = "mods/euphoria-patches.pw.toml"
-hash = "1010c34ac2177d15b77d843b7e514d152df73d5f0c05b59247eeaa525b23698d"
+hash = "ea10cab55df1871fa566aa64329fef98a1b68c8966d72d6c716c57c394e67bab"
 metafile = true
 
 [[files]]
@@ -309,7 +305,7 @@ metafile = true
 
 [[files]]
 file = "mods/immediatelyfast.pw.toml"
-hash = "f57772314b450b5c5d9f84d6cfccb414d1f3d72f1dfdeaf07e8ffe35d2675a92"
+hash = "fec42f4ea33169c1ea9c14f6b179325f974367eb7c7082dfffe9c483789a19f1"
 metafile = true
 
 [[files]]
@@ -329,7 +325,7 @@ metafile = true
 
 [[files]]
 file = "mods/jei.pw.toml"
-hash = "8da660f47b338e994d8acf2caa10d9d5845b96f9c425ace479e7870191974f21"
+hash = "47c701c67e70b60b3a71c9ec4aff707ea0411f033024730b1ca0567b8526a824"
 metafile = true
 
 [[files]]
@@ -354,7 +350,7 @@ metafile = true
 
 [[files]]
 file = "mods/littletiles.pw.toml"
-hash = "e9048bb70985899607dc0bc6f11c5b2fd0e68f4439ef3967a935d26498b6a870"
+hash = "a784c52eedc1dae02b14c7ab0d0d5b52349e3223f500d78b8db8bf3e6db3cccb"
 metafile = true
 
 [[files]]
@@ -364,7 +360,7 @@ metafile = true
 
 [[files]]
 file = "mods/modernfix.pw.toml"
-hash = "ed6ac1b169f40d6ea67376edac878c6eb842c935f743553016ba3817e67b9830"
+hash = "1813b429f0782edb4d0c428f00da0c760acea32ede566656588af99c6ad10a11"
 metafile = true
 
 [[files]]
@@ -394,7 +390,7 @@ metafile = true
 
 [[files]]
 file = "mods/roxy.pw.toml"
-hash = "ce45249fe1c98b059fefb9498ff05e2a5629d9dbfd60c1c83b88280ae38db824"
+hash = "bfb5056ddaf2a050dd4452a723682fb201de0989c515762becfb45bd4de6b565"
 metafile = true
 
 [[files]]
@@ -414,7 +410,7 @@ metafile = true
 
 [[files]]
 file = "mods/sodium-extra.pw.toml"
-hash = "c4ebb45eb6e49b9e6a1dfcbae4f7b67da70088f7e672a70d1fff2308d72ff9bc"
+hash = "1f879739b8ea01784133a004b34d8895c0f18a737501b4d3546bf33673384707"
 metafile = true
 
 [[files]]
@@ -429,7 +425,7 @@ metafile = true
 
 [[files]]
 file = "mods/terrafirmacraft.pw.toml"
-hash = "a6b4fecf8e242d40757a9e60efcb8a2b41097391fd7b43627e44a4cecd354f75"
+hash = "23e6cf23b64f2510d5addae6d031f167c1ef84e1942c000708f796dc64e32b58"
 metafile = true
 
 [[files]]
@@ -464,12 +460,12 @@ metafile = true
 
 [[files]]
 file = "mods/xaeros-minimap.pw.toml"
-hash = "03b30d68893aff0507d36044ab3b43e586f4412274b5de0abe193b9f4a754905"
+hash = "72f10bccb7f9767b2a731dda29aaeacdd4671971e8adaebe8840be9ca0090c31"
 metafile = true
 
 [[files]]
 file = "mods/xaeros-world-map.pw.toml"
-hash = "2ba7eb6ca5c2c9886cfb1bb23ed56fbbcaac3d4d3b1b185dc550ed61b66ecce1"
+hash = "a71c5d8a681bc8d891495e166a75de7715007ae8509b5bb45904763b0eae5224"
 metafile = true
 
 [[files]]

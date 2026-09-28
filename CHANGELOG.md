@@ -1,5 +1,8 @@
 ## 3.0.10
 * Fixed Photon shaders for TFC water etc.
+* Updated TFC to 4.2.11
+* Many more updates
+* 3.0.9 dies on second launch, don't use! Fixed that here.
 
 ## 3.0.9
 * Special advancement for those that recklessly chisel raw stone ceilings

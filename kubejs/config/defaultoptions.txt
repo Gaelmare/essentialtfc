@@ -1,4 +1,3 @@
-version:3955
 ao:true
 biomeBlendRadius:2
 enableVsync:true
