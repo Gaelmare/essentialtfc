@@ -325,3 +325,7 @@ metafile = true
 file = "resourcepacks/terrafirmacraft-vexxed-visuals.pw.toml"
 hash = "f37165b4b043c5a3ee25c00361526eaaa3640f26ebca0d0aaf4a5bfd9d369c8a"
 metafile = true
+
+[[files]]
+file = "shaderpacks/test"
+hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
