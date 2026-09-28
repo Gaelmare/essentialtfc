@@ -17,7 +17,7 @@ file = "build.sh"
 hash = "347ce7dbaf10052c7f930df03115ac6a7e0205dd38b789caecf52d4867d98807"
 
 [[files]]
-file = "config/global_shaderpack_properties/block.properties"
+file = "config/global_shaderpack_properties/photon_v1.3b/block.properties"
 hash = "c00ff4a4a04ce6b6ae43cd981674eaeb9f373082a6df36b24eff4bc73e10e5bc"
 
 [[files]]
