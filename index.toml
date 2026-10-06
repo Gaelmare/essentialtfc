@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "bc067954dcfa19e7a6fa2c42cbef9b99d03f7238fb8a3d9a17d7a166b6489948"
+hash = "5f8f77d6ff4282b12d6851000add79a2bc36422e56707f3b374607e4536891a2"
 
 [[files]]
 file = "LICENSE.txt"
@@ -10,7 +10,11 @@ hash = "33c42f6adbfec0327ebfbc2eaa58bff1e29f3d0efc054dd828eabdc0b52c14a4"
 
 [[files]]
 file = "README.md"
-hash = "819be96656ff15857e137b9cfa745484e43f2b91c0f73c960a9ba2b2cebeff9b"
+hash = "e57b066482836b064f639dba8c34aa6ef14b0d3ab1acb45f3004354460e483c4"
+
+[[files]]
+file = "config/global_shaderpack_properties/photon_v1.3b-fix/block.properties"
+hash = "c00ff4a4a04ce6b6ae43cd981674eaeb9f373082a6df36b24eff4bc73e10e5bc"
 
 [[files]]
 file = "config/global_shaderpack_properties/photon_v1.3b/block.properties"
@@ -221,6 +225,11 @@ metafile = true
 [[files]]
 file = "mods/bsl-shaders.pw.toml"
 hash = "4a5ea44fb3e87c430dbb19df9587ec93bd189ea1a12a15ed190dde3cf5a5cf13"
+metafile = true
+
+[[files]]
+file = "mods/cacophony-tfc.pw.toml"
+hash = "08347fdff0a319087b8841a0b2c65aeae0fd9a4bf707391b0fb498471c4162e4"
 metafile = true
 
 [[files]]

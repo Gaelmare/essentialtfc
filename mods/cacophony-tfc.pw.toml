@@ -1,0 +1,13 @@
+name = "Cacophony-TFC"
+filename = "cacophony-0.1.2-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "3f655e5eddaea61c6cbad15c5141ec87f5d81911"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8870586
+project-id = 1629976

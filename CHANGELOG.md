@@ -1,3 +1,8 @@
+## 3.0.11
+* Added Cacophony, ambient sound mod from a TFC dev
+* Fixed Photon shaders for water and TFC Tuesday specific black box fix.
+
+
 ## 3.0.10
 * Fixed Photon shaders for TFC water etc.
 * Updated TFC to 4.2.11
