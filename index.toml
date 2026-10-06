@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "d3ba2abef63ddbda626ce87c0892cdc4e141d8140cfe0fa432016e7e036c4fea"
+hash = "bc29b3fe9de876fee3d38c0710c42378dece8f3714c1d4e2a5a5528ad36acc83"
 
 [[files]]
 file = "LICENSE.txt"
@@ -10,7 +10,11 @@ hash = "33c42f6adbfec0327ebfbc2eaa58bff1e29f3d0efc054dd828eabdc0b52c14a4"
 
 [[files]]
 file = "README.md"
-hash = "3908714b2616cc32fbf83a3924340b3fe69334a98f017730317f03972d91e69e"
+hash = "5fbc1004ef5bbbed0b4b850b9dd1be0853b2e608bd573a73105958cddc93bda1"
+
+[[files]]
+file = "config/global_shaderpack_properties/photon_v1.3b-fix/block.properties"
+hash = "c00ff4a4a04ce6b6ae43cd981674eaeb9f373082a6df36b24eff4bc73e10e5bc"
 
 [[files]]
 file = "config/global_shaderpack_properties/photon_v1.3b/block.properties"
@@ -69,6 +73,11 @@ metafile = true
 [[files]]
 file = "mods/bsl-shaders.pw.toml"
 hash = "4a5ea44fb3e87c430dbb19df9587ec93bd189ea1a12a15ed190dde3cf5a5cf13"
+metafile = true
+
+[[files]]
+file = "mods/cacophony-tfc.pw.toml"
+hash = "08347fdff0a319087b8841a0b2c65aeae0fd9a4bf707391b0fb498471c4162e4"
 metafile = true
 
 [[files]]
@@ -325,7 +334,3 @@ metafile = true
 file = "resourcepacks/terrafirmacraft-vexxed-visuals.pw.toml"
 hash = "f37165b4b043c5a3ee25c00361526eaaa3640f26ebca0d0aaf4a5bfd9d369c8a"
 metafile = true
-
-[[files]]
-file = "shaderpacks/test"
-hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"

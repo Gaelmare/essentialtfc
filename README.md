@@ -13,6 +13,7 @@ Mod List:
 - Barrels 2012
 - Better Advanced Tooltips
 - BSL Shaders
+- Cacophony-TFC
 - Complementary Shaders - Reimagined
 - Controlling
 - Corpse
