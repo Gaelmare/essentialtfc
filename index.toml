@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "bc29b3fe9de876fee3d38c0710c42378dece8f3714c1d4e2a5a5528ad36acc83"
+hash = "2df4a4eb0e5a1f7bb486b44e3188457f6ab7895521ba16cc7ddc821686f90d0c"
 
 [[files]]
 file = "LICENSE.txt"
@@ -77,7 +77,7 @@ metafile = true
 
 [[files]]
 file = "mods/cacophony-tfc.pw.toml"
-hash = "08347fdff0a319087b8841a0b2c65aeae0fd9a4bf707391b0fb498471c4162e4"
+hash = "cc888683261fba06445e24a322a97593fb7c06d4ee11005660734f5be6bd436a"
 metafile = true
 
 [[files]]
