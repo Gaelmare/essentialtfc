@@ -1,13 +1,13 @@
 name = "VitalTFC"
 author = "Gaelmare"
-version = "3.0.11"
+version = "3.0.12"
 description = "Vital TFC is the modpack I would play with Vanilla TFC 1.21"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "93cb91375adfd95e535b8540f21da836edc77cd16d7e6d0dcc959c0d71852e9e"
+hash = "40ca178f50ce96898ed54f236fd2df7e331648d112075d76519df5a658704dc2"
 
 [versions]
 minecraft = "1.21.1"

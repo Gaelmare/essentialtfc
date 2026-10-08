@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "5f8f77d6ff4282b12d6851000add79a2bc36422e56707f3b374607e4536891a2"
+hash = "fd7997ea825653940e483b7f5d9144f9e9c26b61aa8d7f1c72c901c3500fb735"
 
 [[files]]
 file = "LICENSE.txt"
@@ -10,7 +10,7 @@ hash = "33c42f6adbfec0327ebfbc2eaa58bff1e29f3d0efc054dd828eabdc0b52c14a4"
 
 [[files]]
 file = "README.md"
-hash = "e57b066482836b064f639dba8c34aa6ef14b0d3ab1acb45f3004354460e483c4"
+hash = "fdd54946d072722cb64c506a12772dd50ee330ae13efca4f497fc010505fb24b"
 
 [[files]]
 file = "config/global_shaderpack_properties/photon_v1.3b-fix/block.properties"
@@ -229,7 +229,7 @@ metafile = true
 
 [[files]]
 file = "mods/cacophony-tfc.pw.toml"
-hash = "08347fdff0a319087b8841a0b2c65aeae0fd9a4bf707391b0fb498471c4162e4"
+hash = "cc888683261fba06445e24a322a97593fb7c06d4ee11005660734f5be6bd436a"
 metafile = true
 
 [[files]]
