@@ -1,5 +1,6 @@
 ## 3.0.12
 * Cacophony update based TFCT feedback
+* Pigvil is back!
 
 ## 3.0.11
 * Added Cacophony, ambient sound mod from a TFC dev

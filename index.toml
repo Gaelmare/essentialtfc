@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "fd7997ea825653940e483b7f5d9144f9e9c26b61aa8d7f1c72c901c3500fb735"
+hash = "a7c7876b8c16f28a3be37d36efd498639852a753636e2b165282be895d152df9"
 
 [[files]]
 file = "LICENSE.txt"
@@ -43,14 +43,6 @@ hash = "33bcf15d5706daf090323b03c16e357c44bdb8e5f29a2f65ef839316b6e94c5f"
 [[files]]
 file = "icon.png"
 hash = "1d6d60bd81f9b5a7b0a0f35fcaa7d9c9eddac21fe4ad3620412371c378af60e5"
-
-[[files]]
-file = "kubejs/PORT_SUMMARY.md"
-hash = "c5097d9d199b3c599b3be1f6a103c42a00c8dbbce83cca6e6bc34e2918cf2d4c"
-
-[[files]]
-file = "kubejs/README.md"
-hash = "fefa771d095e973218fefa4bbf84065484a04bef4110addc72c49b6276c80419"
 
 [[files]]
 file = "kubejs/assets/kubejs/models/block/pigvil_black.json"
