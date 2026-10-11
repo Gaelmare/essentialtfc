@@ -36,7 +36,7 @@ These use the extracted textures and item model JSONs.
 ### 2) TFC anvil registration
 
 The startup script registers custom TFC anvils using the KubeJS-TFC `tfc:anvil` builder for:
-- pigvil_base
+- pigvil_steel
 - pigvil_black
 - pigvil_blue
 - pigvil_red

@@ -15,3 +15,5 @@ cacert.pem
 .github
 *.iml
 build.sh
+
+.venv
