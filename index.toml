@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "2df4a4eb0e5a1f7bb486b44e3188457f6ab7895521ba16cc7ddc821686f90d0c"
+hash = "73557977ee274a1f06a9f3eafb0d7f07979766cf38295bec2c2024b6c57e151f"
 
 [[files]]
 file = "LICENSE.txt"
@@ -10,7 +10,7 @@ hash = "33c42f6adbfec0327ebfbc2eaa58bff1e29f3d0efc054dd828eabdc0b52c14a4"
 
 [[files]]
 file = "README.md"
-hash = "666f3e9b385c37a391052d4df1f4f2e58d2e859b16df2ce414f9a68829a20a9b"
+hash = "5fbc1004ef5bbbed0b4b850b9dd1be0853b2e608bd573a73105958cddc93bda1"
 
 [[files]]
 file = "config/global_shaderpack_properties/photon_v1.3b-fix/block.properties"
@@ -43,14 +43,6 @@ hash = "33bcf15d5706daf090323b03c16e357c44bdb8e5f29a2f65ef839316b6e94c5f"
 [[files]]
 file = "icon.png"
 hash = "72dd7be62ca8b2deca784072450b4f13625567ac3ce6253538add8d1451020e7"
-
-[[files]]
-file = "kubejs/PORT_SUMMARY.md"
-hash = "c5097d9d199b3c599b3be1f6a103c42a00c8dbbce83cca6e6bc34e2918cf2d4c"
-
-[[files]]
-file = "kubejs/README.md"
-hash = "fefa771d095e973218fefa4bbf84065484a04bef4110addc72c49b6276c80419"
 
 [[files]]
 file = "kubejs/assets/kubejs/models/block/pigvil_black.json"
