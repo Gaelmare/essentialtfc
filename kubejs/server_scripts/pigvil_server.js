@@ -149,7 +149,7 @@ BlockEvents.rightClicked(event => {
         heldItem.count = Math.max(0, heldItem.count - 1);
     }
 
-    playAmbientSound(player, pos, 'minecraft:entity.player.burp');
+    playAmbientSound(player, clickedBlock.pos, 'minecraft:entity.player.burp');
 
     // could apply conversion chance here as well
 
