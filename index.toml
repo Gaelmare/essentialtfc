@@ -213,11 +213,11 @@ file = "kubejs/server_scripts/main_server.js"
 hash = "cfebd4549d9578a7c1d5fa5c7e81e9156c898f68d026f79ecb45c580b6bbfb8f"
 
 [[files]]
-file = "kubejs/server_scripts/pigvil_port.js"
+file = "kubejs/server_scripts/pigvil_server.js"
 hash = "47f33c7e21bb3fb87006f67af8384a029e2e12597f528cfaf39df59ef9de8a1f"
 
 [[files]]
-file = "kubejs/startup_scripts/pigvil_port.js"
+file = "kubejs/startup_scripts/pigvil_startup.js"
 hash = "13c9ac173ba9d818688c71a0d78763dff150551eeb5bd4875e56f585fe4e23bf"
 
 [[files]]

@@ -1,13 +1,13 @@
 name = "EssentialTFC"
 author = "Gaelmare"
-version = "3.0.12"
+version = "3.0.13"
 description = "Beginner's TerraFirmaCraft modpack"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "fc2254c66fbcc010c7b9125ba94fb6bc21b286011a84ed488dc2294a6fe637ff"
+hash = "0973181dd203b966a4ec1e6da08fb0d7ecd81af5758af07d5c01cd40106aa807"
 
 [versions]
 minecraft = "1.21.1"
