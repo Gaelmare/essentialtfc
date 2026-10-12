@@ -214,7 +214,7 @@ hash = "cfebd4549d9578a7c1d5fa5c7e81e9156c898f68d026f79ecb45c580b6bbfb8f"
 
 [[files]]
 file = "kubejs/server_scripts/pigvil_server.js"
-hash = "47f33c7e21bb3fb87006f67af8384a029e2e12597f528cfaf39df59ef9de8a1f"
+hash = "b836784304980f7b8cf30b38de8c906532f33beefca1e09500d2d6e4d9e565c6"
 
 [[files]]
 file = "kubejs/startup_scripts/pigvil_startup.js"
