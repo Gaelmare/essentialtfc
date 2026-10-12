@@ -1,3 +1,7 @@
+## 3.0.13
+* Refinement of Pigvil, including corrected model hitbox
+* Pigvil must be converted from an adult male pig with max adult familiarity that's not too old.
+
 ## 3.0.12
 * Cacophony update based TFCT feedback
 * Pigvil is back!

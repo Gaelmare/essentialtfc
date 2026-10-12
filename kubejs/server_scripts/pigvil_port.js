@@ -57,13 +57,26 @@ const PIGVIL_BLOCKS = new Set([
 ]);
 
 
-const playPigAmbientSound = (player, pos) => {
+const playAmbientSound = (player, pos, sound) => {
     if (!player || !pos || !player.server || typeof player.server.runCommandSilent !== 'function') return;
+    if (!sound) return;
 
     player.server.runCommandSilent(
-        'playsound minecraft:entity.pig.ambient ambient @a[x=' + pos.x + ',y=' + pos.y + ',z=' + pos.z + ',distance=..16] ' +
+        'playsound ' + sound + ' ambient @a[x=' + pos.x + ',y=' + pos.y + ',z=' + pos.z + ',distance=..16] ' +
         pos.x + ' ' + pos.y + ' ' + pos.z + ' 1 1'
     );
+};
+
+const isValidPigvilTarget = entity => {
+    const isMale = entity.getGender().isMale();
+    const isAdult = Number(entity.getAge()) >= 0;
+    const familiarityNumber = Math.round(Number(entity.getFamiliarity()) * 100);
+    const isFamiliarEnough = familiarityNumber >= 35; // this was a config in the OG mod
+    const hasRequiredOldTick = entity.getOldTick() === -1;
+
+    const valid = isMale && isAdult && isFamiliarEnough && hasRequiredOldTick;
+
+    return valid;
 };
 
 
@@ -79,6 +92,8 @@ ItemEvents.rightClicked(event => {
     if (!targetEntity || entityType !== 'tfc:pig') return;
     if (!heldItem || heldItem.isEmpty()) return;
 
+    if (!isValidPigvilTarget(targetEntity)) return;
+
     const itemId = heldItem.id && typeof heldItem.id.toString === 'function' ? heldItem.id.toString() : null;
     if (itemId !== CARROT_BASE) return;
 
@@ -89,11 +104,15 @@ ItemEvents.rightClicked(event => {
     const pos = targetEntity.blockPosition ? targetEntity.blockPosition() : (targetEntity.getBlockPos ? targetEntity.getBlockPos() : null);
     if (!pos) return;
 
+    playAmbientSound(player, pos, 'minecraft:entity.player.burp');
+
+    //could create a config for this conversion chance
+    if (Math.random() * 100 > 25) return;
 
     const pigvilState = Block.getBlock(PIGVIL_STEEL).defaultBlockState();
     event.level.setBlock(pos, pigvilState, 3);
 
-    playPigAmbientSound(player, pos);
+    playAmbientSound(player, pos, 'minecraft:entity.pig.ambient');
 
     if (typeof targetEntity.discard === 'function') {
         targetEntity.discard();
@@ -116,15 +135,9 @@ BlockEvents.rightClicked(event => {
     const heldItem = event.item;
     const player = event.player;
 
-    if (!clickedBlock) return;
+    if (!clickedBlock || !heldItem || heldItem.isEmpty()) return;
 
     const blockId = clickedBlock.id.toString();
-    if (PIGVIL_BLOCKS.has(blockId)) {
-        playPigAmbientSound(player, clickedBlock.pos);
-    }
-
-    if (!heldItem || heldItem.isEmpty()) return;
-
     const itemId = heldItem.id.toString();
     const options = UPGRADE_PATHS[blockId];
     if (!options) return;
@@ -135,6 +148,10 @@ BlockEvents.rightClicked(event => {
     if (player && !player.isCreative()) {
         heldItem.count = Math.max(0, heldItem.count - 1);
     }
+
+    playAmbientSound(player, pos, 'minecraft:entity.player.burp');
+
+    // could apply conversion chance here as well
 
     const nextState = Block.getBlock(target.next).defaultBlockState();
     event.level.setBlock(clickedBlock.pos, nextState, 3);
