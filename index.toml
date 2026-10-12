@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "73557977ee274a1f06a9f3eafb0d7f07979766cf38295bec2c2024b6c57e151f"
+hash = "7748d595570c195bf2837b2ffa4483d844e6735e1e53fe164366264887fbbb6a"
 
 [[files]]
 file = "LICENSE.txt"
@@ -46,23 +46,23 @@ hash = "72dd7be62ca8b2deca784072450b4f13625567ac3ce6253538add8d1451020e7"
 
 [[files]]
 file = "kubejs/assets/kubejs/models/block/pigvil_black.json"
-hash = "c9a16c07d2bccf809e2a543e0210fdfccd523329a0d005716be77c1dd71659b0"
+hash = "419324cc7959fa992ccfef841e7badb110a427a9b78c49393e17990936e0cbec"
 
 [[files]]
 file = "kubejs/assets/kubejs/models/block/pigvil_blue.json"
-hash = "e77ce5a4548799098889f99d9c3e98b26b25d6f017f57b1952e75616905bf111"
+hash = "bf666beadfc8f5c04dbc6cca04ee19b93543ee832097693178dfcd7a317fea7e"
 
 [[files]]
 file = "kubejs/assets/kubejs/models/block/pigvil_purple.json"
-hash = "96e84a97d8d166f28aeeafb978064b93b1ad93ceda6c5c1d4cbdf71910aa3e99"
+hash = "8da10d18a3ba305a5258fae62f523b4ccb4cd82bddb95f613b62830c30bf29d5"
 
 [[files]]
 file = "kubejs/assets/kubejs/models/block/pigvil_red.json"
-hash = "3226305120412c1601ec73b256579ca4dd4b6a7c7de209ffe5924dfb84fbf643"
+hash = "e1cb8a28563bd4668201faee93bea3900b841d1e8c42f82d889abb80211fcc26"
 
 [[files]]
 file = "kubejs/assets/kubejs/models/block/pigvil_steel.json"
-hash = "82de950de820072ee1e0033f1f234f7bf6800b41b06400dd9c377a3cf23cc74e"
+hash = "acaaa684e2b205456fed1482a884e68d5b83d468fc634e54a5a2fc9cb6839a7e"
 
 [[files]]
 file = "kubejs/assets/kubejs/models/item/black_steel_carrot.json"
@@ -214,7 +214,7 @@ hash = "cfebd4549d9578a7c1d5fa5c7e81e9156c898f68d026f79ecb45c580b6bbfb8f"
 
 [[files]]
 file = "kubejs/server_scripts/pigvil_port.js"
-hash = "f59b6c72c814401ac8db09d0d4f5fc6a83c36deaa5b6ba1cbe6bcc5d7a5fe865"
+hash = "47f33c7e21bb3fb87006f67af8384a029e2e12597f528cfaf39df59ef9de8a1f"
 
 [[files]]
 file = "kubejs/startup_scripts/pigvil_port.js"
