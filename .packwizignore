@@ -17,3 +17,6 @@ cacert.pem
 build.sh
 
 .venv
+kubejs/PORT_SUMMARY.md
+kubejs/README.md
+

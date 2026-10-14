@@ -1,0 +1,13 @@
+{
+	"entity.kubejs.pigvil": "Pigvil",
+	"entity.kubejs.pigvil_black": "Black Steel Pigvil",
+	"entity.kubejs.pigvil_blue": "Blue Steel Pigvil",
+	"entity.kubejs.pigvil_red": "Red Steel Pigvil",
+	"entity.kubejs.pigvil_purple": "Purple Steel Pigvil",
+	"item.kubejs.pigvil": "Pigvil Spawn Egg",
+	"block.kubejs.pigvil_steel": "Pigvil Steel Anvil",
+	"block.kubejs.pigvil_black": "Black Steel Pigvil Anvil",
+	"block.kubejs.pigvil_blue": "Blue Steel Pigvil Anvil",
+	"block.kubejs.pigvil_red": "Red Steel Pigvil Anvil",
+	"block.kubejs.pigvil_purple": "Purple Steel Pigvil Anvil"
+}

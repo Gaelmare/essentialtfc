@@ -20,11 +20,13 @@ Mod List:
 - CreativeCore
 - Cupboard
 - Curios API
+- EntityJS
 - Euphoria Patches
 - Extreme sound muffler - (Neo)Forge
 - FallingTree
 - FerriteCore ((Neo)Forge)
 - Forgified Fabric API
+- GeckoLib
 - Global Shaderpack Properties
 - ImmediatelyFast
 - Inventory Tweaks - ReFoxed

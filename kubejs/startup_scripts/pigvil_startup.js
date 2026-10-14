@@ -1,5 +1,5 @@
-// Pigvil port scaffold for KubeJS-TFC 1.21.1.
-// This is intentionally the smaller block/anvil route rather than the original Java mob/AI implementation.
+// Pigvil carrot items and anvil blocks for KubeJS-TFC 1.21.1.
+// The walking Pigvil entity is registered in pigvil_entity_startup.js.
 
 const ITEM_DEFS = {
     pigiron_carrot: { name: 'Pig Iron Carrot', texture: 'kubejs:item/pigiron_carrot' },
@@ -26,12 +26,12 @@ StartupEvents.registry('item', event => {
 
 StartupEvents.registry('block', event => {
     for (const [id, def] of Object.entries(BLOCK_DEFS)) {
+        // No drops: breaking a Pigvil anvil spawns the Pigvil entity instead (pigvil_entity_server.js).
         event.create(id, 'tfc:anvil')
             .tier(def.tier)
             .texture(def.texture)
-            .tag('curios:back')
             .tag('minecraft:mineable/pickaxe')
-            .tag('tfc:minecart_holdable');
+            .noDrops();
     }
 });
 

@@ -10,7 +10,7 @@ hash = "33c42f6adbfec0327ebfbc2eaa58bff1e29f3d0efc054dd828eabdc0b52c14a4"
 
 [[files]]
 file = "README.md"
-hash = "66025297d2909c92098e4c9fa14b686067a44c48cc5f8b05713625b200e3e4f9"
+hash = "70b2b29a8b2a3f2eec39746842c2ffc156733ac9cbbff9112e5a9ce578cfc682"
 
 [[files]]
 file = "config/global_shaderpack_properties/photon_v1.3b-fix/block.properties"
@@ -43,6 +43,18 @@ hash = "33bcf15d5706daf090323b03c16e357c44bdb8e5f29a2f65ef839316b6e94c5f"
 [[files]]
 file = "icon.png"
 hash = "1d6d60bd81f9b5a7b0a0f35fcaa7d9c9eddac21fe4ad3620412371c378af60e5"
+
+[[files]]
+file = "kubejs/assets/kubejs/animations/entity/pigvil.animation.json"
+hash = "000b4cd2fc4e5b9a551494eb0f9bf501c4e1f2a8ea4b7ebfcc2d33d63251e7bd"
+
+[[files]]
+file = "kubejs/assets/kubejs/geo/entity/pigvil.geo.json"
+hash = "3641138ecb8cb19f4530dbd063bbbc69780a67cd44131d653b64c16ac81878ff"
+
+[[files]]
+file = "kubejs/assets/kubejs/lang/en_us.json"
+hash = "a91f737645e81ce3927a916cd01ae1151596069dc13160a3cbdc49850227c567"
 
 [[files]]
 file = "kubejs/assets/kubejs/models/block/pigvil_black.json"
@@ -365,12 +377,24 @@ file = "kubejs/server_scripts/main_server.js"
 hash = "cfebd4549d9578a7c1d5fa5c7e81e9156c898f68d026f79ecb45c580b6bbfb8f"
 
 [[files]]
+file = "kubejs/server_scripts/pigvil_entity_server.js"
+hash = "b6e2a453a8b9576f89c410fc72fd3f19f69e513edb6d21b770fe4bad456c1860"
+
+[[files]]
 file = "kubejs/server_scripts/pigvil_server.js"
-hash = "b836784304980f7b8cf30b38de8c906532f33beefca1e09500d2d6e4d9e565c6"
+hash = "79b4010c32a7b92709218aa7bff6cfe84a8cfb78e0a550b04c117850e3f2bcf0"
+
+[[files]]
+file = "kubejs/startup_scripts/pigvil_entity_data.js"
+hash = "ee9c3b80f71792118f1475c7bd44f8e79f7a2fd78725c4230ec63c845f7046e0"
+
+[[files]]
+file = "kubejs/startup_scripts/pigvil_entity_startup.js"
+hash = "a49f8aa5b571e91fa4574439610c5a16298963bb281bc6ac70b8be92632c0b1a"
 
 [[files]]
 file = "kubejs/startup_scripts/pigvil_startup.js"
-hash = "13c9ac173ba9d818688c71a0d78763dff150551eeb5bd4875e56f585fe4e23bf"
+hash = "b8de6525b1be1a0f269b5db87560f942ffac706e37cbf46ce6aa9ecd57484888"
 
 [[files]]
 file = "mods/barrels-2012.pw.toml"
@@ -443,6 +467,11 @@ hash = "20de659318ff023d1d7c99d360eb8e33a6053c3564d1c702ddaa7fcfc63e693e"
 metafile = true
 
 [[files]]
+file = "mods/entityjs.pw.toml"
+hash = "f9aa994b7d684a6eb086e5832744863eb783d974cf2212cfacc2181697cc60c7"
+metafile = true
+
+[[files]]
 file = "mods/euphoria-patches.pw.toml"
 hash = "ea10cab55df1871fa566aa64329fef98a1b68c8966d72d6c716c57c394e67bab"
 metafile = true
@@ -465,6 +494,11 @@ metafile = true
 [[files]]
 file = "mods/forgified-fabric-api.pw.toml"
 hash = "15219e64b45e53db93de94091172e6a4c5ae9a749710ce91a615c973a552c215"
+metafile = true
+
+[[files]]
+file = "mods/geckolib.pw.toml"
+hash = "4cf7eb494f48576e28895ee5f362878f95c6bad65372666106140fdae82d0c4c"
 metafile = true
 
 [[files]]
