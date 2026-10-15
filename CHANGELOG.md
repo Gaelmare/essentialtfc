@@ -1,3 +1,14 @@
+## 3.0.14
+* Pigvil walks again!
+* Mod updates:
+  - CreativeCore
+  - EMF
+  - ETF
+  - ESM
+  - LittleTiles
+  - Roxy (TFC specific change!)
+  - TFC
+
 ## 3.0.13
 * Refinement of Pigvil, including corrected model hitbox
 * Pigvil must be converted from an adult male pig with max adult familiarity that's not too old.
