@@ -438,7 +438,7 @@ metafile = true
 
 [[files]]
 file = "mods/creativecore.pw.toml"
-hash = "30cb84b864534e520ce67d07a7898b71f03d6f346afd54f33d9cb967f4859c54"
+hash = "9872a039a5c245ece1345292c9855228accc8cf15f02cfb45ef8bcc8578d643a"
 metafile = true
 
 [[files]]
@@ -458,12 +458,12 @@ metafile = true
 
 [[files]]
 file = "mods/entity-model-features.pw.toml"
-hash = "2e82b0238c24e7522ddffec066b0be2cfe4faa18b1fb66d9496734ff7a658153"
+hash = "4a5c12ac077b52ecb776aef06525848b0182bbee0d48ec66ebc0aa0cfba0a0eb"
 metafile = true
 
 [[files]]
 file = "mods/entity-texture-features-fabric.pw.toml"
-hash = "20de659318ff023d1d7c99d360eb8e33a6053c3564d1c702ddaa7fcfc63e693e"
+hash = "98e8e30dd6f85ba67b9c98732efd6c25fd30191986825791158a1b0fd6b0ca7a"
 metafile = true
 
 [[files]]
@@ -478,7 +478,7 @@ metafile = true
 
 [[files]]
 file = "mods/extreme-sound-muffler.pw.toml"
-hash = "6d51c8adfc6782f216a150dedda2ea64969a639f4e21401eb5c5b5ac8c9ab28f"
+hash = "c8dc552aab96bc9ab2fcaa0ae5a240f47ae828c934f8eeb5269cfe642ff8ceb5"
 metafile = true
 
 [[files]]
@@ -553,7 +553,7 @@ metafile = true
 
 [[files]]
 file = "mods/littletiles.pw.toml"
-hash = "a784c52eedc1dae02b14c7ab0d0d5b52349e3223f500d78b8db8bf3e6db3cccb"
+hash = "1b35acac0f8263f95eb74759f19ae93e89118278953f102a9e2d5ded1a55bf28"
 metafile = true
 
 [[files]]
@@ -593,7 +593,7 @@ metafile = true
 
 [[files]]
 file = "mods/roxy.pw.toml"
-hash = "bfb5056ddaf2a050dd4452a723682fb201de0989c515762becfb45bd4de6b565"
+hash = "eb705b873aabf46e19492275be6cb66d0b21b1e03c457bc34274479d75bbdd87"
 metafile = true
 
 [[files]]
@@ -628,7 +628,7 @@ metafile = true
 
 [[files]]
 file = "mods/terrafirmacraft.pw.toml"
-hash = "23e6cf23b64f2510d5addae6d031f167c1ef84e1942c000708f796dc64e32b58"
+hash = "e2b40e77bc51bf0462d9a9c8a6a9c42418d42d003d3b08473636e0f980672828"
 metafile = true
 
 [[files]]
