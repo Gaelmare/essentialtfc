@@ -73,3 +73,7 @@ zip -d "$tfczip" overrides/mods/voxy-0.2.16-beta+1.21.11.jar
 zip -d "$tfczip" overrides/kubejs/server_scripts/main_server.js
 echo "Updated $tfczip"
 
+# AutoModpack host files for the TFC Tuesday server, written to .out/automodpack.
+# Set AUTOMODPACK_JARS to folders holding the pack's jars (colon-separated) to copy them in.
+python3 tools/automodpack/automodpack.py build "$tfczip" ${AUTOMODPACK_JARS:+--jars "$AUTOMODPACK_JARS"}
+
