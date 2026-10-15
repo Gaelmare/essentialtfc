@@ -11,3 +11,8 @@ cacert.pem
 ### Dev ###
 .idea
 *.zip
+
+### AutoModpack ###
+# Local copies of deployed servers and clients; they can hold the server's TLS key and players' secrets.
+/automodpack/
+*.tzst

@@ -20,3 +20,7 @@ build.sh
 kubejs/PORT_SUMMARY.md
 kubejs/README.md
 
+
+tools/
+/automodpack/
+*.tzst
