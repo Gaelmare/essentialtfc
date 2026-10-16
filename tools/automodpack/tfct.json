@@ -13,16 +13,23 @@
   "notShipped": [
     "voxy"
   ],
-  "serverMods": [
-    {
-      "file": "automodpack-mc1.21.1-neoforge-4.0.5.jar",
-      "sha1": "18cabd45e7c67f21f80febf65ba7d9aa7872851a"
-    },
-    {
-      "file": "gogetem-1.0.0.jar",
-      "source": "server-mods/gogetem-1.0.0.jar"
-    }
+  "extraMods": [
+    {"file": "automodpack-mc1.21.1-neoforge-4.0.5.jar", "side": "server", "sha1": "18cabd45e7c67f21f80febf65ba7d9aa7872851a"},
+    {"file": "gogetem-1.0.0.jar", "side": "server", "source": "server-mods/gogetem-1.0.0.jar"},
+
+    {"file": "architectury-13.0.11-neoforge.jar", "side": "both", "sha1": "008656a0702801174b8ec245ed7aad1921d6e9f1"},
+    {"file": "blackearlyloading-1.0.0.jar", "side": "client", "sha1": "9212d1b1cefed7e19b0b1d95cd95180269e53c70"},
+    {"file": "chunksending-1.21-3.7.jar", "side": "both", "sha1": "ab8beeb5287e4e88bddb0408d1f404833e83f969"},
+    {"file": "chunksmith-3.4.1+1.21.1-neoforge.jar", "side": "both", "sha1": "c23b4a188831b097697bb925b8efcfaa25077c10"},
+    {"file": "ContentCreatorIntegration-1.21-NeoForge-1.13.0.jar", "side": "both", "sha1": "af7211826a6c1bc25d176f3e13a86d3325675bdb"},
+    {"file": "gsu-1.5.12.23.jar", "side": "both", "sha1": "1f66122942e3296eb9cd786dea0156ef54d97f81"},
+    {"file": "iChunUtil-1.21-NeoForge-1.0.3.jar", "side": "both", "sha1": "1f161c8b6288e6094fc57f4a9c10a6050df71081"},
+    {"file": "kotlinforforge-5.12.0-all.jar", "side": "both", "sha1": "a2032c921e93a0ccb0db5d742167e3139c2de01b"},
+    {"file": "observable-5.4.4.jar", "side": "both", "sha1": "e17417eee213aac8291ff8bad1c6a5f710636b72"},
+    {"file": "Pehkui-3.8.3+1.21-neoforge.jar", "side": "both", "sha1": "4ae35b04b0fca7b170417a12d6da6a693281574b"},
+    {"file": "spark-1.10.124-neoforge.jar", "side": "both", "sha1": "9430cc2ab64ff89d698be593769fb9f9ee4efae6"}
   ],
+  "hostOverlay": "host",
   "builtPacks": [
     {
       "file": "shaderpacks/photon_v1.3b-fix.zip",

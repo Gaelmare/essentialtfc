@@ -6,10 +6,11 @@ Needs Python 3.11+ and GNU tar with zstd.
 
 ## Deploying a release
 
-1. Build the TFCT zip and the server bundle. `AUTOMODPACK_JARS` lists folders holding the pack's jars and packs, matched by sha1: an up-to-date VitalTFC instance has all of them, and the TFCTuesday2026 instance has the AutoModpack jar.
+1. Build the TFCT zip and the server bundle. `AUTOMODPACK_JARS` lists folders holding the jars and packs, matched by sha1. An up-to-date VitalTFC instance has the pack's; the TFCTuesday2026 instance has the AutoModpack jar in `mods/` and the operator's extra mods in its modpack folder.
 
    ```bash
-   AUTOMODPACK_JARS=~/bin/minecraft-at/instances/VitalTFC/mods:~/bin/minecraft-at/instances/VitalTFC/resourcepacks:~/bin/minecraft-at/instances/VitalTFC/shaderpacks:~/bin/minecraft-at/instances/TFCTuesday2026/mods ./build.sh
+   I=$HOME/bin/minecraft-at/instances
+   AUTOMODPACK_JARS="$I/VitalTFC/mods:$I/VitalTFC/resourcepacks:$I/VitalTFC/shaderpacks:$I/TFCTuesday2026/mods:$I/TFCTuesday2026/automodpack/modpacks/TFC Tuesday 2026/mods" ./build.sh
    ```
 
    If it lists missing files, add the folder that has them and rerun; the archive is only written when nothing is missing.
@@ -28,6 +29,8 @@ This tooling came out of comparing the 3.0.14 server (snapshot `tfct-automodpack
 - **Stray kubejs files.** The server's `kubejs/` had a second copy of the pigvil assets one level too high (`kubejs/textures`, `kubejs/models` and so on), plus KubeJS's example `main.js`, all sent to players through `/kubejs/**`. The host config no longer syncs `mods/` or `kubejs/` from the server folder, and deploying replaces `kubejs/`.
 - **Stale packwiz index.** The server's `mods/.index` held packwiz metadata from an early 3.0.x release (TFC 4.2.9, for example). Nothing reads it, but packwiz-installer would have downgraded mods. Deploying replaces `mods/` without it.
 - **Default Options.** The server still had the Default Options mod (and Balm, which only it needs) and their configs from 3.0.4. The pack replaced them in 3.0.7 with `kubejs/config/defaultoptions.txt`. Both are dropped.
+- **Operator-added mods are kept.** These are in `extraMods`, sent to players as before. Players and the server get: spark, observable (which needs architectury and kotlinforforge), chunksending, chunksmith, ContentCreatorIntegration (which needs iChunUtil), gsu and Pehkui. Players only get blackearlyloading. The CCI configs are in `host/config/contentcreatorintegration/`; their token fields are empty, so keep real tokens out of the repo.
+- **`config/xaerominimap.txt` is obsolete.** Xaero's Minimap 26.x only renames it to `config/xaerohud.txt`, once, if that doesn't exist yet. Its settings now live in `config/xaero/minimap/`, seeded from `defaultconfigs/xaero/minimap/`, which the pack ships (since `3a8a58e`). The operator's copy is dropped.
 - **kubejs_tfc** was 2.0.2 on the server against 2.1.0 in the pack; the bundle ships the pack's version.
 - **voxy** is left out for size; it's shared on Discord. Its force-copy rule is gone.
 - **AutoModpack** goes in the server's `mods/` only; players install it themselves.
@@ -36,8 +39,8 @@ This tooling came out of comparing the 3.0.14 server (snapshot `tfct-automodpack
 
 Open questions:
 
-- The bundle leaves out 13 mods the operator added: spark, observable (with architectury and kotlinforforge), chunksending, chunksmith (waiting on CurseForge permission), ContentCreatorIntegration (with iChunUtil), gsu, Pehkui and blackearlyloading. It also leaves out the operator's `xaerominimap.txt` and contentcreatorintegration configs. Add any to keep to `serverMods` in `tfct.json`.
-- The operator also sent players `config/` copies of fallingtree, lithium and simplebackups. The pack carries them under `defaultconfigs/` instead, where lithium and fallingtree probably never read them, since those aren't NeoForge configs.
+- **lithium.properties and fallingtree.json don't work from `defaultconfigs/`.** `3a8a58e` (2026-09-26) moved them there from `config/`, together with `simplebackups-common.toml`, but only NeoForge's own configs are seeded from `defaultconfigs/`. NeoForge copies `defaultconfigs/<file>` the first time a NeoForge config of any type is created; `simplebackups-common.toml` is one, so it can stay. Lithium and FallingTree read only `config/lithium.properties` and `config/fallingtree.json`, so since that commit neither reaches CurseForge players: Lithium's `collisions.empty_space` setting is off for them, and FallingTree runs with its defaults instead of the saw-only rule. The operator sent the pre-move copies to TFCT players under `config/`; the bundle doesn't. Moving those two back to `config/` fixes both.
+- **The server's own `config/`** is not part of the bundle, so the server keeps whatever FallingTree, Lithium and CCI settings it has now.
 - The fix's `settings.glsl` defines `USER_SEPARATE_ENTITY_DRAWS`, but `shaders.properties` tests `USE_SEPARATE_ENTITY_DRAWS`. It may be a typo, or the fix may only work because of it.
 - The pack's packwiz metadata marks the client-only mods in `clientOnly` as `side = "both"`. Marking them `client` would let the tool drop that list.
 
@@ -46,7 +49,7 @@ Open questions:
 AutoModpack sends players everything in `automodpack/host-modpack/main/`, plus any files in the server folder that match `syncedFiles` in `automodpack-server.json`. The build fills host-modpack with exactly what players need, and the template syncs nothing else from the server folder. So:
 
 - players get the export's files, minus `kubejs/server_scripts` and server-only mods
-- the server's `mods/` holds the pack's server-side mods plus the extras in `tfct.json` (AutoModpack itself, and gogetem), which never reach players
+- the server's `mods/` holds the pack's server-side mods plus the `extraMods` in `tfct.json` whose side is `server` or `both`. AutoModpack itself and gogetem are `server`, so they never reach players
 - the server's `kubejs/` is the export's `kubejs/`, including `server_scripts`
 
 ## Build
@@ -63,7 +66,8 @@ It writes `.out/automodpack/TFCT-<version>/`, holding `automodpack/`, `mods/`, `
 
 - `clientOnly`: packwiz slugs (the `mods/<slug>.pw.toml` name) of mods that players get but the server doesn't load
 - `notShipped`: packwiz slugs left out entirely; voxy is shared on Discord instead
-- `serverMods`: server-only jars, either committed under `server-mods/` (`source`) or found in `--jars` by `sha1`
+- `extraMods`: mods that aren't in the pack, with a `side`. `server` mods go only in the server's `mods/`, `client` mods only to players, and `both` to each. Each jar is either committed under `server-mods/` (`source`) or found in `--jars` by `sha1`
+- `hostOverlay`: a folder (`host/`) whose files are sent to players as-is, such as the CCI configs
 - `builtPacks`: shader packs built from another pack with some files replaced. `photon_v1.3b-fix.zip` is `photon_v1.3b.zip` with the `shaders.properties` and `settings.glsl` from `config/global_shaderpack_properties/photon_v1.3b-fix/`. Global Shaderpack Properties applies the `.properties` file at runtime, but not the `.glsl` one, so the pack itself has to be rebuilt.
 
 `automodpack-server.json` is the host config the bundle installs.

@@ -143,13 +143,21 @@ def plan(zip_path):
     for built in CONFIG['builtPacks']:
         host['/' + built['file']] = {'sha1': None, 'side': 'client', 'source': 'built', 'pack': built}
 
-    for extra in CONFIG['serverMods']:
+    overlay = TOOL / CONFIG['hostOverlay']
+    for source in sorted(p for p in overlay.rglob('*') if p.is_file()):
+        host['/' + source.relative_to(overlay).as_posix()] = {
+            'sha1': sha1_file(source), 'side': 'client', 'source': 'repo', 'path': str(source)}
+
+    for extra in CONFIG['extraMods']:
         if 'source' in extra:
             source = TOOL / extra['source']
-            server['/mods/' + extra['file']] = {'sha1': sha1_file(source), 'side': 'server',
-                                                 'source': 'repo', 'path': str(source)}
+            info = {'sha1': sha1_file(source), 'side': extra['side'], 'source': 'repo', 'path': str(source)}
         else:
-            server['/mods/' + extra['file']] = {'sha1': extra['sha1'], 'side': 'server', 'source': 'jars'}
+            info = {'sha1': extra['sha1'], 'side': extra['side'], 'source': 'jars'}
+        if extra['side'] != 'client':
+            server['/mods/' + extra['file']] = info
+        if extra['side'] != 'server':
+            host['/mods/' + extra['file']] = dict(info)
     return manifest, host, server
 
 
