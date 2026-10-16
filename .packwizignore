@@ -23,4 +23,6 @@ kubejs/README.md
 
 tools/
 /automodpack/
+/tmp/
 *.tzst
+completion.sh
