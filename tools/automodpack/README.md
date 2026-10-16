@@ -1,8 +1,16 @@
 # AutoModpack tooling
 
-The TFC Tuesday server hands the pack to players with [AutoModpack](https://modrinth.com/project/automodpack). These tools build the server's `automodpack/` folder from the TFCT CurseForge export, and check a deployed server against that export.
+The TFC Tuesday server hands the pack to players with [AutoModpack](https://modrinth.com/project/automodpack). These tools build the server's `mods/`, `kubejs/` and `automodpack/` folders from the TFCT CurseForge export, and check a deployed server against that export.
 
 Needs Python 3.11+ and GNU tar with zstd.
+
+## How the server is laid out
+
+AutoModpack sends players everything in `automodpack/host-modpack/main/`, plus any files in the server folder that match `syncedFiles` in `automodpack-server.json`. The build fills host-modpack with exactly what players need, and the template syncs nothing else from the server folder. So:
+
+- players get the export's files, minus `kubejs/server_scripts` and server-only mods
+- the server's `mods/` holds the pack's server-side mods plus the extras in `tfct.json` (AutoModpack itself, and gogetem), which never reach players
+- the server's `kubejs/` is the export's `kubejs/`, including `server_scripts`
 
 ## Build
 
@@ -12,15 +20,16 @@ Needs Python 3.11+ and GNU tar with zstd.
 python3 tools/automodpack/automodpack.py build TFCT-3.0.14.zip --jars ~/instance/mods:~/instance/resourcepacks:~/instance/shaderpacks
 ```
 
-It writes `.out/automodpack/TFCT-<version>/` and `.out/automodpack/TFCT-<version>-automodpack.tzst`:
+It writes `.out/automodpack/TFCT-<version>/`, holding `automodpack/`, `mods/`, `kubejs/` and `DEPLOY.md` (how to install it on the server), then archives it as `.out/automodpack/TFCT-<version>-automodpack.tzst`. Mods, resource packs and shader packs are copied from the `--jars` folders, matched by sha1; `build.sh` passes `$AUTOMODPACK_JARS`. If anything is missing, the folder is still written for inspection but the archive isn't, so an incomplete bundle can't be deployed.
 
-- `automodpack/automodpack-server.json`: copied from `automodpack-server.json` here. Edit that file to change the host config.
-- `automodpack/host-modpack/main/`: everything a player installing the export would get, except `server`-side mods and the top-level README, CHANGELOG and LICENSE:
-  - the export's overrides (kubejs, config, defaultconfigs, resource packs)
-  - every client mod, resource pack and shader pack, copied from the `--jars` folders, matched by sha1
-- `expected-content.json`: every file the export installs, with sha1 and side. It isn't in the archive.
+`tfct.json` says what differs from the export:
 
-Files missing from the `--jars` folders are listed, and the rest of the output is still written. `build.sh` passes `$AUTOMODPACK_JARS` as `--jars`; without it, no jars or packs are copied.
+- `clientOnly`: packwiz slugs (the `mods/<slug>.pw.toml` name) of mods that players get but the server doesn't load
+- `notShipped`: packwiz slugs left out entirely; voxy is shared on Discord instead
+- `serverMods`: server-only jars, either committed under `server-mods/` (`source`) or found in `--jars` by `sha1`
+- `builtPacks`: shader packs built from another pack with some files replaced. `photon_v1.3b-fix.zip` is `photon_v1.3b.zip` with the `shaders.properties` and `settings.glsl` from `config/global_shaderpack_properties/photon_v1.3b-fix/`. Global Shaderpack Properties applies the `.properties` file at runtime, but not the `.glsl` one, so the pack itself has to be rebuilt.
+
+`automodpack-server.json` is the host config the bundle installs.
 
 ## Compare
 
@@ -29,12 +38,13 @@ python3 tools/automodpack/automodpack.py compare TFCT-3.0.14.zip tfct-automodpac
 python3 tools/automodpack/automodpack.py compare TFCT-3.0.14.zip SERVER --client "automodpack/modpacks/TFC Tuesday 2026"
 ```
 
-`SERVER` is a server snapshot holding `automodpack/` and `mods/`, either a folder or a `.tzst`. It reports:
+`SERVER` is a server snapshot holding `automodpack/` and `mods/` (and `kubejs/`, if you have it), either a folder or a `.tzst`. It reports, against what the build would produce:
 
-- what clients are sent (the server's `automodpack-content.json`) against what the export installs
-- the mods the server loads against the pack's `both`/`server` mods
+- what players are sent (the server's `automodpack-content.json`)
+- built shader packs whose replaced files don't match the repo
+- the mods the server loads, and its `kubejs/` when the snapshot has one
 - `automodpack-server.json` against the template here
-- stale packwiz metadata in the server's `mods/.index`
+- leftover packwiz metadata in the server's `mods/.index`
 
 `--client` also checks a player's downloaded copy against the server's list. The exit status is 1 when anything differs.
 

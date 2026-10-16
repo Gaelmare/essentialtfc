@@ -4,19 +4,13 @@
   "modpackHost": true,
   "generateModpackOnStart": true,
   "syncedFiles": [
-    "!/kubejs/server_scripts/**",
-    "/mods/*.jar",
-    "/kubejs/**",
-    "!/mods/gogetem*",
     "/emotes/*"
   ],
   "allowEditsInFiles": [
     "/config/**",
     "/options.txt"
   ],
-  "forceCopyFilesToStandardLocation": [
-    "/mods/voxy*.jar"
-  ],
+  "forceCopyFilesToStandardLocation": [],
   "nonModpackFilesToDelete": {},
   "autoExcludeServerSideMods": true,
   "autoExcludeUnnecessaryFiles": true,

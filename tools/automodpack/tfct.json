@@ -1,0 +1,36 @@
+{
+  "clientOnly": [
+    "dynamiclights-reforged",
+    "entity-model-features",
+    "entity-texture-features-fabric",
+    "euphoria-patches",
+    "global-shaderpack-properties",
+    "irisshaders",
+    "sodium",
+    "sodium-extra",
+    "voxy"
+  ],
+  "notShipped": [
+    "voxy"
+  ],
+  "serverMods": [
+    {
+      "file": "automodpack-mc1.21.1-neoforge-4.0.5.jar",
+      "sha1": "18cabd45e7c67f21f80febf65ba7d9aa7872851a"
+    },
+    {
+      "file": "gogetem-1.0.0.jar",
+      "source": "server-mods/gogetem-1.0.0.jar"
+    }
+  ],
+  "builtPacks": [
+    {
+      "file": "shaderpacks/photon_v1.3b-fix.zip",
+      "base": "shaderpacks/photon_v1.3b.zip",
+      "replace": {
+        "shaders/shaders.properties": "config/global_shaderpack_properties/photon_v1.3b-fix/shaders.properties",
+        "shaders/settings.glsl": "config/global_shaderpack_properties/photon_v1.3b-fix/settings.glsl"
+      }
+    }
+  ]
+}

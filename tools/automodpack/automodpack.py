@@ -1,16 +1,19 @@
 #!/usr/bin/env python3
-"""Build AutoModpack host files from a CurseForge export, and check a deployment against it.
+"""Build the TFC Tuesday AutoModpack server bundle from a CurseForge export, and check a
+deployment against it.
 
   automodpack.py build TFCT-3.0.14.zip [--jars DIR ...] [--out .out/automodpack]
   automodpack.py compare TFCT-3.0.14.zip SERVER [--client CLIENT]
 
-SERVER is a server snapshot holding automodpack/ and mods/, either a directory or a
-zstd tar (.tzst). CLIENT is a player's automodpack/modpacks/<name> directory.
+SERVER is a server snapshot holding automodpack/ and mods/ (and optionally kubejs/), either
+a directory or a zstd tar (.tzst). CLIENT is a player's automodpack/modpacks/<name> directory.
 Archives are unpacked without automodpack/.private, which holds the server's keys.
 """
 
 import argparse
+import contextlib
 import hashlib
+import io
 import json
 import os
 import pathlib
@@ -22,14 +25,38 @@ import tempfile
 import tomllib
 import zipfile
 
-REPO = pathlib.Path(__file__).resolve().parents[2]
-TEMPLATE = pathlib.Path(__file__).with_name('automodpack-server.json')
+TOOL = pathlib.Path(__file__).resolve().parent
+REPO = TOOL.parents[1]
+TEMPLATE = TOOL / 'automodpack-server.json'
+CONFIG = json.loads((TOOL / 'tfct.json').read_text())
 
 # Top-level documents in the export's overrides; not game files, so clients don't need them.
 SKIP_OVERRIDES = {'README.md', 'CHANGELOG.md', 'LICENSE.txt'}
 
 HOST = pathlib.PurePosixPath('automodpack/host-modpack/main')
 CONTENT = 'automodpack/host-modpack/automodpack-content.json'
+
+DEPLOY = """\
+# Deploying {name} {version} to the AutoModpack server
+
+Stop the server first. Leave `automodpack/.private/` and `automodpack/automodpack-client.json`
+alone: they hold the server's keys and aren't in this bundle.
+
+1. Delete these from the server folder:
+   - `mods/`, including the old packwiz metadata in `mods/.index/`
+   - `kubejs/`
+   - `automodpack/host-modpack/`
+2. Extract this archive into the server folder, so `mods/`, `kubejs/` and `automodpack/`
+   land at the top level. This replaces `automodpack/automodpack-server.json`.
+3. Start the server. AutoModpack regenerates `automodpack/host-modpack/automodpack-content.json`
+   and KubeJS recreates its default `kubejs/config/common.json` and `web_server.json`.
+
+Players are sent exactly `automodpack/host-modpack/main/`. The server folder's `mods/` and
+`kubejs/` are no longer synced, so server-only mods and `kubejs/server_scripts` stay on the
+server. Server-only mods in this bundle:
+
+{server_only}
+"""
 
 
 def sha1_bytes(data):
@@ -45,7 +72,7 @@ def sha1_file(path):
 
 
 def load_packwiz():
-    """Maps each packwiz filename to its sha1, side, install path and CurseForge ids."""
+    """Maps each packwiz filename to its slug, sha1, side, install path and CurseForge ids."""
     meta = {}
     for sub in ('mods', 'resourcepacks', 'shaderpacks'):
         for path in sorted((REPO / sub).glob('*.pw.toml')):
@@ -59,6 +86,7 @@ def load_packwiz():
             else:
                 install = f'/{sub}/{name}'
             meta[name] = {
+                'slug': path.name.removesuffix('.pw.toml'),
                 'sha1': download['hash'] if download.get('hash-format') == 'sha1' else None,
                 'side': data.get('side', 'both'),
                 'install': install,
@@ -67,7 +95,7 @@ def load_packwiz():
     return meta
 
 
-def expected_files(zip_path, packwiz):
+def export_files(zip_path, packwiz):
     """Every file the export installs, keyed by install path ('/mods/x.jar')."""
     by_cf = {m['cf']: name for name, m in packwiz.items() if m['cf']}
     files = {}
@@ -79,7 +107,7 @@ def expected_files(zip_path, packwiz):
                 sys.exit(f"{zip_path}: CurseForge file {entry['projectID']}/{entry['fileID']} "
                          f"has no packwiz metadata in {REPO}")
             m = packwiz[name]
-            files[m['install']] = {'sha1': m['sha1'], 'side': m['side'], 'source': 'curseforge'}
+            files[m['install']] = {'sha1': m['sha1'], 'side': m['side'], 'slug': m['slug'], 'source': 'jars'}
 
         for info in z.infolist():
             if info.is_dir() or not info.filename.startswith('overrides/'):
@@ -91,21 +119,44 @@ def expected_files(zip_path, packwiz):
             files['/' + rel] = {
                 'sha1': sha1_bytes(z.read(info)),
                 'side': m['side'] if m else 'both',
+                'slug': m['slug'] if m else None,
                 'source': 'override',
             }
     return manifest, files
 
 
-def client_bound(info):
-    return info['side'] != 'server'
+def plan(zip_path):
+    """Splits the export into what players are sent (host) and what the server loads (server)."""
+    manifest, files = export_files(zip_path, load_packwiz())
+    client_only = set(CONFIG['clientOnly'])
+    not_shipped = set(CONFIG['notShipped'])
+    host, server = {}, {}
+    for path, info in files.items():
+        if info['slug'] in not_shipped:
+            continue
+        if info['side'] != 'server' and not path.startswith('/kubejs/server_scripts/'):
+            host[path] = info
+        if path.startswith('/kubejs/') or (
+                path.startswith('/mods/') and info['side'] != 'client' and info['slug'] not in client_only):
+            server[path] = info
+
+    for built in CONFIG['builtPacks']:
+        host['/' + built['file']] = {'sha1': None, 'side': 'client', 'source': 'built', 'pack': built}
+
+    for extra in CONFIG['serverMods']:
+        if 'source' in extra:
+            source = TOOL / extra['source']
+            server['/mods/' + extra['file']] = {'sha1': sha1_file(source), 'side': 'server',
+                                                 'source': 'repo', 'path': str(source)}
+        else:
+            server['/mods/' + extra['file']] = {'sha1': extra['sha1'], 'side': 'server', 'source': 'jars'}
+    return manifest, host, server
 
 
-def server_bound(path, info):
-    return path.startswith('/mods/') and info['side'] != 'client'
-
+# --- build ---------------------------------------------------------------------------------
 
 def index_jars(dirs):
-    """sha1 -> path for every file under the given directories."""
+    """sha1 -> path for every jar and zip under the given directories."""
     found = {}
     for d in dirs:
         for path in pathlib.Path(d).expanduser().rglob('*'):
@@ -114,50 +165,78 @@ def index_jars(dirs):
     return found
 
 
+def build_pack(pack, base_data):
+    """Rebuilds a shader pack zip from its base with the replacement files from the repo."""
+    replace = {inner: (REPO / src).read_bytes() for inner, src in pack['replace'].items()}
+    out = io.BytesIO()
+    with zipfile.ZipFile(io.BytesIO(base_data)) as base, zipfile.ZipFile(out, 'w') as new:
+        missing = set(replace) - set(base.namelist())
+        if missing:
+            sys.exit(f"{pack['base']} has no {', '.join(sorted(missing))} to replace")
+        for info in base.infolist():
+            data = replace.get(info.filename)
+            new.writestr(info, base.read(info) if data is None else data, compress_type=info.compress_type)
+    return out.getvalue()
+
+
 def build(args):
-    packwiz = load_packwiz()
-    manifest, files = expected_files(args.zip, packwiz)
+    manifest, host, server = plan(args.zip)
     base = pathlib.Path(args.out)
     out = base / pathlib.Path(args.zip).stem
     if out.exists():
         shutil.rmtree(out)
-    host = out / HOST
 
     jar_dirs = [d for arg in args.jars for d in arg.split(os.pathsep) if d]
     jars = index_jars(jar_dirs)
     missing = []
+
+    def data_for(path, info, z):
+        if info['source'] == 'override':
+            return z.read('overrides' + path)
+        if info['source'] == 'repo':
+            return pathlib.Path(info['path']).read_bytes()
+        if info['source'] == 'built':
+            base_sha1 = host['/' + info['pack']['base']]['sha1']
+            if base_sha1 not in jars:
+                return None
+            return build_pack(info['pack'], jars[base_sha1].read_bytes())
+        return jars[info['sha1']].read_bytes() if info['sha1'] in jars else None
+
     with zipfile.ZipFile(args.zip) as z:
-        for path, info in sorted(files.items()):
-            if not client_bound(info):
-                continue
-            dest = host / path.lstrip('/')
-            dest.parent.mkdir(parents=True, exist_ok=True)
-            if info['source'] == 'override':
-                dest.write_bytes(z.read('overrides' + path))
-            elif info['sha1'] in jars:
-                shutil.copyfile(jars[info['sha1']], dest)
-            else:
-                missing.append(path)
+        for root, files in ((out / HOST, host), (out, server)):
+            for path, info in sorted(files.items()):
+                data = data_for(path, info, z)
+                if data is None:
+                    missing.append(path)
+                    continue
+                info['sha1'] = sha1_bytes(data)
+                dest = root / path.lstrip('/')
+                dest.parent.mkdir(parents=True, exist_ok=True)
+                dest.write_bytes(data)
 
     shutil.copyfile(TEMPLATE, out / 'automodpack' / 'automodpack-server.json')
-    (out / 'expected-content.json').write_text(json.dumps({
+    server_only = sorted(p for p in server if p.startswith('/mods/') and p not in host)
+    (out / 'DEPLOY.md').write_text(DEPLOY.format(
+        name=manifest['name'], version=manifest['version'],
+        server_only='\n'.join(f'- `{p[len("/mods/"):]}`' for p in server_only)))
+    (base / f'{out.name}-expected.json').write_text(json.dumps({
         'name': manifest['name'],
         'version': manifest['version'],
-        'minecraft': manifest['minecraft']['version'],
-        'loader': manifest['minecraft']['modLoaders'][0]['id'],
-        'files': files,
-    }, indent=2, sort_keys=True) + '\n')
-
-    archive = base / f'{out.name}-automodpack.tzst'
-    subprocess.run(['tar', '--zstd', '-cf', str(archive), '-C', str(out), 'automodpack'], check=True)
-    print(f'Wrote {out} and {archive}')
+        'host': host,
+        'server': server,
+    }, indent=2, sort_keys=True, default=str) + '\n')
 
     if missing:
-        print(f'{len(missing)} CurseForge files not found by sha1'
+        print(f'Wrote {out}, but not the archive: {len(missing)} files were not found by sha1'
               + (' in ' + ', '.join(jar_dirs) if jar_dirs else ' (pass --jars to copy them in)') + ':')
-        for path in missing:
+        for path in sorted(set(missing)):
             print(f'  {path}')
         return 1 if jar_dirs else 0
+
+    archive = base / f'{out.name}-automodpack.tzst'
+    subprocess.run(['tar', '--zstd', '-cf', str(archive), '-C', str(out),
+                    'automodpack', 'mods', 'kubejs', 'DEPLOY.md'], check=True)
+    print(f'Wrote {archive}; see {out / "DEPLOY.md"}')
     return 0
 
 
@@ -194,6 +273,18 @@ def open_snapshot(path, stack):
     return pathlib.Path(tmp)
 
 
+def check_built(pack, zip_path):
+    """Differences between a deployed built pack and the replacement files in the repo."""
+    problems = []
+    with zipfile.ZipFile(zip_path) as z:
+        for inner, src in pack['replace'].items():
+            if inner not in z.namelist():
+                problems.append(f'/{pack["file"]}: no {inner}')
+            elif sha1_bytes(z.read(inner)) != sha1_file(REPO / src):
+                problems.append(f'/{pack["file"]}: {inner} differs from {src}')
+    return problems
+
+
 def collapse(items, threshold=5):
     """Folds `threshold` or more entries with the same note from one asset-depth directory
     (/kubejs/textures/block, not /mods) into one line."""
@@ -226,9 +317,7 @@ class Report:
 
 
 def compare(args):
-    import contextlib
-    packwiz = load_packwiz()
-    manifest, files = expected_files(args.zip, packwiz)
+    manifest, host_plan, server_plan = plan(args.zip)
     report = Report()
 
     with contextlib.ExitStack() as stack:
@@ -240,7 +329,6 @@ def compare(args):
         server_mods = {f'/mods/{p.name}': sha1_file(p) for p in (server / 'mods').glob('*.jar')}
         config = json.loads((server / 'automodpack/automodpack-server.json').read_text())
         index_dir = server / 'mods/.index'
-        index = sorted(index_dir.glob('*.pw.toml')) if index_dir.is_dir() else []
 
         print(f"# {manifest['name']} {manifest['version']} ({args.zip}) vs {args.server}")
         print(f"AutoModpack {content.get('automodpackVersion')}, "
@@ -250,24 +338,39 @@ def compare(args):
         if content.get('loaderVersion') != expected_loader:
             report.section('Loader version', [f"pack {expected_loader}, server {content.get('loaderVersion')}"])
 
-        # What clients are sent, against what the export installs.
-        want = {p: i['sha1'] for p, i in files.items() if client_bound(i)}
+        # What players are sent, against the planned host-modpack.
+        want = {p: i['sha1'] for p, i in host_plan.items()}
         via = lambda p: '  (host-modpack)' if p in host else '  (server dir)'
         missing, extra, changed, pairs = diff_sets(want, sent)
         report.section('Sent to clients: different version', [f'{m}  ->  {e}{via(e)}' for m, e in pairs])
         report.section('Sent to clients: different content', [p + via(p) for p in changed])
-        report.section('In the pack but not sent to clients', missing)
-        report.section('Sent to clients but not in the pack', [p + via(p) for p in extra])
+        report.section('Not sent to clients', missing)
+        report.section('Sent to clients but not planned', [p + via(p) for p in extra])
+        report.section('Server scripts sent to clients', sorted(p for p in sent if p.startswith('/kubejs/server_scripts/')))
+        built = []
+        for pack in CONFIG['builtPacks']:
+            if '/' + pack['file'] in host:
+                built += check_built(pack, host_dir / pack['file'])
+        report.section('Built shader packs that differ from the repo', built)
 
         # Mods the server itself loads.
-        want = {p: i['sha1'] for p, i in files.items() if server_bound(p, i)}
+        want = {p: i['sha1'] for p, i in server_plan.items() if p.startswith('/mods/')}
         missing, extra, changed, pairs = diff_sets(want, server_mods)
         report.section('Server mods: different version', [f'{m}  ->  {e}' for m, e in pairs])
         report.section('Server mods: different content', changed)
-        report.section('Pack mods the server does not load', [
-            m + ('  (clients get it from host-modpack)' if m in host else '') for m in missing])
-        report.section('Server mods not in the pack', [
-            e + ('' if e in sent else '  (not sent to clients)') for e in extra])
+        report.section('Server mods missing', missing)
+        report.section('Server mods not planned', [e + ('' if e in sent else '  (not sent to clients)') for e in extra])
+
+        if (server / 'kubejs').is_dir():
+            kubejs = {'/' + p.relative_to(server).as_posix(): sha1_file(p)
+                      for p in (server / 'kubejs').rglob('*') if p.is_file()}
+            want = {p: i['sha1'] for p, i in server_plan.items() if p.startswith('/kubejs/')}
+            missing, extra, changed, _ = diff_sets(want, kubejs)
+            report.section('Server kubejs: different content', changed)
+            report.section('Server kubejs missing', missing)
+            report.section('Server kubejs not planned', extra)
+        else:
+            print('\n(The snapshot has no kubejs/, so the server\'s kubejs files are not checked.)')
 
         # Host config against the committed template.
         template = json.loads(TEMPLATE.read_text())
@@ -275,15 +378,9 @@ def compare(args):
             f'{k}: template {json.dumps(template.get(k))}, server {json.dumps(config.get(k))}'
             for k in sorted(set(template) | set(config)) if template.get(k) != config.get(k)])
 
-        if '!/kubejs/server_scripts/**' in config.get('syncedFiles', []) and any(
-                p.startswith('/kubejs/server_scripts/') for p in sent):
-            report.section('Exclusion not applied', [
-                '"!/kubejs/server_scripts/**" is in syncedFiles, but server_scripts are still sent to clients'])
-
-        stale = [p.name for p in index if not (REPO / 'mods' / p.name).is_file()
-                 or (REPO / 'mods' / p.name).read_bytes() != p.read_bytes()]
-        report.section('Stale packwiz metadata in the server mods/.index', stale,
-                       'These no longer match the repo; running packwiz-installer there would change mods.')
+        if index_dir.is_dir():
+            report.section('Old packwiz metadata in the server mods/.index', sorted(p.name for p in index_dir.iterdir()),
+                           'Nothing reads it; running packwiz-installer there would change mods.')
 
         if args.client:
             client = pathlib.Path(args.client)
@@ -311,7 +408,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = parser.add_subparsers(dest='command', required=True)
 
-    p = sub.add_parser('build', help='write automodpack/ host files for a CurseForge export')
+    p = sub.add_parser('build', help='write the AutoModpack server bundle for a CurseForge export')
     p.add_argument('zip', help='CurseForge export, such as TFCT-3.0.14.zip')
     p.add_argument('--out', default=str(REPO / '.out' / 'automodpack'))
     p.add_argument('--jars', action='append', default=[],
