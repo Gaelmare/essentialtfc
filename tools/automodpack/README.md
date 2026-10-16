@@ -4,6 +4,43 @@ The TFC Tuesday server hands the pack to players with [AutoModpack](https://modr
 
 Needs Python 3.11+ and GNU tar with zstd.
 
+## Deploying a release
+
+1. Build the TFCT zip and the server bundle. `AUTOMODPACK_JARS` lists folders holding the pack's jars and packs, matched by sha1: an up-to-date VitalTFC instance has all of them, and the TFCTuesday2026 instance has the AutoModpack jar.
+
+   ```bash
+   AUTOMODPACK_JARS=~/bin/minecraft-at/instances/VitalTFC/mods:~/bin/minecraft-at/instances/VitalTFC/resourcepacks:~/bin/minecraft-at/instances/VitalTFC/shaderpacks:~/bin/minecraft-at/instances/TFCTuesday2026/mods ./build.sh
+   ```
+
+   If it lists missing files, add the folder that has them and rerun; the archive is only written when nothing is missing.
+2. Send `.out/automodpack/TFCT-<version>-automodpack.tzst` to the server operator. Its `DEPLOY.md` has the steps: stop the server, delete `mods/`, `kubejs/` and `automodpack/host-modpack/`, extract the archive into the server folder, start the server. `automodpack/.private/` stays untouched.
+3. After the server has restarted, get a new snapshot of its `automodpack/` and `mods/` and check it:
+
+   ```bash
+   python3 tools/automodpack/automodpack.py compare TFCT-<version>.zip <snapshot>.tzst
+   ```
+
+## Background (October 2026)
+
+This tooling came out of comparing the 3.0.14 server (snapshot `tfct-automodpack-mods-101526.tzst`, 2026-10-15) with `TFCT-3.0.14.zip`. The server had drifted from the pack, so the bundle now replaces the server's `mods/`, `kubejs/` and host-modpack wholesale instead of editing them by hand. What was found, and what was decided:
+
+- **Server scripts reached players.** The operator had copied `kubejs/server_scripts` into `host-modpack/main/`, which AutoModpack sends without filtering. The `!/kubejs/server_scripts/**` rule was fine: it only filters the server folder, and AutoModpack 4.0.5's matcher honours it. The build now leaves server scripts out of host-modpack.
+- **Stray kubejs files.** The server's `kubejs/` had a second copy of the pigvil assets one level too high (`kubejs/textures`, `kubejs/models` and so on), plus KubeJS's example `main.js`, all sent to players through `/kubejs/**`. The host config no longer syncs `mods/` or `kubejs/` from the server folder, and deploying replaces `kubejs/`.
+- **Stale packwiz index.** The server's `mods/.index` held packwiz metadata from an early 3.0.x release (TFC 4.2.9, for example). Nothing reads it, but packwiz-installer would have downgraded mods. Deploying replaces `mods/` without it.
+- **Default Options.** The server still had the Default Options mod (and Balm, which only it needs) and their configs from 3.0.4. The pack replaced them in 3.0.7 with `kubejs/config/defaultoptions.txt`. Both are dropped.
+- **kubejs_tfc** was 2.0.2 on the server against 2.1.0 in the pack; the bundle ships the pack's version.
+- **voxy** is left out for size; it's shared on Discord. Its force-copy rule is gone.
+- **AutoModpack** goes in the server's `mods/` only; players install it themselves.
+- **gogetem** is darkphan's own server-only mod (MIT), committed under `server-mods/`.
+- **Photon fix.** `photon_v1.3b-fix.zip` differs from `photon_v1.3b.zip` only in `shaders/shaders.properties` and `shaders/settings.glsl`. Global Shaderpack Properties only overrides `.properties` files, so the build makes the fix pack from the base pack plus those two files rather than committing the zip.
+
+Open questions:
+
+- The bundle leaves out 13 mods the operator added: spark, observable (with architectury and kotlinforforge), chunksending, chunksmith (waiting on CurseForge permission), ContentCreatorIntegration (with iChunUtil), gsu, Pehkui and blackearlyloading. It also leaves out the operator's `xaerominimap.txt` and contentcreatorintegration configs. Add any to keep to `serverMods` in `tfct.json`.
+- The operator also sent players `config/` copies of fallingtree, lithium and simplebackups. The pack carries them under `defaultconfigs/` instead, where lithium and fallingtree probably never read them, since those aren't NeoForge configs.
+- The fix's `settings.glsl` defines `USER_SEPARATE_ENTITY_DRAWS`, but `shaders.properties` tests `USE_SEPARATE_ENTITY_DRAWS`. It may be a typo, or the fix may only work because of it.
+- The pack's packwiz metadata marks the client-only mods in `clientOnly` as `side = "both"`. Marking them `client` would let the tool drop that list.
+
 ## How the server is laid out
 
 AutoModpack sends players everything in `automodpack/host-modpack/main/`, plus any files in the server folder that match `syncedFiles` in `automodpack-server.json`. The build fills host-modpack with exactly what players need, and the template syncs nothing else from the server folder. So:
