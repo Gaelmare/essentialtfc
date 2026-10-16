@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "4b202225a90b8b0e608f9887f5c929b39a9f9084c62d01556e5a94cd3c6a9dcf"
+hash = "1ac3502177038e7e14e5a54cad29e45ea261f203e195fad0190c83586ca57764"
 
 [[files]]
 file = "LICENSE.txt"
@@ -15,6 +15,14 @@ hash = "70b2b29a8b2a3f2eec39746842c2ffc156733ac9cbbff9112e5a9ce578cfc682"
 [[files]]
 file = "config/global_shaderpack_properties/photon_v1.3b-fix/block.properties"
 hash = "c00ff4a4a04ce6b6ae43cd981674eaeb9f373082a6df36b24eff4bc73e10e5bc"
+
+[[files]]
+file = "config/global_shaderpack_properties/photon_v1.3b-fix/settings.glsl"
+hash = "e0749b193e79ee818b9523d567e50e3e8de20eb948fce20570db5cc1c7c78bac"
+
+[[files]]
+file = "config/global_shaderpack_properties/photon_v1.3b-fix/shaders.properties"
+hash = "e238276fb8e150dd9d2e86b6978762e4672efd824508fb56f6f94390a89f0a57"
 
 [[files]]
 file = "config/global_shaderpack_properties/photon_v1.3b/block.properties"
