@@ -10,7 +10,9 @@
     "/config/**",
     "/options.txt"
   ],
-  "forceCopyFilesToStandardLocation": [],
+  "forceCopyFilesToStandardLocation": [
+    "/mods/voxy*.jar"
+  ],
   "nonModpackFilesToDelete": {},
   "autoExcludeServerSideMods": true,
   "autoExcludeUnnecessaryFiles": true,

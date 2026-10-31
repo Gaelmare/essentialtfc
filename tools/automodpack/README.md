@@ -32,7 +32,7 @@ This tooling came out of comparing the 3.0.14 server (snapshot `tfct-automodpack
 - **Operator-added mods are kept.** These are in `extraMods`, sent to players as before. Players and the server get: spark, observable (which needs architectury and kotlinforforge), chunksending, chunksmith, ContentCreatorIntegration (which needs iChunUtil), gsu and Pehkui. Players only get blackearlyloading. The CCI configs are in `host/config/contentcreatorintegration/`; their token fields are empty, so keep real tokens out of the repo.
 - **`config/xaerominimap.txt` is obsolete.** Xaero's Minimap 26.x only renames it to `config/xaerohud.txt`, once, if that doesn't exist yet. Its settings now live in `config/xaero/minimap/`, seeded from `defaultconfigs/xaero/minimap/`, which the pack ships (since `3a8a58e`). The operator's copy is dropped.
 - **kubejs_tfc** was 2.0.2 on the server against 2.1.0 in the pack; the bundle ships the pack's version.
-- **voxy** is left out for size; it's shared on Discord. Its force-copy rule is gone.
+- **voxy** is synced as before, with its force-copy rule (`forceCopyFilesToStandardLocation`) to put it in players' standard `mods/`. `build.sh` drops it from the TFCT zip for size, so the bundle adds it as a `client` entry in `extraMods`.
 - **AutoModpack** goes in the server's `mods/` only. Players get it from the seed modpack they install, which AutoModpack then syncs into.
 - **gogetem** is darkphan's own server-only mod (MIT), committed under `server-mods/`.
 - **Photon fix.** Players get both Photon 1.4, from the export, and `photon_v1.3b-fix.zip`. The fix pack differs from `photon_v1.3b.zip` only in `shaders/shaders.properties` and `shaders/settings.glsl`. Global Shaderpack Properties only overrides `.properties` files, so the build makes the fix pack from the base pack plus those two files rather than committing the zip. It also bakes in the pack's TFC `block.properties`, so the fix pack matches what Global Shaderpack Properties applies at runtime. The export no longer has `photon_v1.3b.zip`, so the build finds it in `--jars` by sha1.
@@ -65,8 +65,8 @@ It writes `.out/automodpack/TFCT-<version>/`, holding `automodpack/`, `mods/`, `
 `tfct.json` says what differs from the export:
 
 - `clientOnly`: packwiz slugs (the `mods/<slug>.pw.toml` name) of mods that players get but the server doesn't load
-- `notShipped`: packwiz slugs left out entirely; voxy is shared on Discord instead
-- `extraMods`: mods that aren't in the pack, with a `side`. `server` mods go only in the server's `mods/`, `client` mods only to players, and `both` to each. Each jar is either committed under `server-mods/` (`source`) or found in `--jars` by `sha1`
+- `notShipped`: packwiz slugs left out entirely. vss (Voxy Server Side) is left out because the server uses chunksmith, an `extraMods` entry, for the same job; the CurseForge pack ships vss only because chunksmith can't be shipped there yet
+- `extraMods`: mods that aren't in the TFCT export, with a `side`: the operator's extra mods, and voxy, which `build.sh` removes from the zip. Update voxy's `file` and `sha1` here when the pack updates it; the build stops if that jar isn't found. `server` mods go only in the server's `mods/`, `client` mods only to players, and `both` to each. Each jar is either committed under `server-mods/` (`source`) or found in `--jars` by `sha1`
 - `hostOverlay`: a folder (`host/`) whose files are sent to players as-is, such as the CCI configs
 - `builtPacks`: shader packs built from another pack (`base`, found in `--jars` by `baseSha1`) with some files replaced. `photon_v1.3b-fix.zip` is `photon_v1.3b.zip` with the `block.properties`, `shaders.properties` and `settings.glsl` from `config/global_shaderpack_properties/photon_v1.3b-fix/`. Global Shaderpack Properties applies the `.properties` files at runtime, but not the `.glsl` one, so the pack itself has to be rebuilt.
 
