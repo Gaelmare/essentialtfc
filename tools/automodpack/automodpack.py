@@ -52,10 +52,13 @@ alone: they hold the server's keys and aren't in this bundle.
    and KubeJS recreates its default `kubejs/config/common.json` and `web_server.json`.
 
 Players are sent exactly `automodpack/host-modpack/main/`. The server folder's `mods/` and
-`kubejs/` are no longer synced, so server-only mods and `kubejs/server_scripts` stay on the
-server. Server-only mods in this bundle:
+`kubejs/` are no longer synced, so the mods below and `kubejs/server_scripts` stay on the
+server. Mods this bundle puts only in the server's `mods/`, not in what players are sent:
 
 {server_only}
+
+AutoModpack, if listed, still runs on players' clients: they get it from the seed modpack
+they install, not from this sync.
 """
 
 

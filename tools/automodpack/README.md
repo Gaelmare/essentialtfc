@@ -33,7 +33,7 @@ This tooling came out of comparing the 3.0.14 server (snapshot `tfct-automodpack
 - **`config/xaerominimap.txt` is obsolete.** Xaero's Minimap 26.x only renames it to `config/xaerohud.txt`, once, if that doesn't exist yet. Its settings now live in `config/xaero/minimap/`, seeded from `defaultconfigs/xaero/minimap/`, which the pack ships (since `3a8a58e`). The operator's copy is dropped.
 - **kubejs_tfc** was 2.0.2 on the server against 2.1.0 in the pack; the bundle ships the pack's version.
 - **voxy** is left out for size; it's shared on Discord. Its force-copy rule is gone.
-- **AutoModpack** goes in the server's `mods/` only; players install it themselves.
+- **AutoModpack** goes in the server's `mods/` only. Players get it from the seed modpack they install, which AutoModpack then syncs into.
 - **gogetem** is darkphan's own server-only mod (MIT), committed under `server-mods/`.
 - **Photon fix.** Players get both Photon 1.4, from the export, and `photon_v1.3b-fix.zip`. The fix pack differs from `photon_v1.3b.zip` only in `shaders/shaders.properties` and `shaders/settings.glsl`. Global Shaderpack Properties only overrides `.properties` files, so the build makes the fix pack from the base pack plus those two files rather than committing the zip. It also bakes in the pack's TFC `block.properties`, so the fix pack matches what Global Shaderpack Properties applies at runtime. The export no longer has `photon_v1.3b.zip`, so the build finds it in `--jars` by sha1.
 
@@ -49,7 +49,7 @@ Open questions:
 AutoModpack sends players everything in `automodpack/host-modpack/main/`, plus any files in the server folder that match `syncedFiles` in `automodpack-server.json`. The build fills host-modpack with exactly what players need, and the template syncs nothing else from the server folder. So:
 
 - players get the export's files, minus `kubejs/server_scripts` and server-only mods
-- the server's `mods/` holds the pack's server-side mods plus the `extraMods` in `tfct.json` whose side is `server` or `both`. AutoModpack itself and gogetem are `server`, so they never reach players
+- the server's `mods/` holds the pack's server-side mods plus the `extraMods` in `tfct.json` whose side is `server` or `both`. AutoModpack and gogetem are `server`, so the sync never sends them; players already have AutoModpack from the seed modpack
 - the server's `kubejs/` is the export's `kubejs/`, including `server_scripts`
 
 ## Build
