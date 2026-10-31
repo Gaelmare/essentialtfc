@@ -25,7 +25,7 @@ Needs Python 3.11+ and GNU tar with zstd.
 
 This tooling came out of comparing the 3.0.14 server (snapshot `tfct-automodpack-mods-101526.tzst`, 2026-10-15) with `TFCT-3.0.14.zip`. The server had drifted from the pack, so the bundle now replaces the server's `mods/`, `kubejs/` and host-modpack wholesale instead of editing them by hand. What was found, and what was decided:
 
-- **Server scripts reached players.** The operator had copied `kubejs/server_scripts` into `host-modpack/main/`, which AutoModpack sends without filtering. The `!/kubejs/server_scripts/**` rule was fine: it only filters the server folder, and AutoModpack 4.0.5's matcher honours it. The build now leaves server scripts out of host-modpack.
+- **Server scripts go to players.** The operator had copied `kubejs/server_scripts` into `host-modpack/main/` by hand, which AutoModpack sends without filtering. That's intended: players need them for single player, and CurseForge players get them anyway. The build now puts the pack's whole `kubejs/` in host-modpack, so there's no hand-copied set to drift. (The template's old `!/kubejs/server_scripts/**` rule only filtered the server folder, which is no longer synced.)
 - **Stray kubejs files.** The server's `kubejs/` had a second copy of the pigvil assets one level too high (`kubejs/textures`, `kubejs/models` and so on), plus KubeJS's example `main.js`, all sent to players through `/kubejs/**`. The host config no longer syncs `mods/` or `kubejs/` from the server folder, and deploying replaces `kubejs/`.
 - **Stale packwiz index.** The server's `mods/.index` held packwiz metadata from an early 3.0.x release (TFC 4.2.9, for example). Nothing reads it, but packwiz-installer would have downgraded mods. Deploying replaces `mods/` without it.
 - **Default Options.** The server still had the Default Options mod (and Balm, which only it needs) and their configs from 3.0.4. The pack replaced them in 3.0.7 with `kubejs/config/defaultoptions.txt`. Both are dropped.
@@ -48,7 +48,7 @@ Open questions:
 
 AutoModpack sends players everything in `automodpack/host-modpack/main/`, plus any files in the server folder that match `syncedFiles` in `automodpack-server.json`. The build fills host-modpack with exactly what players need, and the template syncs nothing else from the server folder. So:
 
-- players get the export's files, minus `kubejs/server_scripts` and server-only mods
+- players get the export's files, including `kubejs/server_scripts` for single player, minus server-only mods
 - the server's `mods/` holds the pack's server-side mods plus the `extraMods` in `tfct.json` whose side is `server` or `both`. AutoModpack and gogetem are `server`, so the sync never sends them; players already have AutoModpack from the seed modpack
 - the server's `kubejs/` is the export's `kubejs/`, including `server_scripts`
 

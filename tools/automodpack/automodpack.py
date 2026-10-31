@@ -52,8 +52,9 @@ alone: they hold the server's keys and aren't in this bundle.
    and KubeJS recreates its default `kubejs/config/common.json` and `web_server.json`.
 
 Players are sent exactly `automodpack/host-modpack/main/`. The server folder's `mods/` and
-`kubejs/` are no longer synced, so the mods below and `kubejs/server_scripts` stay on the
-server. Mods this bundle puts only in the server's `mods/`, not in what players are sent:
+`kubejs/` are no longer synced; players get the pack's `kubejs/`, server scripts included, so
+single player works. Mods this bundle puts only in the server's `mods/`, not in what players
+are sent:
 
 {server_only}
 
@@ -137,7 +138,7 @@ def plan(zip_path):
     for path, info in files.items():
         if info['slug'] in not_shipped:
             continue
-        if info['side'] != 'server' and not path.startswith('/kubejs/server_scripts/'):
+        if info['side'] != 'server':
             host[path] = info
         if path.startswith('/kubejs/') or (
                 path.startswith('/mods/') and info['side'] != 'client' and info['slug'] not in client_only):
@@ -357,7 +358,6 @@ def compare(args):
         report.section('Sent to clients: different content', [p + via(p) for p in changed])
         report.section('Not sent to clients', missing)
         report.section('Sent to clients but not planned', [p + via(p) for p in extra])
-        report.section('Server scripts sent to clients', sorted(p for p in sent if p.startswith('/kubejs/server_scripts/')))
         built = []
         for pack in CONFIG['builtPacks']:
             if '/' + pack['file'] in host:
