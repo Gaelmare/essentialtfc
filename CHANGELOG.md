@@ -2,7 +2,7 @@
   - CreativeCore
   - LittleTiles
   - Roxy (TFC specific change again!)
-  - Photon (includes TFC wate fix again)
+  - Photon (includes TFC water fix again)
   - Corpse
 
 ## 3.0.14
