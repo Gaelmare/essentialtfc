@@ -17,3 +17,4 @@ cacert.pem
 /automodpack/
 /tmp/
 *.tzst
+__pycache__

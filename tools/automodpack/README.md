@@ -6,11 +6,11 @@ Needs Python 3.11+ and GNU tar with zstd.
 
 ## Deploying a release
 
-1. Build the TFCT zip and the server bundle. `AUTOMODPACK_JARS` lists folders holding the jars and packs, matched by sha1. An up-to-date VitalTFC instance has the pack's; the TFCTuesday2026 instance has the AutoModpack jar in `mods/` and the operator's extra mods in its modpack folder.
+1. Build the TFCT zip and the server bundle. `AUTOMODPACK_JARS` lists folders holding the jars and packs, matched by sha1. An up-to-date VitalTFC instance has the pack's; the TFCTuesday2026 instance has the AutoModpack jar in `mods/`, `photon_v1.3b.zip` in `shaderpacks/`, and the operator's extra mods in its modpack folder. `build.sh` uses these folders when `AUTOMODPACK_JARS` isn't set:
 
    ```bash
    I=$HOME/bin/minecraft-at/instances
-   AUTOMODPACK_JARS="$I/VitalTFC/mods:$I/VitalTFC/resourcepacks:$I/VitalTFC/shaderpacks:$I/TFCTuesday2026/mods:$I/TFCTuesday2026/automodpack/modpacks/TFC Tuesday 2026/mods" ./build.sh
+   AUTOMODPACK_JARS="$I/VitalTFC/mods:$I/VitalTFC/resourcepacks:$I/VitalTFC/shaderpacks:$I/TFCTuesday2026/mods:$I/TFCTuesday2026/shaderpacks:$I/TFCTuesday2026/automodpack/modpacks/TFC Tuesday 2026/mods" ./build.sh
    ```
 
    If it lists missing files, add the folder that has them and rerun; the archive is only written when nothing is missing.
@@ -35,7 +35,7 @@ This tooling came out of comparing the 3.0.14 server (snapshot `tfct-automodpack
 - **voxy** is left out for size; it's shared on Discord. Its force-copy rule is gone.
 - **AutoModpack** goes in the server's `mods/` only; players install it themselves.
 - **gogetem** is darkphan's own server-only mod (MIT), committed under `server-mods/`.
-- **Photon fix.** `photon_v1.3b-fix.zip` differs from `photon_v1.3b.zip` only in `shaders/shaders.properties` and `shaders/settings.glsl`. Global Shaderpack Properties only overrides `.properties` files, so the build makes the fix pack from the base pack plus those two files rather than committing the zip.
+- **Photon fix.** Players get both Photon 1.4, from the export, and `photon_v1.3b-fix.zip`. The fix pack differs from `photon_v1.3b.zip` only in `shaders/shaders.properties` and `shaders/settings.glsl`. Global Shaderpack Properties only overrides `.properties` files, so the build makes the fix pack from the base pack plus those two files rather than committing the zip. It also bakes in the pack's TFC `block.properties`, so the fix pack matches what Global Shaderpack Properties applies at runtime. The export no longer has `photon_v1.3b.zip`, so the build finds it in `--jars` by sha1.
 
 Open questions:
 
@@ -68,7 +68,7 @@ It writes `.out/automodpack/TFCT-<version>/`, holding `automodpack/`, `mods/`, `
 - `notShipped`: packwiz slugs left out entirely; voxy is shared on Discord instead
 - `extraMods`: mods that aren't in the pack, with a `side`. `server` mods go only in the server's `mods/`, `client` mods only to players, and `both` to each. Each jar is either committed under `server-mods/` (`source`) or found in `--jars` by `sha1`
 - `hostOverlay`: a folder (`host/`) whose files are sent to players as-is, such as the CCI configs
-- `builtPacks`: shader packs built from another pack with some files replaced. `photon_v1.3b-fix.zip` is `photon_v1.3b.zip` with the `shaders.properties` and `settings.glsl` from `config/global_shaderpack_properties/photon_v1.3b-fix/`. Global Shaderpack Properties applies the `.properties` file at runtime, but not the `.glsl` one, so the pack itself has to be rebuilt.
+- `builtPacks`: shader packs built from another pack (`base`, found in `--jars` by `baseSha1`) with some files replaced. `photon_v1.3b-fix.zip` is `photon_v1.3b.zip` with the `block.properties`, `shaders.properties` and `settings.glsl` from `config/global_shaderpack_properties/photon_v1.3b-fix/`. Global Shaderpack Properties applies the `.properties` files at runtime, but not the `.glsl` one, so the pack itself has to be rebuilt.
 
 `automodpack-server.json` is the host config the bundle installs.
 

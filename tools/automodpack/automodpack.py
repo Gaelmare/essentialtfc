@@ -204,7 +204,7 @@ def build(args):
         if info['source'] == 'repo':
             return pathlib.Path(info['path']).read_bytes()
         if info['source'] == 'built':
-            base_sha1 = host['/' + info['pack']['base']]['sha1']
+            base_sha1 = info['pack']['baseSha1']
             if base_sha1 not in jars:
                 return None
             return build_pack(info['pack'], jars[base_sha1].read_bytes())
