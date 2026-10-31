@@ -13,6 +13,10 @@ file = "README.md"
 hash = "70b2b29a8b2a3f2eec39746842c2ffc156733ac9cbbff9112e5a9ce578cfc682"
 
 [[files]]
+file = "config/fallingtree.json"
+hash = "6e8857b6c4d79a5bc9ab011e40cce643544bd8c8348957448d66827230da5e5a"
+
+[[files]]
 file = "config/global_shaderpack_properties/photon_v1.3b-fix/block.properties"
 hash = "c00ff4a4a04ce6b6ae43cd981674eaeb9f373082a6df36b24eff4bc73e10e5bc"
 
@@ -25,15 +29,11 @@ file = "config/global_shaderpack_properties/photon_v1.3b-fix/shaders.properties"
 hash = "e238276fb8e150dd9d2e86b6978762e4672efd824508fb56f6f94390a89f0a57"
 
 [[files]]
-file = "config/global_shaderpack_properties/photon_v1.3b/block.properties"
-hash = "c00ff4a4a04ce6b6ae43cd981674eaeb9f373082a6df36b24eff4bc73e10e5bc"
+file = "config/global_shaderpack_properties/photon_v1.4/block.properties"
+hash = "1c01fc86746e349f56a341cf3d0fa33b883b45094d51401d2747685e8f0920b4"
 
 [[files]]
-file = "defaultconfigs/fallingtree.json"
-hash = "6e8857b6c4d79a5bc9ab011e40cce643544bd8c8348957448d66827230da5e5a"
-
-[[files]]
-file = "defaultconfigs/lithium.properties"
+file = "config/lithium.properties"
 hash = "ca4f2a432b3af2e9b7021fe11989b95dd138641c38c506d84167425e3ba2b296"
 
 [[files]]
@@ -441,12 +441,12 @@ metafile = true
 
 [[files]]
 file = "mods/corpse.pw.toml"
-hash = "e2edf339c98dbdcf04f46a15276e9b1b5bbdeee0f1ac8b7d9bddb1ee8e54b9a1"
+hash = "40fc9e871f9d9b2d327ca708a4881b682ca5fa1b9cfea53e2f67478b64783609"
 metafile = true
 
 [[files]]
 file = "mods/creativecore.pw.toml"
-hash = "9872a039a5c245ece1345292c9855228accc8cf15f02cfb45ef8bcc8578d643a"
+hash = "5821cab36620a84eb7306b155ed4492da246c92d27b3ee3eff97af1f43ca129c"
 metafile = true
 
 [[files]]
@@ -561,7 +561,7 @@ metafile = true
 
 [[files]]
 file = "mods/littletiles.pw.toml"
-hash = "1b35acac0f8263f95eb74759f19ae93e89118278953f102a9e2d5ded1a55bf28"
+hash = "258df31d3b0aec209a7cacb87634a6e6c62883a8e40ae1a36dd7a6721d77206c"
 metafile = true
 
 [[files]]
@@ -591,7 +591,7 @@ metafile = true
 
 [[files]]
 file = "mods/photon-shader.pw.toml"
-hash = "ac478481f65646015b7d4a3b9a3ef54a8208dee5b6cf5383f68dc3de86f8324f"
+hash = "393ac463875b2d59f6ab88ce25c62169d2b0a16333f02dac29309f57f2b6968b"
 metafile = true
 
 [[files]]
@@ -601,7 +601,7 @@ metafile = true
 
 [[files]]
 file = "mods/roxy.pw.toml"
-hash = "eb705b873aabf46e19492275be6cb66d0b21b1e03c457bc34274479d75bbdd87"
+hash = "e22fdcb03ff855f0c8ce92d8dc2455b790b401f4c83b72c3505514cd4053d5fd"
 metafile = true
 
 [[files]]
