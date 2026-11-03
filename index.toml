@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "7748d595570c195bf2837b2ffa4483d844e6735e1e53fe164366264887fbbb6a"
+hash = "88f21f6a9453eaf3f83ca7ed5f28c139c790e540454bf54f697bbc961da5c5fc"
 
 [[files]]
 file = "LICENSE.txt"
@@ -13,19 +13,19 @@ file = "README.md"
 hash = "5fbc1004ef5bbbed0b4b850b9dd1be0853b2e608bd573a73105958cddc93bda1"
 
 [[files]]
+file = "config/fallingtree.json"
+hash = "6e8857b6c4d79a5bc9ab011e40cce643544bd8c8348957448d66827230da5e5a"
+
+[[files]]
 file = "config/global_shaderpack_properties/photon_v1.3b-fix/block.properties"
 hash = "c00ff4a4a04ce6b6ae43cd981674eaeb9f373082a6df36b24eff4bc73e10e5bc"
 
 [[files]]
-file = "config/global_shaderpack_properties/photon_v1.3b/block.properties"
-hash = "c00ff4a4a04ce6b6ae43cd981674eaeb9f373082a6df36b24eff4bc73e10e5bc"
+file = "config/global_shaderpack_properties/photon_v1.4/block.properties"
+hash = "1c01fc86746e349f56a341cf3d0fa33b883b45094d51401d2747685e8f0920b4"
 
 [[files]]
-file = "defaultconfigs/fallingtree.json"
-hash = "6e8857b6c4d79a5bc9ab011e40cce643544bd8c8348957448d66827230da5e5a"
-
-[[files]]
-file = "defaultconfigs/lithium.properties"
+file = "config/lithium.properties"
 hash = "ca4f2a432b3af2e9b7021fe11989b95dd138641c38c506d84167425e3ba2b296"
 
 [[files]]
@@ -43,6 +43,18 @@ hash = "33bcf15d5706daf090323b03c16e357c44bdb8e5f29a2f65ef839316b6e94c5f"
 [[files]]
 file = "icon.png"
 hash = "72dd7be62ca8b2deca784072450b4f13625567ac3ce6253538add8d1451020e7"
+
+[[files]]
+file = "kubejs/assets/kubejs/animations/entity/pigvil.animation.json"
+hash = "000b4cd2fc4e5b9a551494eb0f9bf501c4e1f2a8ea4b7ebfcc2d33d63251e7bd"
+
+[[files]]
+file = "kubejs/assets/kubejs/geo/entity/pigvil.geo.json"
+hash = "3641138ecb8cb19f4530dbd063bbbc69780a67cd44131d653b64c16ac81878ff"
+
+[[files]]
+file = "kubejs/assets/kubejs/lang/en_us.json"
+hash = "a91f737645e81ce3927a916cd01ae1151596069dc13160a3cbdc49850227c567"
 
 [[files]]
 file = "kubejs/assets/kubejs/models/block/pigvil_black.json"
@@ -213,12 +225,24 @@ file = "kubejs/server_scripts/main_server.js"
 hash = "cfebd4549d9578a7c1d5fa5c7e81e9156c898f68d026f79ecb45c580b6bbfb8f"
 
 [[files]]
+file = "kubejs/server_scripts/pigvil_entity_server.js"
+hash = "b6e2a453a8b9576f89c410fc72fd3f19f69e513edb6d21b770fe4bad456c1860"
+
+[[files]]
 file = "kubejs/server_scripts/pigvil_server.js"
-hash = "b836784304980f7b8cf30b38de8c906532f33beefca1e09500d2d6e4d9e565c6"
+hash = "79b4010c32a7b92709218aa7bff6cfe84a8cfb78e0a550b04c117850e3f2bcf0"
+
+[[files]]
+file = "kubejs/startup_scripts/pigvil_entity_data.js"
+hash = "ee9c3b80f71792118f1475c7bd44f8e79f7a2fd78725c4230ec63c845f7046e0"
+
+[[files]]
+file = "kubejs/startup_scripts/pigvil_entity_startup.js"
+hash = "a49f8aa5b571e91fa4574439610c5a16298963bb281bc6ac70b8be92632c0b1a"
 
 [[files]]
 file = "kubejs/startup_scripts/pigvil_startup.js"
-hash = "13c9ac173ba9d818688c71a0d78763dff150551eeb5bd4875e56f585fe4e23bf"
+hash = "b8de6525b1be1a0f269b5db87560f942ffac706e37cbf46ce6aa9ecd57484888"
 
 [[files]]
 file = "mods/barrels-2012.pw.toml"
@@ -257,7 +281,7 @@ metafile = true
 
 [[files]]
 file = "mods/corpse.pw.toml"
-hash = "e2edf339c98dbdcf04f46a15276e9b1b5bbdeee0f1ac8b7d9bddb1ee8e54b9a1"
+hash = "40fc9e871f9d9b2d327ca708a4881b682ca5fa1b9cfea53e2f67478b64783609"
 metafile = true
 
 [[files]]
@@ -277,12 +301,17 @@ metafile = true
 
 [[files]]
 file = "mods/entity-model-features.pw.toml"
-hash = "2e82b0238c24e7522ddffec066b0be2cfe4faa18b1fb66d9496734ff7a658153"
+hash = "4a5c12ac077b52ecb776aef06525848b0182bbee0d48ec66ebc0aa0cfba0a0eb"
 metafile = true
 
 [[files]]
 file = "mods/entity-texture-features-fabric.pw.toml"
-hash = "20de659318ff023d1d7c99d360eb8e33a6053c3564d1c702ddaa7fcfc63e693e"
+hash = "98e8e30dd6f85ba67b9c98732efd6c25fd30191986825791158a1b0fd6b0ca7a"
+metafile = true
+
+[[files]]
+file = "mods/entityjs.pw.toml"
+hash = "f9aa994b7d684a6eb086e5832744863eb783d974cf2212cfacc2181697cc60c7"
 metafile = true
 
 [[files]]
@@ -292,7 +321,7 @@ metafile = true
 
 [[files]]
 file = "mods/extreme-sound-muffler.pw.toml"
-hash = "6d51c8adfc6782f216a150dedda2ea64969a639f4e21401eb5c5b5ac8c9ab28f"
+hash = "c8dc552aab96bc9ab2fcaa0ae5a240f47ae828c934f8eeb5269cfe642ff8ceb5"
 metafile = true
 
 [[files]]
@@ -308,6 +337,11 @@ metafile = true
 [[files]]
 file = "mods/forgified-fabric-api.pw.toml"
 hash = "15219e64b45e53db93de94091172e6a4c5ae9a749710ce91a615c973a552c215"
+metafile = true
+
+[[files]]
+file = "mods/geckolib.pw.toml"
+hash = "4cf7eb494f48576e28895ee5f362878f95c6bad65372666106140fdae82d0c4c"
 metafile = true
 
 [[files]]
@@ -387,7 +421,7 @@ metafile = true
 
 [[files]]
 file = "mods/photon-shader.pw.toml"
-hash = "ac478481f65646015b7d4a3b9a3ef54a8208dee5b6cf5383f68dc3de86f8324f"
+hash = "393ac463875b2d59f6ab88ce25c62169d2b0a16333f02dac29309f57f2b6968b"
 metafile = true
 
 [[files]]
@@ -397,7 +431,7 @@ metafile = true
 
 [[files]]
 file = "mods/roxy.pw.toml"
-hash = "bfb5056ddaf2a050dd4452a723682fb201de0989c515762becfb45bd4de6b565"
+hash = "e22fdcb03ff855f0c8ce92d8dc2455b790b401f4c83b72c3505514cd4053d5fd"
 metafile = true
 
 [[files]]
@@ -432,7 +466,7 @@ metafile = true
 
 [[files]]
 file = "mods/terrafirmacraft.pw.toml"
-hash = "23e6cf23b64f2510d5addae6d031f167c1ef84e1942c000708f796dc64e32b58"
+hash = "e2b40e77bc51bf0462d9a9c8a6a9c42418d42d003d3b08473636e0f980672828"
 metafile = true
 
 [[files]]

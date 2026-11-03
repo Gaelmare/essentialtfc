@@ -1,6 +1,5 @@
-// Pigvil conversion and progression for KubeJS-TFC 1.21.1.
-// This is a JS-only port, using the original Pigvil art and behavior while
-// not trying to port the custom Java entity code.
+// Pigvil carrot recipes and item sizes for KubeJS-TFC 1.21.1.
+// The walking Pigvil entity, including carrot upgrades, is handled in pigvil_entity_server.js.
 
 const PIGVIL_STEEL = 'kubejs:pigvil_steel';
 const PIGVIL_BLACK = 'kubejs:pigvil_black';
@@ -31,16 +30,6 @@ ServerEvents.recipes(event => {
 });
 
 
-const UPGRADE_PATHS = {
-    'kubejs:pigvil_steel': [{ item: 'kubejs:black_steel_carrot', next: 'kubejs:pigvil_black' }],
-    'kubejs:pigvil_black': [
-        { item: 'kubejs:blue_steel_carrot', next: 'kubejs:pigvil_blue' },
-        { item: 'kubejs:red_steel_carrot', next: 'kubejs:pigvil_red' }
-    ],
-    'kubejs:pigvil_blue': [{ item: 'kubejs:red_steel_carrot', next: 'kubejs:pigvil_purple' }],
-    'kubejs:pigvil_red': [{ item: 'kubejs:blue_steel_carrot', next: 'kubejs:pigvil_purple' }],
-};
-
 const CARROT_ITEMS = new Set([
     CARROT_BASE,
     CARROT_BLACK,
@@ -55,112 +44,6 @@ const PIGVIL_BLOCKS = new Set([
     PIGVIL_RED,
     PIGVIL_PURPLE,
 ]);
-
-
-const playAmbientSound = (player, pos, sound) => {
-    if (!player || !pos || !player.server || typeof player.server.runCommandSilent !== 'function') return;
-    if (!sound) return;
-
-    player.server.runCommandSilent(
-        'playsound ' + sound + ' ambient @a[x=' + pos.x + ',y=' + pos.y + ',z=' + pos.z + ',distance=..16] ' +
-        pos.x + ' ' + pos.y + ' ' + pos.z + ' 1 1'
-    );
-};
-
-const isValidPigvilTarget = entity => {
-    const isMale = entity.getGender().isMale();
-    const isAdult = Number(entity.getAge()) >= 0;
-    const familiarityNumber = Math.round(Number(entity.getFamiliarity()) * 100);
-    const isFamiliarEnough = familiarityNumber >= 35; // this was a config in the OG mod
-    const hasRequiredOldTick = entity.getOldTick() === -1;
-
-    const valid = isMale && isAdult && isFamiliarEnough && hasRequiredOldTick;
-
-    return valid;
-};
-
-
-ItemEvents.rightClicked(event => {
-    const player = event.player;
-    const heldItem = event.item;
-    const rawTarget = event.target;
-    const targetEntity = rawTarget && rawTarget.entity ? rawTarget.entity : rawTarget;
-    const entityType = targetEntity && typeof targetEntity.type === 'string'
-        ? targetEntity.type
-        : (targetEntity && typeof targetEntity.getType === 'function' ? targetEntity.getType().toString() : null);
-
-    if (!targetEntity || entityType !== 'tfc:pig') return;
-    if (!heldItem || heldItem.isEmpty()) return;
-
-    if (!isValidPigvilTarget(targetEntity)) return;
-
-    const itemId = heldItem.id && typeof heldItem.id.toString === 'function' ? heldItem.id.toString() : null;
-    if (itemId !== CARROT_BASE) return;
-
-    if (player && !player.isCreative()) {
-        heldItem.count = Math.max(0, heldItem.count - 1);
-    }
-
-    const pos = targetEntity.blockPosition ? targetEntity.blockPosition() : (targetEntity.getBlockPos ? targetEntity.getBlockPos() : null);
-    if (!pos) return;
-
-    playAmbientSound(player, pos, 'minecraft:entity.player.burp');
-
-    //could create a config for this conversion chance
-    if (Math.random() * 100 > 25) return;
-
-    const pigvilState = Block.getBlock(PIGVIL_STEEL).defaultBlockState();
-    event.level.setBlock(pos, pigvilState, 3);
-
-    playAmbientSound(player, pos, 'minecraft:entity.pig.ambient');
-
-    if (typeof targetEntity.discard === 'function') {
-        targetEntity.discard();
-    } else if (typeof targetEntity.remove === 'function') {
-        targetEntity.remove();
-    } else if (typeof targetEntity.kill === 'function') {
-        targetEntity.kill();
-    }
-
-    if (player && typeof player.swing === 'function') {
-        player.swing();
-    }
-
-    event.cancel();
-});
-
-
-BlockEvents.rightClicked(event => {
-    const clickedBlock = event.block;
-    const heldItem = event.item;
-    const player = event.player;
-
-    if (!clickedBlock || !heldItem || heldItem.isEmpty()) return;
-
-    const blockId = clickedBlock.id.toString();
-    const itemId = heldItem.id.toString();
-    const options = UPGRADE_PATHS[blockId];
-    if (!options) return;
-
-    const target = options.find(option => option.item === itemId);
-    if (!target) return;
-
-    if (player && !player.isCreative()) {
-        heldItem.count = Math.max(0, heldItem.count - 1);
-    }
-
-    playAmbientSound(player, clickedBlock.pos, 'minecraft:entity.player.burp');
-
-    // could apply conversion chance here as well
-
-    const nextState = Block.getBlock(target.next).defaultBlockState();
-    event.level.setBlock(clickedBlock.pos, nextState, 3);
-    if (player && typeof player.swing === 'function') {
-        player.swing();
-    }
-
-    event.cancel();
-});
 
 
 TFCEvents.data(event => {

@@ -1,3 +1,19 @@
+## 3.0.15
+* Mod updates:
+  - Roxy (TFC specific change again!)
+  - Photon (includes TFC water fix again)
+  - Corpse
+* FallingTree and Lithium configs moved back to config/ so they apply again
+
+## 3.0.14
+* Pigvil walks again!
+* Mod updates:
+  - EMF
+  - ETF
+  - ESM
+  - Roxy (TFC specific change!)
+  - TFC
+
 ## 3.0.13
 * Refinement of Pigvil, including corrected model hitbox
 * Pigvil must be converted from an adult male pig with max adult familiarity that's not too old.
