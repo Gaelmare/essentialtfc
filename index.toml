@@ -10,7 +10,7 @@ hash = "33c42f6adbfec0327ebfbc2eaa58bff1e29f3d0efc054dd828eabdc0b52c14a4"
 
 [[files]]
 file = "README.md"
-hash = "5fbc1004ef5bbbed0b4b850b9dd1be0853b2e608bd573a73105958cddc93bda1"
+hash = "54716b91c85525c8317c771ab13bb7a0c21aea37cf2312fe1a00ebb6a8076643"
 
 [[files]]
 file = "config/fallingtree.json"
@@ -466,7 +466,7 @@ metafile = true
 
 [[files]]
 file = "mods/terrafirmacraft.pw.toml"
-hash = "e2b40e77bc51bf0462d9a9c8a6a9c42418d42d003d3b08473636e0f980672828"
+hash = "7c9f545967a39ed28de1cabe0f9b27e6794be5d2d32d5fcfaca05aebda9178c7"
 metafile = true
 
 [[files]]
