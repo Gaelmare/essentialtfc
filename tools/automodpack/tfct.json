@@ -31,16 +31,5 @@
     {"file": "voxy-0.2.16-beta+1.21.11.jar", "side": "client", "sha1": "280a55279e0860d29146d908cd8a0246a12e2537"}
   ],
   "hostOverlay": "host",
-  "builtPacks": [
-    {
-      "file": "shaderpacks/photon_v1.3b-fix.zip",
-      "base": "photon_v1.3b.zip",
-      "baseSha1": "d975d25c9686de5f10e8b86c8518613cdf3f040a",
-      "replace": {
-        "shaders/block.properties": "config/global_shaderpack_properties/photon_v1.3b-fix/block.properties",
-        "shaders/shaders.properties": "config/global_shaderpack_properties/photon_v1.3b-fix/shaders.properties",
-        "shaders/settings.glsl": "config/global_shaderpack_properties/photon_v1.3b-fix/settings.glsl"
-      }
-    }
-  ]
+  "builtPacks": []
 }
