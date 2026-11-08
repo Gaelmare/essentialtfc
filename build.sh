@@ -20,7 +20,7 @@ SUMMARY="The pack I'd actually want to play if I was playing Vanilla TFC in 1.21
 if [[ ! "$newest_zip" == *"VitalTFC"* ]]; then
   echo "Not a VitalTFC zip, skipping TFCT update"
   ESSTFC=true
-  SUMMARY="The pack I would recommend to a beginner vanilla TFC player in 1.21."
+  SUMMARY="TFC modpack for beginner TerraFirmaCraft players with selected QoL and minor content mods"
 fi
 
 tmpdir=$(mktemp -d)

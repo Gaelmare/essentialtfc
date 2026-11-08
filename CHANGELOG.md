@@ -5,11 +5,13 @@
   - TFC
 
 ## 3.0.15
+* Mod updates:
   - CreativeCore
   - LittleTiles
   - Roxy (TFC specific change again!)
   - Photon (includes TFC water fix again)
   - Corpse
+* FallingTree and Lithium configs moved back to config/ so they apply again
 
 ## 3.0.14
 * Pigvil walks again!
