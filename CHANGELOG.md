@@ -1,3 +1,6 @@
+## 3.0.17
+  - TFC again! Lamp updates!
+
 ## 3.0.16
   - TFC
 
