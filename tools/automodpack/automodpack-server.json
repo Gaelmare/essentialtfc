@@ -1,0 +1,38 @@
+{
+  "DO_NOT_CHANGE_IT": 2,
+  "modpackName": "TFC Tuesday 2026",
+  "modpackHost": true,
+  "generateModpackOnStart": true,
+  "syncedFiles": [
+    "/emotes/*"
+  ],
+  "allowEditsInFiles": [
+    "/config/**",
+    "/options.txt"
+  ],
+  "forceCopyFilesToStandardLocation": [
+    "/mods/voxy*.jar"
+  ],
+  "nonModpackFilesToDelete": {},
+  "autoExcludeServerSideMods": true,
+  "autoExcludeUnnecessaryFiles": true,
+  "requireAutoModpackOnClient": true,
+  "nagUnModdedClients": true,
+  "nagMessage": "This server provides dedicated modpack through AutoModpack!",
+  "nagClickableMessage": "Click here to get the AutoModpack!",
+  "nagClickableLink": "https://modrinth.com/project/automodpack",
+  "bindAddress": "",
+  "bindPort": -1,
+  "addressToSend": "",
+  "portToSend": -1,
+  "disableInternalTLS": false,
+  "requireMagicPackets": false,
+  "updateIpsOnEveryStart": false,
+  "bandwidthLimit": 0,
+  "validateSecrets": true,
+  "secretLifetime": 336,
+  "selfUpdater": false,
+  "acceptedLoaders": [
+    "neoforge"
+  ]
+}

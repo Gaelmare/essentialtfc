@@ -73,3 +73,10 @@ zip -d "$tfczip" overrides/mods/voxy-0.2.16-beta+1.21.11.jar
 zip -d "$tfczip" overrides/kubejs/server_scripts/main_server.js
 echo "Updated $tfczip"
 
+# AutoModpack host files for the TFC Tuesday server, written to .out/automodpack.
+# AUTOMODPACK_JARS lists folders (colon-separated) holding the jars and packs to copy in,
+# matched by sha1. It defaults to the local VitalTFC and TFCTuesday2026 instances.
+I=$HOME/bin/minecraft-at/instances
+AUTOMODPACK_JARS=${AUTOMODPACK_JARS:-"$I/VitalTFC/mods:$I/VitalTFC/resourcepacks:$I/VitalTFC/shaderpacks:$I/TFCTuesday2026/mods:$I/TFCTuesday2026/automodpack/modpacks/TFC Tuesday 2026/mods"}
+python3 tools/automodpack/automodpack.py build "$tfczip" --jars "$AUTOMODPACK_JARS"
+
