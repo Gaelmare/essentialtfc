@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "4872bf9304593d0922af2af7f3474d11aaeed2d5c8420accebe4d0bf200db3dd"
+hash = "3ade94187353f25dea225d95ccf69d097b9a4f213c43f38b8250584a37acddaa"
 
 [[files]]
 file = "LICENSE.txt"
@@ -636,7 +636,7 @@ metafile = true
 
 [[files]]
 file = "mods/terrafirmacraft.pw.toml"
-hash = "235fab0b2049e73a6b84575faebb4e651af2b9ea55c1fd4ee6b32cf60cf6ef1d"
+hash = "a170dff6c39eb35a5beb4fde6334d908bc9f4c4d9c38d51aaaea760bf2580e87"
 metafile = true
 
 [[files]]

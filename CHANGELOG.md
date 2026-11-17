@@ -1,3 +1,6 @@
+## 3.0.18
+  - TFC released rare crash fix
+
 ## 3.0.17
   - TFC again! Lamp updates!
 
