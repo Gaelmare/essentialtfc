@@ -415,11 +415,6 @@ hash = "2bdee19bd39b4bd411d7c858a7978ca9d2bdda41c1cf15920ea6be0014663f79"
 metafile = true
 
 [[files]]
-file = "mods/no-chat-restrictions.pw.toml"
-hash = "f1c4a7b50d7a41fc1a2e25b4c930c53a38c3a22f8f897b2c3302cae47a8f9a36"
-metafile = true
-
-[[files]]
 file = "mods/patchouli.pw.toml"
 hash = "3718e8a37d0dc2939cc350cce74bcb9c36b59f48baf4560e62804f7ca6478185"
 metafile = true
