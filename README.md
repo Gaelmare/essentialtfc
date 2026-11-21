@@ -37,6 +37,7 @@ Mod List:
 - KubeJS TFC
 - Lithium (Fabric/NeoForge)
 - MakeUp - Ultra Fast | Shaders
+- MezzConfig
 - ModernFix
 - Mouse Tweaks
 - No Chat Restrictions

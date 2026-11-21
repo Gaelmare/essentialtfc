@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "7460b46d8f1c3f331aaa145ef777364f26348887809b3a6432d8cfbe1bebb7c4"
+hash = "b9a4642b7f88fc3fee90af3d7c6382533e67cb0c9e507e10028c32824cdf2455"
 
 [[files]]
 file = "LICENSE.txt"
@@ -10,7 +10,7 @@ hash = "33c42f6adbfec0327ebfbc2eaa58bff1e29f3d0efc054dd828eabdc0b52c14a4"
 
 [[files]]
 file = "README.md"
-hash = "5c51708c2b2039e58d616c5126b1d6ac94d52df772fe421a9282d4bdcb27d594"
+hash = "112702747856cdd1d890659f44006d2420b2b2900ba83b44dd3a33bf294a9e33"
 
 [[files]]
 file = "config/fallingtree.json"
@@ -397,6 +397,11 @@ metafile = true
 [[files]]
 file = "mods/makeup-ultra-fast-shader.pw.toml"
 hash = "9ae348e6a86750b68b4abc66044f6ec18ca90818d4d3a16e7aba7ee16bf971fa"
+metafile = true
+
+[[files]]
+file = "mods/mezzconfig.pw.toml"
+hash = "5d445e2ad3f047becc67fec1e8f3bf6fe22ade3a443ec301590d54d0f3b91f3a"
 metafile = true
 
 [[files]]
