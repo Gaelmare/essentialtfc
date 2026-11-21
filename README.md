@@ -40,6 +40,7 @@ Mod List:
 - MezzConfig
 - ModernFix
 - Mouse Tweaks
+- No Chat Restrictions
 - Patchouli
 - Photon Shader
 - Rhino

@@ -58,6 +58,10 @@ cp resourcepacks/Vexxed\ Visuals\ -\ TFC\ Canes.zip $tmpdir/overrides/resourcepa
 (cd "$tmpdir" && zip -r -q "$tmpzip" .)
 mv -f "$tmpzip" "$newest_zip"
 
+# NoChatRestrictions stays out of the CurseForge zips but goes in the AutoModpack bundle,
+# which finds it by sha1 (tools/automodpack/tfct.json) in the local instances.
+nochat=$(sed -n 's/^filename = "\(.*\)"$/\1/p' mods/no-chat-restrictions.pw.toml)
+zip -d "$newest_zip" "overrides/mods/$nochat"
 zip -d "$newest_zip" overrides/icon.png
 zip -u "$newest_zip" icon.png
 echo "Updated $newest_zip"

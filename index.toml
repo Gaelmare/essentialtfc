@@ -10,7 +10,7 @@ hash = "33c42f6adbfec0327ebfbc2eaa58bff1e29f3d0efc054dd828eabdc0b52c14a4"
 
 [[files]]
 file = "README.md"
-hash = "920c2bbdcfe0e768294f2a4776dbb94bc384b885c8c31d6697ac7c69a630c461"
+hash = "112702747856cdd1d890659f44006d2420b2b2900ba83b44dd3a33bf294a9e33"
 
 [[files]]
 file = "config/fallingtree.json"
@@ -412,6 +412,11 @@ metafile = true
 [[files]]
 file = "mods/mouse-tweaks.pw.toml"
 hash = "2bdee19bd39b4bd411d7c858a7978ca9d2bdda41c1cf15920ea6be0014663f79"
+metafile = true
+
+[[files]]
+file = "mods/no-chat-restrictions.pw.toml"
+hash = "1b6992bbce7bb400e5cc57769879c86271db2933a578afd9ea3d9f177a35a920"
 metafile = true
 
 [[files]]

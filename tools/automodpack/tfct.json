@@ -28,7 +28,8 @@
     {"file": "observable-5.4.4.jar", "side": "both", "sha1": "e17417eee213aac8291ff8bad1c6a5f710636b72"},
     {"file": "Pehkui-3.8.3+1.21-neoforge.jar", "side": "both", "sha1": "4ae35b04b0fca7b170417a12d6da6a693281574b"},
     {"file": "spark-1.10.124-neoforge.jar", "side": "both", "sha1": "9430cc2ab64ff89d698be593769fb9f9ee4efae6"},
-    {"file": "voxy-0.2.16-beta+1.21.11.jar", "side": "client", "sha1": "280a55279e0860d29146d908cd8a0246a12e2537"}
+    {"file": "voxy-0.2.16-beta+1.21.11.jar", "side": "client", "sha1": "280a55279e0860d29146d908cd8a0246a12e2537"},
+    {"file": "NoChatRestrictions-NeoForge-MC1.21.11-v1.1.0.jar", "side": "client", "sha1": "658c8f4014c98f602408c93dba3fb78cac963683"}
   ],
   "hostOverlay": "host",
   "builtPacks": []
