@@ -1,3 +1,6 @@
+## 3.0.19
+  - many updated mods
+
 ## 3.0.18
   - TFC released rare crash fix
 

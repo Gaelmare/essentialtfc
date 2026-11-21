@@ -59,7 +59,7 @@ Mod List:
 - TFCGyres-OreHints
 - Vexxed Visuals: TerraFirmaCraft
 - voxy
-- Voxy Server Side Forge / NeoForge
+- Voxy Server Side Horizon
 - Xaero's Minimap
 - Xaero's World Map
 - YetAnotherConfigLib
